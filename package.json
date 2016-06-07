@@ -1,0 +1,43 @@
+{
+  "name": "correctiv-simple-charts",
+  "version": "0.0.1",
+  "description": "A simple wrapper around nvd3",
+  "main": "webpack.config.js",
+  "scripts": {
+    "html": "cpy ./src/index.html ./build/",
+    "data": "cpy ./src/data/sample.csv ./build/",
+    "bundle": "webpack -p -d --progress --colors",
+    "build": "npm-run-all html bundle",
+    "serve": "webpack-dev-server --hot",
+    "dev": "npm-run-all html data serve"
+  },
+  "author": "@simonwoerpel",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "npm-run-all": "^1.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/correctiv/correctiv-simple-charts"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel": "^5.4.7",
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "cpy": "^3.4.1",
+    "css-loader": "^0.23.0",
+    "csswring": "^4.0.0",
+    "d3": "^3.5.17",
+    "dsv-loader": "^1.0.3",
+    "nvd3": "^1.8.3",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^7.1.3",
+    "postcss-loader": "^0.8.0",
+    "postcss-nested": "^1.0.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  }
+}
