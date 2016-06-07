@@ -64,7 +64,7 @@ class Chart {
   }
 
   _initElement() {
-    this.element = this.opts.element.append('svg')
+    this.element = d3.select(this.opts.selector).append('svg')
   }
 
   _getZoomHandlers() {

@@ -12,7 +12,7 @@ const SETTINGS = {
     useVoronoi: true,
     duration: 350,
     color: d3.scale.category10().range(),
-    element: d3.select('div#correctiv-simple-chart'),
+    selector: 'div#correctiv-simple-chart',
 
     xAxis: {
       tickFormat: _tickFormat
