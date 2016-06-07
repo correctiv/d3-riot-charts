@@ -20,10 +20,10 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: {modules: 'common'} },
-      { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' }
+      { test: /\.less/, loader: 'style-loader!css-loader!less-loader!postcss-loader' }
     ]
   },
-  postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
+  // postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
   devServer: {
     contentBase: './build/',
     port: 1337,

@@ -1,4 +1,4 @@
-import './css/index.css'
+import './less/main.less'
 
 import CSVLoader from './data/loader'
 import Chart from './charts'

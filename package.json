@@ -31,6 +31,8 @@
     "csswring": "^4.0.0",
     "d3": "^3.5.17",
     "dsv-loader": "^1.0.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
     "nvd3": "^1.8.3",
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.1.3",

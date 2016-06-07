@@ -1,0 +1,90 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/nvd3/build/nv.d3.min.css';
+
+
+.correctiv-simple-charts {
+
+    svg {
+        height: 800px;
+    }
+
+    .nv-axis path, .nv-axis line {
+        fill: none;
+        // stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .nv-axis text {
+        font: 10px sans-serif;
+    }
+
+    .nv-point {
+        fill-opacity: .6;
+        stroke-width: 1;
+        stroke-opacity: 1;
+    }
+
+    .nv-point.active {
+        fill-opacity: 1;
+    }
+
+
+    &__tooltip {
+        // display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // width: 200px;
+        background: rgba(255, 255, 255, .8);
+        border: 1px solid #ddd;
+        z-index: 1000;
+        padding: 10px;
+        overflow: hidden;
+        pointer-events: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+
+        &--head {
+            font-weight: bold;
+            color: #dc0000;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0 0 .5em 0;
+        }
+
+        &--data {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+
+            dt {
+                float: none;
+                padding: 0;
+                margin: 0;
+                font-weight: bold;
+            }
+
+            dd {
+                float: none;
+                padding: 0;
+                margin: 0 0 .4em 0;
+            }
+
+        }
+    }
+}
+
+
+// reset nvd3 tooltip kind of...
+.nvtooltip, .xy-tooltip {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: 0;
+}
+
+

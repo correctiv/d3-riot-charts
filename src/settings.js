@@ -12,7 +12,7 @@ const SETTINGS = {
     useVoronoi: true,
     duration: 350,
     color: d3.scale.category10().range(),
-    selector: 'div#correctiv-simple-chart',
+    selector: 'div.correctiv-simple-charts',
 
     xAxis: {
       tickFormat: _tickFormat
@@ -22,7 +22,7 @@ const SETTINGS = {
     },
     tooltip: {
       contentGenerator: (obj) => {
-        return '<h3>' + obj + '</h3>'
+        return '<div class="correctiv-simple-charts__tooltip"><span class="correctiv-simple-charts__tooltip--head">' + obj.point.label + '</span></div>'
       }
     },
     zoom: {
