@@ -1,6 +1,7 @@
 import 'd3'
 import 'nvd3'
 import Opts from './settings'
+import getZoomHandlers from './utils'
 
 
 class Chart {
@@ -18,7 +19,14 @@ class Chart {
     this._initElement()
     this._applyData()
 
+
     this.element.call(this.chart)
+
+    if (this.opts.zoom.active) {
+      let {zoom, reset} = this._getZoomHandlers()
+      this.element.call(zoom).on('dblclick.zoom', reset)
+    }
+
     nv.utils.windowResize(this.chart.update)
     nv.addGraph(() => {
       return this.chart
@@ -57,6 +65,12 @@ class Chart {
 
   _initElement() {
     this.element = this.opts.element.append('svg')
+  }
+
+  _getZoomHandlers() {
+    let chart = this.chart
+    let extend = this.opts.zoom.extend
+    return getZoomHandlers({chart, extend})
   }
 }
 

@@ -24,6 +24,10 @@ const SETTINGS = {
       contentGenerator: (obj) => {
         return '<h3>' + obj + '</h3>'
       }
+    },
+    zoom: {
+      active: true,
+      extend: 100
     }
   }
 
