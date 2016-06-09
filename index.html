@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>correctiv-simple-charts</title>
+</head>
+<body>
+  <script src="correctiv-simple-charts.min.js"></script>
+  <script type="text/javascript">
+
+showChart({
+  selector: '#example-scatter',
+  kind: 'scatterChart',
+  dataUrl: './data/sample.csv',
+  chart: {
+    height: '600px',
+    showDistX: false
+  },
+  data: {
+    keys: {
+      columns: ['bilanzsumme_2014', 'eigenkapital_2014', 'sparkasse']
+    }
+  }
+})
+
+  </script>
+</body>
+</html>
