@@ -1,4 +1,5 @@
 import 'd3'
+import fillUpNestedObjects from './utils/fill_up_nested_objects'
 
 
 const _tickFormat = d3.format('.02f')
@@ -6,13 +7,15 @@ const _tickFormat = d3.format('.02f')
 
 const SETTINGS = {
 
-  chartDefaults: {
+  chart: {
+    height: '400px',
+    width: '100%',
+
     showDistX: true,
     showDistY: true,
     useVoronoi: true,
     duration: 350,
     color: d3.scale.category10().range(),
-    selector: 'div.correctiv-simple-charts',
 
     xAxis: {
       tickFormat: _tickFormat
@@ -22,7 +25,7 @@ const SETTINGS = {
     },
     tooltip: {
       contentGenerator: (obj) => {
-        return '<div class="correctiv-simple-charts__tooltip"><span class="correctiv-simple-charts__tooltip--head">' + obj.point.label + '</span></div>'
+        return '<div class="simple-charts__tooltip"><span class="simple-charts__tooltip--head">' + obj.point.label + '</span></div>'
       }
     },
     zoom: {
@@ -33,26 +36,8 @@ const SETTINGS = {
 
 }
 
-class Opts {
-
-  constructor(opts) {
-    this.opts = opts
-    this.defaults = SETTINGS.chartDefaults
-  }
-
-  getOpt(opt) {
-    return this.opts[opt] || this.defaults[opt]
-  }
-
-  getOpts() {
-    let opts = {}
-    for (let key in this.defaults) {
-      opts[key] = this.opts[key] || this.defaults[key]
-    }
-    return opts
-  }
-
+function Opts(opts) {
+  return fillUpNestedObjects(opts, SETTINGS)
 }
-
 
 export default Opts

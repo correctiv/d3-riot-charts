@@ -1,24 +1,26 @@
 import 'd3'
 import 'nvd3'
+import CSVLoader from './loader'
 import Opts from './settings'
-import getZoomHandlers from './utils'
+import getChartElement from './utils/get_chart_element'
+import getZoomHandlers from './utils/zoom'
 
 
 class Chart {
 
-  constructor({data, kind, opts}) {
+  constructor({element, data, kind, opts}) {
+    this.element = element
     this.data = data
     this.kind = kind
-    this.opts = new Opts(opts).getOpts()
+    this.opts = opts
   }
 
   render() {
     this._initChart()
+    this._initOpts()
     this._initAxes()
     this._initTooltip()
-    this._initElement()
     this._applyData()
-
 
     this.element.call(this.chart)
 
@@ -39,7 +41,7 @@ class Chart {
 
   _initChart() {
     if (this.kind == 'scatterChart') {
-    this.chart = nv.models.scatterChart()
+      this.chart = nv.models.scatterChart()
     } else {
       throw Error('not implemented')
     }
@@ -63,10 +65,6 @@ class Chart {
     this.chart.tooltip.contentGenerator(this.opts.tooltip.contentGenerator)
   }
 
-  _initElement() {
-    this.element = d3.select(this.opts.selector).append('svg')
-  }
-
   _getZoomHandlers() {
     let chart = this.chart
     let extend = this.opts.zoom.extend
@@ -74,5 +72,47 @@ class Chart {
   }
 }
 
+/**
+ * generates the chart and puts it into given html selector
+ *
+ * @param {string} selector - html selector for use in `querySelector`,
+ *    if this element doesn't exist, it will be created
+ * @param {string} kind - kind of chart,
+ *    currently only `scatterChart` implemented
+ * @param {string} dataUrl – absolute url where to find data in csv
+ * @param {object} opts – options mapping for chart and data, example:
+ *    {
+ *      chart: chartOpts (see `settings.js` for defaults),
+ *      data: {keys: [...]}
+ *    }
+ *
+ **/
+function showChart({
+  selector,
+  kind,
+  dataUrl,
+  opts
+}) {
+  // fill missing opts with defaults
+  let _opts = Opts(opts)
 
-export default Chart
+  // get data
+  let loader = new CSVLoader({url: dataUrl,
+                              opts: _opts.data})
+  let data = loader.getData()
+
+  // get or create html element
+  let {height, width} = _opts.chart
+  let element = getChartElement(selector, {height, width})
+
+  // get chart
+  let chart = new Chart({element: element,
+                         data: data,
+                         kind: kind,
+                         opts: _opts.chart})
+
+  // finally render
+  chart.render()
+}
+
+export default showChart
