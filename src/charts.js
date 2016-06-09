@@ -43,7 +43,7 @@ class Chart {
     if (this.kind == 'scatterChart') {
       this.chart = nv.models.scatterChart()
     } else {
-      throw Error('not implemented')
+      throw new Error('not implemented')
     }
   }
 

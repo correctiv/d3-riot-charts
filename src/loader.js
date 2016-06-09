@@ -40,7 +40,7 @@ class CSVLoader {
         })
         .get((err, rows) => {
           if (err) {
-            reject(Error("error loading data"))
+            reject(new Error("error loading data"))
           } else {
             resolve(rows)
           }
