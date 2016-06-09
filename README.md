@@ -1,6 +1,6 @@
 # correctiv-simple-charts
 
-kind of "request-driven" developement of a simple charts library as sort of a wrapper around `nvd3`
+kind of "request-driven" developement of a simple charts library as sort of a wrapper around `nvd3` for use with reusable correctiv visualizations
 
 ## usage
 
@@ -34,8 +34,10 @@ currently, only `nv.models.scatterChart` is implemented.
 
 `npm run dev`
 
+starts a simple server at `localhost:1337` that serves the example `index.html` from the root directory of this project.
+
 ## build
 
 `npm run build`
 
-the build will be in the `./dist` folder
+the minified build `correctiv-simple-charts.min.js` will be in the `./dist` folder
