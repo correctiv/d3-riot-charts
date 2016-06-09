@@ -20,23 +20,23 @@ class Chart {
     this._initOpts()
     this._initAxes()
     this._initTooltip()
-    this._applyData()
 
-    this.element.call(this.chart)
+    // wait for promised data
+    this.data.then((data) => {
+      this.element.datum(data)
+      this.element.call(this.chart)
+      if (this.opts.zoom.active) {
+        let {zoom, reset} = this._getZoomHandlers()
+        this.element.call(zoom).on('dblclick.zoom', reset)
+      }
+      nv.utils.windowResize(this.chart.update)
 
-    if (this.opts.zoom.active) {
-      let {zoom, reset} = this._getZoomHandlers()
-      this.element.call(zoom).on('dblclick.zoom', reset)
-    }
-
-    nv.utils.windowResize(this.chart.update)
-    nv.addGraph(() => {
-      return this.chart
+      // TODO: do we need this?
+      //
+      // nv.addGraph(() => {
+      //   return this.chart
+      // })
     })
-  }
-
-  _applyData() {
-    this.element.datum(this.data)
   }
 
   _initChart() {
