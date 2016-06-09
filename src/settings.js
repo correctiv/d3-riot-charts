@@ -23,15 +23,10 @@ const SETTINGS = {
     yAxis: {
       tickFormat: _tickFormat
     },
-    tooltip: {
-      contentGenerator: (obj) => {
-        return '<div class="simple-charts__tooltip"><span class="simple-charts__tooltip--head">' + obj.point.label + '</span></div>'
-      }
-    },
     zoom: {
-      active: true,
+      active: false,
       extend: 100
-    }
+    },
   }
 
 }

@@ -4,6 +4,7 @@ import CSVLoader from './loader'
 import Opts from './settings'
 import getChartElement from './utils/get_chart_element'
 import getZoomHandlers from './utils/zoom'
+import Tooltip from './utils/tooltip'
 
 
 class Chart {
@@ -62,7 +63,11 @@ class Chart {
   }
 
   _initTooltip() {
-    this.chart.tooltip.contentGenerator(this.opts.tooltip.contentGenerator)
+    /* @param {object} obj - data instance from nvd3 */
+    let contentGenerator = (obj) => {
+      return Tooltip({label: obj.point.label})
+    }
+    this.chart.tooltip.contentGenerator(contentGenerator)
   }
 
   _getZoomHandlers() {
