@@ -5,21 +5,23 @@ class CSVLoader {
 
   constructor({url, opts}) {
     this.url = url
-    this.columns = opts.keys.columns
+    this.opts = opts
   }
 
   getData() {
+    let {xCol, yCol, labelCol, sizeCol} = this.opts
+
     return new Promise((resolve) => {
       this._getRows().then((rows) => {
         let data = []
         data.push({
-          key: 'Sparkasse',
+          key: 'Data',
           values: rows.map(r => {
             return {
-              label: r.sparkasse,
-              size: parseInt(r.bilanzsumme_2014),
-              x: parseInt(r.bilanzsumme_2014),
-              y: parseInt(r.eigenkapital_2014)
+              label: r[labelCol],
+              size: sizeCol ? Number(r[sizeCol]): 1,
+              x: Number(r[xCol]),
+              y: Number(r[yCol]),
             }
           })
         })
@@ -29,11 +31,12 @@ class CSVLoader {
   }
 
   _getRows() {
+    let columns = this._getNeededColumns()
     return new Promise((resolve, reject) => {
       d3.csv(this.url)
         .row(r => {
           let row = {}
-          for (let key of this.columns) {
+          for (let key of columns) {
             row[key] = r[key]
           }
           return row
@@ -46,6 +49,12 @@ class CSVLoader {
           }
         })
     })
+  }
+
+  _getNeededColumns() {
+    // dont load too much data
+    let {xCol, yCol, labelCol} = this.opts
+    return [xCol, yCol, labelCol]
   }
 
 }
