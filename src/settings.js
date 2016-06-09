@@ -11,8 +11,8 @@ const SETTINGS = {
     height: '400px',
     width: '100%',
 
-    showDistX: true,
-    showDistY: true,
+    showDistX: false,
+    showDistY: false,
     useVoronoi: true,
     duration: 350,
     color: d3.scale.category10().range(),
