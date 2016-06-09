@@ -15,6 +15,10 @@ module.exports = {
     path: __dirname + '/dist/',
     filename: 'correctiv-simple-charts.min.js'
   },
+  externals: {
+    'd3': 'd3',
+    'nvd3': 'nv'
+  },
   devtool: 'eval',
   debug: true,
   module: {
