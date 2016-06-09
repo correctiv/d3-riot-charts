@@ -6,7 +6,7 @@ kind of "request-driven" developement of a simple charts library as sort of a wr
 
 show a chart like this:
 ```javascript
-showChart({
+renderChart({
   selector: '#example-scatter',
   kind: 'scatterChart',
   dataUrl: './data/sample.csv',

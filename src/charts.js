@@ -88,7 +88,7 @@ class Chart {
  *    }
  *
  **/
-function showChart({
+function renderChart({
   selector,
   kind,
   dataUrl,
@@ -117,4 +117,4 @@ function showChart({
   nvChart.render()
 }
 
-export default showChart
+export default renderChart
