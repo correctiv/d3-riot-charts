@@ -79,8 +79,9 @@ class Chart {
  *    if this element doesn't exist, it will be created
  * @param {string} kind - kind of chart,
  *    currently only `scatterChart` implemented
- * @param {string} dataUrl – absolute url where to find data in csv
- * @param {object} opts – options mapping for chart and data, example:
+ * @param {string} dataUrl - absolute url where to find data in csv
+ * @param {object} chart - options for chart
+ * @param {object} data - options for data
  *    {
  *      chart: chartOpts (see `settings.js` for defaults),
  *      data: {keys: [...]}
@@ -91,28 +92,29 @@ function showChart({
   selector,
   kind,
   dataUrl,
-  opts
+  data,
+  chart
 }) {
   // fill missing opts with defaults
-  let _opts = Opts(opts)
+  let opts = Opts({data, chart})
 
   // get data
   let loader = new CSVLoader({url: dataUrl,
-                              opts: _opts.data})
-  let data = loader.getData()
+                              opts: opts.data})
+  let csvData = loader.getData()
 
   // get or create html element
-  let {height, width} = _opts.chart
+  let {height, width} = opts.chart
   let element = getChartElement(selector, {height, width})
 
   // get chart
-  let chart = new Chart({element: element,
-                         data: data,
+  let nvChart = new Chart({element: element,
+                         data: csvData,
                          kind: kind,
-                         opts: _opts.chart})
+                         opts: opts.chart})
 
   // finally render
-  chart.render()
+  nvChart.render()
 }
 
 export default showChart
