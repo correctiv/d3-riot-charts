@@ -4,12 +4,8 @@
   "description": "A simple wrapper around nvd3",
   "main": "webpack.config.js",
   "scripts": {
-    "html": "cpy ./src/index.html ./build/",
-    "data": "cpy ./src/data/sample.csv ./build/",
-    "bundle": "webpack -p -d --progress --colors",
-    "build": "npm-run-all html bundle",
-    "serve": "webpack-dev-server --hot",
-    "dev": "npm-run-all html data serve"
+    "build": "webpack -p -d --progress --colors",
+    "dev": "webpack-dev-server --hot"
   },
   "author": "@simonwoerpel",
   "license": "MIT",

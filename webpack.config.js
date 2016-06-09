@@ -12,8 +12,8 @@ module.exports = {
     app : ['./src/main.js']
   },
   output: {
-    path: __dirname + '/build/',
-    filename: 'bundle.js'
+    path: __dirname + '/dist/',
+    filename: 'correctiv-simple-charts.min.js'
   },
   devtool: 'eval',
   debug: true,
@@ -25,7 +25,7 @@ module.exports = {
   },
   // postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
   devServer: {
-    contentBase: './build/',
+    contentBase: './',
     port: 1337,
     hot: true,
     inline: true
