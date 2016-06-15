@@ -2,9 +2,6 @@ import 'd3'
 import fillUpNestedObjects from './utils/fill_up_nested_objects'
 
 
-const _tickFormat = d3.format('.02f')
-
-
 const SETTINGS = {
 
   chart: {
@@ -18,10 +15,10 @@ const SETTINGS = {
     color: d3.scale.category10().range(),
 
     xAxis: {
-      tickFormat: _tickFormat
+      tickFormat: '.02f'
     },
     yAxis: {
-      tickFormat: _tickFormat
+      tickFormat: '.02f'
     },
     zoom: {
       active: false,

@@ -58,8 +58,8 @@ class Chart {
   }
 
   _initAxes() {
-    this.chart.xAxis.tickFormat(this.opts.xAxis.tickFormat)
-    this.chart.yAxis.tickFormat(this.opts.yAxis.tickFormat)
+    this.chart.xAxis.tickFormat(d3.format(this.opts.xAxis.tickFormat))
+    this.chart.yAxis.tickFormat(d3.format(this.opts.yAxis.tickFormat))
   }
 
   _initTooltip() {
