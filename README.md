@@ -9,15 +9,23 @@ show a chart like this:
 renderChart({
   selector: '#example-scatter',
   kind: 'scatterChart',
-  dataUrl: './data/sample.csv',
+  dataUrl: '/data/sample.csv',
   chart: {
     height: '600px',
-    showDistX: false
+    showDistX: true,
+    zoom: {
+      active: true
+    },
+    tooltip: {
+      labelCol: 'sparkasse',
+      bodyTempl: '<dl>\
+        <dt>Bilanzsumme 2014</dt><dd>{bilanzsumme_2014} €</dd>\
+        <dt>Eigenkapital 2014</dt><dd>{eigenkapital_2014} €</dd></dl>'
+    }
   },
   data: {
-    keys: {
-      columns: ['bilanzsumme_2014', 'eigenkapital_2014', 'sparkasse']
-    }
+    xCol: 'bilanzsumme_2014',
+    yCol: 'eigenkapital_2014'
   }
 })
 ```
