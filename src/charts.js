@@ -63,9 +63,18 @@ class Chart {
   }
 
   _initTooltip() {
-    /* @param {object} obj - data instance from nvd3 */
+    // bodyTempl is optional
+    let {headTempl=null, bodyTempl=null, labelCol=null} = this.opts.tooltip
+    if (!headTempl && !labelCol) {
+      throw new Error('either "headTempl" or "labelCol" must be given')
+    }
+    if (!headTempl) {
+      headTempl = '{'+labelCol+'}'
+    }
+
     let contentGenerator = (obj) => {
-      return Tooltip({label: obj.point.label})
+      let data = obj.point.data
+      return Tooltip({headTempl, bodyTempl, data})
     }
     this.chart.tooltip.contentGenerator(contentGenerator)
   }
@@ -105,7 +114,8 @@ function renderChart({
 
   // get data
   let loader = new CSVLoader({url: dataUrl,
-                              opts: opts.data})
+                              opts: opts.data,
+                              tooltip: opts.chart.tooltip || {}})
   let csvData = loader.getData()
 
   // get or create html element
@@ -114,9 +124,9 @@ function renderChart({
 
   // get chart
   let nvChart = new Chart({element: element,
-                         data: csvData,
-                         kind: kind,
-                         opts: opts.chart})
+                           data: csvData,
+                           kind: kind,
+                           opts: opts.chart})
 
   // finally render
   nvChart.render()
