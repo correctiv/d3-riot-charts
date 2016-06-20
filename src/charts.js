@@ -76,7 +76,9 @@ class Chart {
       let data = obj.point.data
       return Tooltip({headTempl, bodyTempl, data})
     }
-    this.chart.tooltip.contentGenerator(contentGenerator)
+    this.chart.tooltip.options({
+      contentGenerator: contentGenerator
+    })
   }
 
   _getZoomHandlers() {
