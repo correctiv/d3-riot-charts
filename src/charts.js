@@ -1,8 +1,4 @@
-import 'd3'
-import 'nvd3'
-import CSVLoader from './loader'
-import Opts from './settings'
-import getChartElement from './utils/get_chart_element'
+import {MODELS, AVAILABLE_CHARTS} from './nvd3_api'
 import getZoomHandlers from './utils/zoom'
 import {Tooltip} from './utils/tooltip'
 
@@ -14,12 +10,12 @@ class Chart {
     this.data = data
     this.kind = kind
     this.opts = opts
+    this.model = MODELS[this.kind]
   }
 
   render() {
     this._initChart()
     this._initOpts()
-    this._initAxes()
     this._initTooltip()
 
     // wait for promised data
@@ -34,32 +30,24 @@ class Chart {
 
       // TODO: do we need this?
       //
-      // nv.addGraph(() => {
-      //   return this.chart
-      // })
+      nv.addGraph(() => {
+        return this.chart
+      })
     })
   }
 
   _initChart() {
-    if (this.kind == 'scatterChart') {
-      this.chart = nv.models.scatterChart()
+    if (AVAILABLE_CHARTS.indexOf(this.kind) > -1) {
+      this.chart = this.model.chart()
     } else {
-      throw new Error('not implemented')
+      throw new Error('chart type not implemented')
     }
   }
 
   _initOpts() {
-    this.chart
-      .showDistX(this.opts.showDistX)
-      .showDistY(this.opts.showDistY)
-      .duration(this.opts.duration)
-      .useVoronoi(this.opts.useVoronoi)
-      .color(this.opts.color)
-  }
-
-  _initAxes() {
-    this.chart.xAxis.tickFormat(d3.format(this.opts.xAxis.tickFormat))
-    this.chart.yAxis.tickFormat(d3.format(this.opts.yAxis.tickFormat))
+    this.chart.options(this.opts.nvd3)
+    this.chart.xAxis.options(this.opts.xAxis)
+    this.chart.yAxis.options(this.opts.yAxis)
   }
 
   _initTooltip() {
@@ -86,50 +74,5 @@ class Chart {
   }
 }
 
-/**
- * generates the chart and puts it into given html selector
- *
- * @param {string} selector - html selector for use in `querySelector`,
- *    if this element doesn't exist, it will be created
- * @param {string} kind - kind of chart,
- *    currently only `scatterChart` implemented
- * @param {string} dataUrl - absolute url where to find data in csv
- * @param {object} chart - options for chart
- * @param {object} data - options for data
- *    {
- *      chart: chartOpts (see `settings.js` for defaults),
- *      data: {keys: [...]}
- *    }
- *
- **/
-function renderChart({
-  selector,
-  kind,
-  dataUrl,
-  data,
-  chart
-}) {
-  // fill missing opts with defaults
-  let opts = Opts({data, chart})
 
-  // get data
-  let loader = new CSVLoader({url: dataUrl,
-                              opts: opts.data,
-                              tooltip: opts.chart.tooltip || {}})
-  let csvData = loader.getData()
-
-  // get or create html element
-  let {height, width} = opts.chart
-  let element = getChartElement(selector, {height, width})
-
-  // get chart
-  let nvChart = new Chart({element: element,
-                           data: csvData,
-                           kind: kind,
-                           opts: opts.chart})
-
-  // finally render
-  nvChart.render()
-}
-
-export default renderChart
+export default Chart
