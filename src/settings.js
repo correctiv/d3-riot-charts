@@ -12,7 +12,7 @@ const SETTINGS = {
     showDistY: false,
     useVoronoi: true,
     duration: 350,
-    color: d3.scale.category10().range(),
+    color: d3.scale.category20().range(),
 
     xAxis: {
       tickFormat: '.02f'
