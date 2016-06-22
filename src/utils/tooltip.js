@@ -13,6 +13,18 @@ const _format = (data, templString, wrapper) => {
 }
 
 
+const _getMatchesFromTempl = (templ) => {
+  let templRegExp = /\{(\w+)\}/g
+  let matches = []
+  let match = templRegExp.exec(templ)
+  while (match != null) {
+    matches.push(match[1])
+    match = templRegExp.exec(templ)
+  }
+  return matches
+}
+
+
 const Tooltip = ({headTempl, bodyTempl, data}) => {
   let headContent = _format(data, headTempl, TOOLTIP_HEAD)
   let bodyContent = bodyTempl ? _format(data, bodyTempl, TOOLTIP_BODY) : ''
@@ -20,4 +32,20 @@ const Tooltip = ({headTempl, bodyTempl, data}) => {
   return template(TOOLTIP_WRAPPER, {content})
 }
 
-export default Tooltip
+
+const getTooltipCols = (tooltip) => {
+  // extract all needed col names from tooltip templates
+  // to get data for tooltip
+  let {headTempl='', bodyTempl=''} = tooltip
+  let headCols = _getMatchesFromTempl(headTempl)
+  let bodyCols = _getMatchesFromTempl(bodyTempl)
+  let cols = headCols.concat(bodyCols)
+  let labelCol = tooltip.labelCol
+  if (!(labelCol in cols)) {
+    cols.push(labelCol)
+  }
+  return cols
+}
+
+
+export default {Tooltip, getTooltipCols}
