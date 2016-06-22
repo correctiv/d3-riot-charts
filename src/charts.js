@@ -4,7 +4,7 @@ import CSVLoader from './loader'
 import Opts from './settings'
 import getChartElement from './utils/get_chart_element'
 import getZoomHandlers from './utils/zoom'
-import Tooltip from './utils/tooltip'
+import {Tooltip} from './utils/tooltip'
 
 
 class Chart {

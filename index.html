@@ -16,21 +16,24 @@ renderChart({
   dataUrl: 'data/sample.csv',
   chart: {
     height: '600px',
-    showDistX: true,
     zoom: {
       active: true
     },
     tooltip: {
       labelCol: 'sparkasse',
       bodyTempl: '<dl>\
-        <dt>Bilanzsumme 2014</dt><dd>{bilanzsumme_2014} €</dd>\
-        <dt>Eigenkapital 2014</dt><dd>{eigenkapital_2014} €</dd></dl>'
+        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014} €</dd>\
+        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014} €</dd>\
+        <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd></dl>\
+        <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
     }
   },
   data: {
-    xCol: 'bilanzsumme_2014',
-    yCol: 'eigenkapital_2014',
-    sizeCol: 'mitarbeiter_2014'
+    xCol: 'bemessung_2014',
+    yCol: 'durchschnittsgehalt_2014',
+    sizeCol: 'mitarbeiter_2014',
+    groupCol: 'state'
   }
 })
 
