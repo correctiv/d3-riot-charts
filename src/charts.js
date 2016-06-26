@@ -1,4 +1,4 @@
-import {MODELS, AVAILABLE_CHARTS} from './nvd3_api'
+import {MODELS} from './nvd3_api'
 import getZoomHandlers from './utils/zoom'
 import {Tooltip} from './utils/tooltip'
 
@@ -16,7 +16,12 @@ class Chart {
   render() {
     this._initChart()
     this._initOpts()
+
+    this._initAxes()
     this._initTooltip()
+
+    this.model.callX ? this.model.callX(this.chart) : null
+    this.model.callY ? this.model.callY(this.chart) : null
 
     // wait for promised data
     this.data.then((data) => {
@@ -29,7 +34,6 @@ class Chart {
       nv.utils.windowResize(this.chart.update)
 
       // TODO: do we need this?
-      //
       nv.addGraph(() => {
         return this.chart
       })
@@ -37,15 +41,14 @@ class Chart {
   }
 
   _initChart() {
-    if (AVAILABLE_CHARTS.indexOf(this.kind) > -1) {
-      this.chart = this.model.chart()
-    } else {
-      throw new Error('chart type not implemented')
-    }
+    this.chart = this.model.chart()
   }
 
   _initOpts() {
     this.chart.options(this.opts.nvd3)
+  }
+
+  _initAxes() {
     this.chart.xAxis.options(this.opts.xAxis)
     this.chart.yAxis.options(this.opts.yAxis)
   }
@@ -61,7 +64,8 @@ class Chart {
     }
 
     let contentGenerator = (obj) => {
-      let data = obj.point.data
+      // FIXME differences between different nvd3 implementations of this
+      let data = obj[this.model.dataObj].data
       return Tooltip({headTempl, bodyTempl, data})
     }
     this.chart.tooltip.contentGenerator(contentGenerator)

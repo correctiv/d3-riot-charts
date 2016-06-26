@@ -1,3 +1,4 @@
+import {AVAILABLE_CHARTS} from './nvd3_api'
 import Chart from './charts'
 import Opts from './settings'
 import CSVLoader from './loader'
@@ -29,11 +30,17 @@ function renderChart({
   data,
   chart
 }) {
+  // check for implementation
+  if (AVAILABLE_CHARTS.indexOf(kind) == -1) {
+    throw new Error('chart type not implemented')
+  }
+
   // fill missing opts with defaults
   let opts = Opts({data, chart})
 
   // get data
   let loader = new CSVLoader({url: dataUrl,
+                              kind: kind,
                               opts: opts.data,
                               tooltip: opts.chart.tooltip || {}})
   let csvData = loader.getData()
