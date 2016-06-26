@@ -18,6 +18,7 @@ const SETTINGS = {
       active: false,
       extend: 100
     },
+    tooltip: {}
   }
 
 }
