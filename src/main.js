@@ -1,4 +1,4 @@
 import './less/main.less'
-import renderChart from './charts'
+import renderChart from './render_chart'
 
 window.renderChart = renderChart

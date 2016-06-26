@@ -5,6 +5,19 @@
   <title>correctiv-simple-charts</title>
 </head>
 <body>
+  <h2>correctiv-simple-charts</h2>
+  <h1>Examples</h1>
+
+  <h3>scatterChart</h3>
+  <section class="simple-charts">
+    <section id="example-scatter"></section>
+  </section>
+
+  <h3>discreteBarChart</h3>
+  <section class="simple-charts">
+    <section id="example-discrete-bar"></section>
+  </section>
+
   <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
   <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
   <script src="dist/correctiv-simple-charts.min.js"></script>
@@ -22,18 +35,48 @@ renderChart({
     tooltip: {
       labelCol: 'sparkasse',
       bodyTempl: '<dl>\
-        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014} €</dd>\
-        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014} €</dd>\
+        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
         <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
-        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd></dl>\
+        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
         <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
-    }
+    },
+    nvd3: {
+      showDistY: true
+    },
+    yAxis: {
+      tickFormat: d3.format('.01f')
+    },
   },
   data: {
     xCol: 'bemessung_2014',
-    yCol: 'durchschnittsgehalt_2014',
-    sizeCol: 'mitarbeiter_2014',
+    yCol: 'durchschnitt_val',
+    sizeCol: 'mitarbeiter_val',
     groupCol: 'state'
+  }
+})
+
+
+
+renderChart({
+  selector: '#example-discrete-bar',
+  kind: 'discreteBarChart',
+  dataUrl: '/data/sample_barchart_o15.csv',
+  chart: {
+    height: '600px',
+    tooltip: {
+      labelCol: 'name',
+      bodyTempl: '<dl>\
+        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
+        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
+        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Position</dt><dd>{position}</dd></dl>'
+    }
+  },
+  data: {
+    labelCol: 'name',
+    valueCol: 'bezuege_quote_zu_2013' //,
+    // groupCol: 'position'
   }
 })
 

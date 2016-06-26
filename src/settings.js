@@ -8,22 +8,17 @@ const SETTINGS = {
     height: '400px',
     width: '100%',
 
-    showDistX: false,
-    showDistY: false,
-    useVoronoi: true,
-    duration: 350,
-    color: d3.scale.category20().range(),
-
     xAxis: {
-      tickFormat: '.02f'
+      tickFormat: d3.format('.02f')
     },
     yAxis: {
-      tickFormat: '.02f'
+      tickFormat: d3.format('.02f')
     },
     zoom: {
       active: false,
       extend: 100
     },
+    tooltip: {}
   }
 
 }
