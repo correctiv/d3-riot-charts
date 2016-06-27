@@ -1,5 +1,5 @@
 import 'd3'
-import {MODELS} from './nvd3_api'
+import {MODELS} from './nvd3_api/models'
 import {getTooltipCols} from './utils/tooltip'
 
 

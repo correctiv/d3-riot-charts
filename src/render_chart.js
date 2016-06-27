@@ -1,4 +1,4 @@
-import {AVAILABLE_CHARTS} from './nvd3_api'
+import {AVAILABLE_CHARTS} from './nvd3_api/models'
 import Chart from './charts'
 import Opts from './settings'
 import CSVLoader from './loader'

@@ -1,4 +1,4 @@
-import {MODELS} from './nvd3_api'
+import {MODELS} from './nvd3_api/models'
 import getZoomHandlers from './utils/zoom'
 import {Tooltip} from './utils/tooltip'
 
