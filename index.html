@@ -42,7 +42,8 @@ renderChart({
         <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
     },
     nvd3: {
-      showDistY: true
+      showDistY: true,
+      color: ['red', 'blue']
     },
     yAxis: {
       tickFormat: d3.format('.01f')
@@ -52,7 +53,10 @@ renderChart({
     xCol: 'bemessung_2014',
     yCol: 'durchschnitt_val',
     sizeCol: 'mitarbeiter_val',
-    groupCol: 'state'
+    groupCol: 'state',
+    filter: function(row) {
+      return (row.state === 'Nordrhein-Westfalen') || (row.state === 'Bayern')
+    }
   }
 })
 
@@ -75,7 +79,7 @@ renderChart({
   },
   data: {
     labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013' //,
+    valueCol: 'bezuege_quote_zu_2013'
     // groupCol: 'position'
   }
 })
