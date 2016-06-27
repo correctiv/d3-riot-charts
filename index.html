@@ -109,7 +109,10 @@ renderChart({
         <dt>Position</dt><dd>{position}</dd></dl>'
     },
     nvd3: {
-      color: ['blue', 'red']
+      color: ['blue', 'red'],
+      showControls: false,
+      showXAxis: false,
+      stacked: true
     },
   },
   data: {
@@ -135,8 +138,13 @@ renderChart({
         <dt>Position</dt><dd>{position}</dd></dl>'
     },
     nvd3: {
-      color: ['blue', 'red']
-    },
+      color: ['blue', 'red'],
+      showControls: false,
+      showLegend: false,
+      showXAxis: false,
+      showYAxis: false,
+      stacked: true
+    }
   },
   data: {
     labelCol: 'name',
