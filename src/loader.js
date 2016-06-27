@@ -19,6 +19,11 @@ class CSVLoader {
       this._getRows().then((rows) => {
         let tooltipCols = this.tooltipCols
         let opts = this.opts
+
+        if (opts.filter) {
+          rows = rows.filter(opts.filter)
+        }
+
         if (groupCol) {
           resolve(this.model.getGroupedData({rows, tooltipCols, opts}))
         } else {
@@ -33,7 +38,7 @@ class CSVLoader {
       d3.csv(this.url)
         .get((err, rows) => {
           if (err) {
-            reject(new Error("error loading data"))
+            reject(new Error('error loading data'))
           } else {
             resolve(rows)
           }
