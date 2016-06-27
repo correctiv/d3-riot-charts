@@ -18,6 +18,16 @@
     <section id="example-discrete-bar"></section>
   </section>
 
+  <h3>multiBarChart</h3>
+  <section class="simple-charts">
+    <section id="example-multi-bar"></section>
+  </section>
+
+  <h3>multiBarHorizontalChart</h3>
+  <section class="simple-charts">
+    <section id="example-multi-bar-horizontal"></section>
+  </section>
+
   <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
   <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
   <script src="dist/correctiv-simple-charts.min.js"></script>
@@ -83,6 +93,67 @@ renderChart({
     // groupCol: 'position'
   }
 })
+
+renderChart({
+  selector: '#example-multi-bar',
+  kind: 'multiBarChart',
+  dataUrl: '/data/sample_multibar.csv',
+  chart: {
+    height: '300px',
+    tooltip: {
+      labelCol: 'name',
+      bodyTempl: '<dl>\
+        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
+        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
+        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Position</dt><dd>{position}</dd></dl>'
+    },
+    nvd3: {
+      color: ['blue', 'red'],
+      showControls: false,
+      showXAxis: false,
+      stacked: true
+    },
+  },
+  data: {
+    labelCol: 'name',
+    xCol: 'name',
+    yCol: 'value',
+    groupCol: 'group'
+  }
+})
+
+renderChart({
+  selector: '#example-multi-bar-horizontal',
+  kind: 'multiBarHorizontalChart',
+  dataUrl: '/data/sample_multibar2.csv',
+  chart: {
+    height: '900px',
+    tooltip: {
+      labelCol: 'name',
+      bodyTempl: '<dl>\
+        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
+        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
+        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Position</dt><dd>{position}</dd></dl>'
+    },
+    nvd3: {
+      color: ['blue', 'red'],
+      showControls: false,
+      showLegend: false,
+      showXAxis: false,
+      showYAxis: false,
+      stacked: true
+    }
+  },
+  data: {
+    labelCol: 'name',
+    xCol: 'name',
+    yCol: 'value',
+    groupCol: 'group'
+  }
+})
+
 
   </script>
 </body>
