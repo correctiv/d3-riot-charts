@@ -12,13 +12,18 @@
     <section id="vorstaende-chart--1"></section>
   </section>
 
-  <h3>Vergleich NRW & Bayern</h3>
+  <h3>Vergleich NRW &amp; Bayern</h3>
   <section class="simple-charts">
     <section id="vorstaende-chart--2"></section>
   </section>
 
   <h2>Erfolgsabhängige Quote</h2>
-  <p>Vorstände, bei denen der Anteil erfolgsabhäniger Bezüge am Gesamtgehalt mehr als 15% beträgt.</p>
+  <p>Rot: Vorsitz, Blau: (stv.) Mitglied</p>
+  <section class="simple-charts">
+    <section id="vorstaende-chart--4"></section>
+  </section>
+
+  <h3>Vorstände, bei denen der Anteil erfolgsabhäniger Bezüge am Gesamtgehalt mehr als 15% beträgt.</h3>
   <section class="simple-charts">
     <section id="vorstaende-chart--3"></section>
   </section>
@@ -53,7 +58,7 @@ renderChart({
     sizeCol: 'mitarbeiter_val',
     groupCol: 'state'
   }
-})
+});
 
 renderChart({
   selector: '#vorstaende-chart--2',
@@ -83,12 +88,10 @@ renderChart({
     sizeCol: 'mitarbeiter_val',
     groupCol: 'state',
     filter: function(row) {
-      return (row.state === 'Nordrhein-Westfalen') || (row.state === 'Bayern')
+      return (row.state === 'Nordrhein-Westfalen') || (row.state === 'Bayern');
     }
   }
-})
-
-
+});
 
 renderChart({
   selector: '#vorstaende-chart--3',
@@ -106,13 +109,49 @@ renderChart({
     },
     xAxis: {
       tickFormat: ''
+    },
+    nvd3: {
+      color: function(obj) {
+        return obj.data.position.indexOf('Mitglied') > -1 ? 'blue' : 'red';
+      }
     }
   },
   data: {
     labelCol: 'name',
     valueCol: 'bezuege_quote_zu_2013'
   }
-})
+});
+
+
+
+renderChart({
+  selector: '#vorstaende-chart--4',
+  kind: 'discreteBarChart',
+  dataUrl: 'data/sample_barchart.csv',
+  chart: {
+    height: '400px',
+    tooltip: {
+      labelCol: 'name',
+      bodyTempl: '<dl>\
+        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
+        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
+        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Position</dt><dd>{position}</dd></dl>'
+    },
+    xAxis: {
+      tickFormat: ''
+    },
+    nvd3: {
+      color: function(obj) {
+        return obj.data.position.indexOf('Mitglied') > -1 ? 'blue' : 'red';
+      }
+    }
+  },
+  data: {
+    labelCol: 'name',
+    valueCol: 'bezuege_quote_zu_2013'
+  }
+});
 
   </script>
 </body>
