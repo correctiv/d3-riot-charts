@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>correctiv-simple-charts</title>
+</head>
+<body>
+  <h1>Vorstände - Datenauswertung</h1>
+
+  <h3>Durchschnittsgehalt pro Sparkasse</h3>
+  <section class="simple-charts">
+    <section id="vorstaende-chart--1"></section>
+  </section>
+
+  <h3>Erfolgsabhängige Quote</h3>
+  <p>Vorstände, bei denen der Anteil erfolgsabhäniger Bezüge am Gesamtgehalt mehr als 15% beträgt.</p>
+  <section class="simple-charts">
+    <section id="vorstaende-chart--2"></section>
+  </section>
+
+  <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
+  <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
+  <script src="dist/correctiv-simple-charts.min.js"></script>
+  <script type="text/javascript">
+
+renderChart({
+  selector: '#vorstaende-chart--1',
+  kind: 'scatterChart',
+  dataUrl: 'data/sample.csv',
+  chart: {
+    height: '600px',
+    zoom: {
+      active: true
+    },
+    tooltip: {
+      labelCol: 'sparkasse',
+      bodyTempl: '<dl>\
+        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+        <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+        <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
+    }
+  },
+  data: {
+    xCol: 'bemessung_2014',
+    yCol: 'durchschnitt_val',
+    sizeCol: 'mitarbeiter_val',
+    groupCol: 'state'
+  }
+})
+
+
+
+renderChart({
+  selector: '#vorstaende-chart--2',
+  kind: 'discreteBarChart',
+  dataUrl: '/data/sample_barchart_o15.csv',
+  chart: {
+    height: '400px',
+    tooltip: {
+      labelCol: 'name',
+      bodyTempl: '<dl>\
+        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
+        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
+        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Position</dt><dd>{position}</dd></dl>'
+    },
+    xAxis: {
+      tickFormat: ''
+    }
+  },
+  data: {
+    labelCol: 'name',
+    valueCol: 'bezuege_quote_zu_2013'
+  }
+})
+
+  </script>
+</body>
+</html>
