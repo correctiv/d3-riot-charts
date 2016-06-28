@@ -47,7 +47,7 @@ var correctivColors = {
 renderChart({
   selector: '#vorstaende-chart--1',
   kind: 'scatterChart',
-  dataUrl: 'data/sample.csv',
+  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   chart: {
     height: '600px',
     zoom: {
@@ -77,7 +77,7 @@ renderChart({
 renderChart({
   selector: '#vorstaende-chart--2',
   kind: 'scatterChart',
-  dataUrl: 'data/sample.csv',
+  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   chart: {
     height: '600px',
     zoom: {
@@ -111,15 +111,16 @@ renderChart({
 renderChart({
   selector: '#vorstaende-chart--3',
   kind: 'discreteBarChart',
-  dataUrl: 'data/sample_barchart.csv',
+  dataUrl: 'data/vorstaende/bezuege_quote_barchart.csv',
   chart: {
     height: '600px',
     tooltip: {
       labelCol: 'name',
       bodyTempl: '<dl>\
         <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
+        <dt>Quote</dt><dd>{bezuege_quote_str}</dd>\
+        <dt>Gesamtverguetung 2013</dt><dd>{gesamtverguetung_2013_str}</dd>\
+        <dt>Erfolgsabhängige Bezüge 2014</dt><dd>{erfolgsabhaengige_bezuege_str}</dd>\
         <dt>Position</dt><dd>{position}</dd>\
         <dt>Bundesland</dt><dd>{state}</dd></dl>'
     },
@@ -136,10 +137,7 @@ renderChart({
   },
   data: {
     labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013',
-    filter: function(r) {
-      return (r.state === 'Hessen') || (r.state === 'Nordrhein-Westfalen');
-    }
+    valueCol: 'bezuege_quote_zu_2013'
   }
 });
 
