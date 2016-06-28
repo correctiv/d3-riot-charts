@@ -2,47 +2,47 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://correctiv.org/static/CACHE/css/fd09e0dfcaae.css" type="text/css">
   <title>correctiv-simple-charts</title>
 </head>
 <body>
-  <h1>Vorstände - Datenauswertung</h1>
+  <h1>Sparkassen-Vorstandsgehälter</h1>
+  <h2>Visualisierungen</h2>
+  <ol>
+    <li><a href="#karte">Karte absolutes Gesamtgehalt</a></li>
+    <li><a href="#vorstaende-chart--1">Durchschnittsgehalt im Vergleich zur Größe der Sparkasse</a></li>
+    <li><a href="#vorstaende-chart--2">Durchschnittsgehalts-Niveau Vergleich NRW &amp; Bayern</a></li>
+    <li><a href="#vorstaende-chart--3">Quote erfolgsabhängige Bezüge Vergleich NRW &amp; Hessen</a></li>
+  </ol>
 
-  <h2>Durchschnittsgehalt pro Sparkasse</h2>
+  <h2>Karte absolutes Gesamtgehalt</h2>
+  <iframe id="karte" width="100%" height="700" src="https://correctiv.github.io/sparkassen-maps-reusable/vorstandsgehaelter.html"></iframe>
+
+  <h2>Durchschnittsgehalt im Vergleich zur Größe der Sparkasse</h2>
   <section class="simple-charts">
     <section id="vorstaende-chart--1"></section>
   </section>
 
-  <h3>Vergleich NRW &amp; Bayern</h3>
+  <h2>Durchschnittsgehalts-Niveau Vergleich NRW &amp; Bayern</h2>
   <section class="simple-charts">
     <section id="vorstaende-chart--2"></section>
   </section>
 
-  <h2>Erfolgsabhängige Quote</h2>
-  <p>Rot: Vorsitz, Blau: (stv.) Mitglied</p>
-  <section class="simple-charts">
-    <section id="vorstaende-chart--4"></section>
-  </section>
-
-  <h3>Vorstände, bei denen der Anteil erfolgsabhäniger Bezüge am Gesamtgehalt mehr als 15% beträgt.</h3>
+  <h2>Quote erfolgsabhängige Bezüge Vergleich NRW &amp; Hessen</h2>
+  <p>Rot: NRW, Blau: Hessen</p>
   <section class="simple-charts">
     <section id="vorstaende-chart--3"></section>
-  </section>
-
-  <h3>Anteil erfolgsabhängige Bezüge an Gesamtvergütung</h3>
-  <h4>absolut</h4>
-  <section class="simple-charts">
-    <section id="vorstaende-chart--5"></section>
-  </section>
-
-  <h4>relativ</h4>
-  <section class="simple-charts">
-    <section id="vorstaende-chart--6"></section>
   </section>
 
   <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
   <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
   <script src="dist/correctiv-simple-charts.min.js"></script>
   <script type="text/javascript">
+
+var correctivColors = {
+  red: '#c81455',
+  blue: '#477ba9'
+};
 
 renderChart({
   selector: '#vorstaende-chart--1',
@@ -90,7 +90,7 @@ renderChart({
         <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
     },
     nvd3: {
-      color: ['red', 'blue']
+      color: [correctivColors.red, correctivColors.blue]
     }
   },
   data: {
@@ -104,125 +104,42 @@ renderChart({
   }
 });
 
+
 renderChart({
   selector: '#vorstaende-chart--3',
   kind: 'discreteBarChart',
-  dataUrl: 'data/sample_barchart_o15.csv',
+  dataUrl: '/data/sample_barchart.csv',
   chart: {
-    height: '400px',
+    height: '600px',
     tooltip: {
       labelCol: 'name',
       bodyTempl: '<dl>\
         <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
         <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
         <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
-    },
-    xAxis: {
-      tickFormat: ''
+        <dt>Position</dt><dd>{position}</dd>\
+        <dt>Bundesland</dt><dd>{state}</dd></dl>'
     },
     nvd3: {
-      color: function(obj) {
-        return obj.data.position.indexOf('Mitglied') > -1 ? 'blue' : 'red';
-      }
+      color: function(r) {
+        if (r.data.state === 'Hessen') {
+          return correctivColors.blue;
+        } else {
+          return correctivColors.red;
+        }
+      },
+      showXAxis: false
     }
   },
   data: {
     labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013'
-  }
-});
-
-
-
-renderChart({
-  selector: '#vorstaende-chart--4',
-  kind: 'discreteBarChart',
-  dataUrl: 'data/sample_barchart.csv',
-  chart: {
-    height: '400px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
-    },
-    xAxis: {
-      tickFormat: ''
-    },
-    nvd3: {
-      color: function(obj) {
-        return obj.data.position.indexOf('Mitglied') > -1 ? 'blue' : 'red';
-      }
+    valueCol: 'bezuege_quote_zu_2013',
+    filter: function(r) {
+      return (r.state === 'Hessen') || (r.state === 'Nordrhein-Westfalen');
     }
-  },
-  data: {
-    labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013'
   }
 });
 
-
-renderChart({
-  selector: '#vorstaende-chart--5',
-  kind: 'multiBarChart',
-  dataUrl: 'data/sample_multibar.csv',
-  chart: {
-    height: '400px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
-    },
-    nvd3: {
-      color: ['blue', 'red'],
-      showXAxis: false,
-      stacked: true
-    }
-  },
-  data: {
-    labelCol: 'name',
-    xCol: 'name',
-    yCol: 'value',
-    groupCol: 'group'
-  }
-});
-
-
-renderChart({
-  selector: '#vorstaende-chart--6',
-  kind: 'multiBarHorizontalChart',
-  dataUrl: 'data/sample_multibar2.csv',
-  chart: {
-    height: '900px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
-    },
-    nvd3: {
-      color: ['blue', 'red'],
-      showControls: false,
-      showLegend: false,
-      showXAxis: false,
-      stacked: true
-    }
-  },
-  data: {
-    labelCol: 'name',
-    xCol: 'name',
-    yCol: 'value',
-    groupCol: 'group'
-  }
-});
 
   </script>
 </body>
