@@ -1,4 +1,4 @@
-import {scaleLinear, scaleLog} from '../../d3_packages.js'
+import {scaleLinear, scaleOrdinal, scaleBand, scaleLog} from '../../d3_packages.js'
 
 const _getScale = (kind) => {
   switch(kind) {
@@ -7,6 +7,12 @@ const _getScale = (kind) => {
       break
     case 'logarithmic':
       return scaleLog()
+      break
+    case 'ordinal':
+      return scaleOrdinal()
+      break
+    case 'band':
+      return scaleBand()
       break
     default:
       throw new Error('scale '+kind+' not implemented')
@@ -35,11 +41,23 @@ const _getDomain = (axis, xDomain, yDomain) => {
   return domain
 }
 
-export default function({height, width, xDomain, yDomain}) {
+export default function({
+  height,
+  width,
+  xDomain,
+  yDomain
+}) {
   let scale = _getScale(this.kind)
+  let range = _getRange(this.axis, xDomain, yDomain)
   scale
-    .range(_getRange(this.axis, height, width))
     .domain(_getDomain(this.axis, xDomain, yDomain))
+
+  if (this.kind === 'ordinal') {
+    scale.rangeRound(range, .1)
+    console.log(scale)
+  } else {
+    scale.range(_getRange(this.axis, height, width))
+  }
 
   if (this.nice) {
     return scale.nice()

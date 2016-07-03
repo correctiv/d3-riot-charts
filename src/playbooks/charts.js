@@ -1,4 +1,5 @@
 import scatterChart from './scatter_chart.js'
+import barChart from './bar_chart.js'
 
 class Playbook {
 
@@ -28,6 +29,7 @@ class Playbook {
 }
 
 const PLAYBOOKS = {
+  barChart: new Playbook(barChart),
   scatterChart: new Playbook(scatterChart)
 }
 

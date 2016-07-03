@@ -8,11 +8,24 @@
   <h2>correctiv-simple-charts</h2>
   <h1>Examples</h1>
 
+  <h3>barChart</h3>
+  <section id="example-bar"></section>
+
   <h3>scatterChart</h3>
   <section id="example-scatter"></section>
 
   <script src="correctiv-simple-charts.min.js"></script>
   <script type="text/javascript">
+
+renderChart({
+  kind: 'barChart',
+  elementId: 'example-bar-test',
+  dataUrl: 'data/sample.csv',
+  width: 800,
+  height: 400,
+  xCol: 'sparkasse',
+  yCol: 'durchschnitt_val'
+});
 
 renderChart({
   kind: 'scatterChart',

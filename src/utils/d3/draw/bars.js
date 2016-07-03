@@ -1,30 +1,24 @@
-import {scaleLinear, extent} from '../../../d3_packages.js'
-
-const _sizeRange = [2, 7]
-const _getSize = (data, col) => {
-  let domain = extent(data, d => {
-    return d[col]
-  })
-  return scaleLinear()
-    .domain(domain)
-    .range(_sizeRange)
-}
-
-
-export default function(chart) {
-  let getSize = _getSize(chart.data, chart.sizeCol)
-  chart.svg.selectAll('.dot')
-    .data(chart.data)
-    .enter().append('circle')
-    .attr('class', 'dot')
-    .attr('r', d => {
-      return getSize(d[chart.sizeCol])
+export default function({
+  height,
+  data,
+  xCol,
+  yCol,
+  xScale,
+  yScale,
+  svg
+}) {
+  svg.selectAll('.bar')
+    .data(data)
+    .enter().append('rect')
+    .attr('class', this.cssClasses || 'bar')
+    .attr('x', d => {
+      return xScale(d[xCol])
     })
-    .attr('cx', d => {
-      return chart.xScale(d[chart.xCol])
+    .attr('width', xScale.bandwidth())
+    .attr('y', d => {
+      return yScale(d[yCol])
     })
-    .attr('cy', d => {
-      return chart.yScale(d[chart.yCol])
+    .attr('height', d => {
+      return height - yScale(d[yCol])
     })
-    // .style('fill')
 }

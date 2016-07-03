@@ -11,20 +11,28 @@ const _getSize = (data, col) => {
 }
 
 
-export default function(chart) {
-  let getSize = _getSize(chart.data, chart.sizeCol)
-  chart.svg.selectAll('.dot')
-    .data(chart.data)
+export default function({
+  data,
+  sizeCol,
+  xCol,
+  yCol,
+  xScale,
+  yScale,
+  svg
+}) {
+  let getSize = _getSize(data, sizeCol)
+  svg.selectAll('.dot')
+    .data(data)
     .enter().append('circle')
-    .attr('class', 'dot')
+    .attr('class', this.cssClasses || 'dot')
     .attr('r', d => {
-      return getSize(d[chart.sizeCol])
+      return getSize(d[sizeCol])
     })
     .attr('cx', d => {
-      return chart.xScale(d[chart.xCol])
+      return xScale(d[xCol])
     })
     .attr('cy', d => {
-      return chart.yScale(d[chart.yCol])
+      return yScale(d[yCol])
     })
     // .style('fill')
 }
