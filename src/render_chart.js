@@ -7,7 +7,6 @@ import Chart from './chart.js'
  * see extended documentation in `chart.js`
  **/
 export default function(opts) {
-
   // check for implementation
   if (AVAILABLE_CHARTS.indexOf(opts.kind) == -1) {
     throw new Error('chart type not implemented')

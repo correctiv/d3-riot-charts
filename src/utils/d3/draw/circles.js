@@ -1,13 +1,20 @@
 import {scaleLinear, extent} from '../../../d3_packages.js'
+import _getColor from '../get_color.js'
 
 const _sizeRange = [2, 7]
 const _getSize = (data, col) => {
-  let domain = extent(data, d => {
-    return d[col]
-  })
-  return scaleLinear()
-    .domain(domain)
-    .range(_sizeRange)
+  if (col) {
+    let domain = extent(data, d => {
+      return d[col]
+    })
+    return scaleLinear()
+      .domain(domain)
+      .range(_sizeRange)
+  } else {
+    return () => {
+      return 3
+    }
+  }
 }
 
 
@@ -16,10 +23,13 @@ export default function({
   sizeCol,
   xCol,
   yCol,
+  groupCol,
   xScale,
   yScale,
-  svg
+  svg,
+  color
 }) {
+  let getColor = _getColor({color, groupCol})
   let getSize = _getSize(data, sizeCol)
   svg.selectAll('.dot')
     .data(data)
@@ -34,5 +44,7 @@ export default function({
     .attr('cy', d => {
       return yScale(d[yCol])
     })
-    // .style('fill')
+    .style('fill', d => {
+      return getColor(d)
+    })
 }

@@ -7,11 +7,11 @@ export default class {
   constructor() {
     this.getXDomain = getExtentDomain.bind({col: 'xCol'})
     this.getYDomain = getExtentDomain.bind({col: 'yCol'})
-    this.getXScale = getScale.bind({kind: 'linear', axis: 'x', nice: true})
-    this.getYScale = getScale.bind({kind: 'linear', axis: 'y', nice: true})
-    this.getXAxis = getAxis.bind({orientation: 'bottom', scale: 'xScale'})
-    this.getYAxis = getAxis.bind({orientation: 'left', scale: 'yScale'})
-    this.renderXAxis = renderAxis.bind({axis: 'xAxis', cssClass: 'x axis'})
-    this.renderYAxis = renderAxis.bind({axis: 'yAxis', cssClass: 'y axis'})
+    this.getXScale = getScale
+    this.getYScale = getScale.bind({axis: 'y'})
+    this.getXAxis = getAxis
+    this.getYAxis = getAxis.bind({kind: 'axisLeft', axis: 'y'})
+    this.renderXAxis = renderAxis.bind({cssClasses: 'x axis'})
+    this.renderYAxis = renderAxis.bind({axis: 'y', cssClasses: 'y axis'})
   }
 }

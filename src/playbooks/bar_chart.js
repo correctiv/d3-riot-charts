@@ -7,9 +7,9 @@ import drawBars from '../utils/d3/draw/bars.js'
 export default class extends baseChart {
   constructor() {
     super()
-    this.getXDomain = getOrdinalDomain.bind({col: 'xCol'})
-    this.getYDomain = getMaxDomain.bind({col: 'yCol', min: 0})
-    this.getXScale = getScale.bind({kind: 'band', axis: 'x'})
+    this.getXDomain = getOrdinalDomain
+    this.getYDomain = getMaxDomain.bind({col: 'y', min: 0})
+    this.getXScale = getScale.bind({kind: 'scaleBand'})
     this.drawData = drawBars
   }
 }

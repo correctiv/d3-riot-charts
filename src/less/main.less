@@ -1,8 +1,16 @@
+@import './responsive_svg.less';
+
+body {
+  // normalize important for resposive resizing
+  margin: 0;
+  padding: 0;
+}
+
 .simple-charts {
   color: #1a1a1a;
 
-  .dot {
-    fill-opacity: .6;
+  .dot, .bar {
+    fill-opacity: .7;
 
     &:hover {
       fill-opacity: 1;
