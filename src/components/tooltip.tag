@@ -1,7 +1,9 @@
 import renderTooltip from '../utils/render_tooltip.js'
 import './raw_html.tag'
 
-<riot-tooltip class="simple-charts__tooltip { -hidden: !data }">
+<riot-tooltip
+  style="top:{ opts.top }px;left:{ opts.left }px"
+  class="simple-charts__tooltip { -hidden: !data }">
   <raw-html content={ rawContent }></raw-html>
 
   riot.control.on(riot.EVT.tooltipChanged, data => {
