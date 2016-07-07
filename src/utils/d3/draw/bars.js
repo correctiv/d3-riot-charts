@@ -12,7 +12,7 @@ export default function({
   color
 }) {
   let getColor = _getColor({color, groupCol})
-  svg.selectAll('.bar')
+  return svg.selectAll('.bar')
     .data(data)
     .enter().append('rect')
     .attr('class', this.cssClasses || 'bar')
