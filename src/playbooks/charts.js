@@ -9,4 +9,4 @@ const PLAYBOOKS = {
 
 const AVAILABLE_CHARTS = Object.keys(PLAYBOOKS)
 
-export default {AVAILABLE_CHARTS, PLAYBOOKS}
+module.exports = {AVAILABLE_CHARTS, PLAYBOOKS}
