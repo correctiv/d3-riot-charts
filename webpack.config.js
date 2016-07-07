@@ -18,11 +18,20 @@ module.exports = {
   devtool: 'eval',
   debug: true,
   module: {
+    preLoaders: [
+      { test: /\.tag$/, exclude: /node_modules/, include: /src/, loader: 'riotjs-loader', query: { type: 'none'} }
+    ],
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: {modules: 'common'} },
+      { test: /\.js|\.tag$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: { presets: 'es2015'} },
       { test: /\.less/, loader: 'style-loader!css-loader!less-loader!postcss-loader' }
     ]
   },
+  // have riot global
+  plugins: [
+    new webpack.ProvidePlugin({
+      riot: 'riot'
+    })
+  ],
   // postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
   devServer: {
     contentBase: './',
