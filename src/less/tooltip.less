@@ -1,0 +1,47 @@
+.simple-charts__tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #1a1a1a;
+  background: rgba(255, 255, 255, .8);
+  border: 1px solid #ddd;
+  z-index: 1000;
+  padding: 10px;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &__head {
+    font-weight: bold;
+    color: #c81455;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0 0 .5em 0;
+  }
+
+  &__data {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+
+    dt {
+      float: none;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    dd {
+      float: none;
+      padding: 0;
+      margin: 0 0 .4em 0;
+    }
+
+  }
+}

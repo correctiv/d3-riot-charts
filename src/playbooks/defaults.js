@@ -19,7 +19,8 @@ const DEFAULTS = {
   responsiveSvg: false,
   xTicks: 10,
   yTicks: 10,
-  color: schemeCategory10
+  color: schemeCategory10,
+  tooltip: false
 }
 
 export default function(opts) {

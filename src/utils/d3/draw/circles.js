@@ -31,7 +31,7 @@ export default function({
 }) {
   let getColor = _getColor({color, groupCol})
   let getSize = _getSize(data, sizeCol)
-  svg.selectAll('.dot')
+  return svg.selectAll('.dot')
     .data(data)
     .enter().append('circle')
     .attr('class', this.cssClasses || 'dot')

@@ -5,6 +5,8 @@ import getChartElement from './utils/get_chart_element.js'
 import {PLAYBOOKS} from './playbooks/charts.js'
 import Settings from './playbooks/defaults.js'
 import updateDimensions from './utils/update_dimensions.js'
+import getTooltipTemplate from './utils/get_tooltip_template.js'
+import mountRiotTooltip from './utils/mount_riot_tooltip.js'
 
 /**
  * available opts:
@@ -19,6 +21,7 @@ import updateDimensions from './utils/update_dimensions.js'
  * @param {string} xCol - csv column for x-Axis
  * @param {string} yCol - csv column for y-Axis
  * @param {string} sizeCol - csv column for calculating dot size (for `scatterChart`)
+ * @param {object} tooltip – `headTempl` or `labelCol` and optional `bodyTempl` for tooltip rendering
  *
  **/
 export default class {
@@ -63,6 +66,10 @@ export default class {
       this._setupResponsiveness()
     }
 
+    if (this.tooltip) {
+      this._initTooltip()
+    }
+
     this.svg = initSvg(this)
   }
 
@@ -82,11 +89,8 @@ export default class {
     updateDimensions(this)
   }
 
-  _realWidth() {
-    return this.width + this.margin.left + this.margin.right
-  }
-
-  _realHeight() {
-    return this.height + this.margin.top + this.margin.bottom
+  _initTooltip() {
+    this.tooltipTemplate = getTooltipTemplate(this)
+    mountRiotTooltip(this)
   }
 }
