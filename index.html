@@ -35,14 +35,18 @@ renderChart({
   kind: 'scatterChart',
   elementId: 'example-scatter',
   dataUrl: 'data/sample.csv',
-  width: 600,
-  height: 400,
+  width: 800,
+  height: 600,
   xCol: 'bemessung_2014',
   yCol: 'durchschnitt_val',
   sizeCol: 'mitarbeiter_2014',
   groupCol: 'state',
   tooltip: {
     labelCol: 'sparkasse'
+  },
+  search: {
+    searchCols: ['sparkasse'],
+    idCol: 'id'
   }
 });
 

@@ -7,6 +7,8 @@ import Settings from './playbooks/defaults.js'
 import updateDimensions from './utils/update_dimensions.js'
 import getTooltipTemplate from './utils/get_tooltip_template.js'
 import mountRiotTooltip from './utils/mount_riot_tooltip.js'
+import getSearchFunc from './utils/get_search_func.js'
+import mountRiotSearchbox from './utils/mount_riot_searchbox.js'
 
 /**
  * available opts:
@@ -39,6 +41,8 @@ export default class {
     this.data.then(data => {
       this.data = data
       this.playbook.run(this)
+      this.search ? this._setupSearch() : null
+      riot.control.trigger(riot.EVT.chartReady, this)
     })
   }
 
@@ -92,5 +96,10 @@ export default class {
   _initTooltip() {
     this.tooltipTemplate = getTooltipTemplate(this)
     mountRiotTooltip(this)
+  }
+
+  _setupSearch() {
+    this.search.doSearch = getSearchFunc(this)
+    mountRiotSearchbox(this)
   }
 }

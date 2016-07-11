@@ -20,7 +20,8 @@ const DEFAULTS = {
   xTicks: 10,
   yTicks: 10,
   color: schemeCategory10,
-  tooltip: false
+  tooltip: false,
+  search: false
 }
 
 export default function(opts) {

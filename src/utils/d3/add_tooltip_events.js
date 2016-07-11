@@ -1,13 +1,13 @@
 export default function({
   drawedSelection,
   tooltip,
-  idCol
+  search
 }) {
   if (tooltip) {
     // we need ids for events
     drawedSelection
       .attr('id', (d, i) => {
-        return idCol ? d[idCol] : i
+        return search.idCol ? d[search.idCol] : i
       })
     drawedSelection
       .on('mouseover', d => {
