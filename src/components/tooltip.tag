@@ -6,7 +6,7 @@ import './raw_html.tag'
   class="simple-charts__tooltip { -hidden: !data }">
   <raw-html content={ rawContent }></raw-html>
 
-  riot.control.on(riot.EVT.tooltipChanged, data => {
+  this.opts.control.on(riot.EVT.tooltipChanged, data => {
     this.update({
       data: data,
       rawContent: renderTooltip({
@@ -15,7 +15,7 @@ import './raw_html.tag'
     })
   })
 
-  riot.control.on(riot.EVT.hilightOff, () => {
+  this.opts.control.on(riot.EVT.hilightOff, () => {
     this.update({data: null})
   })
 </riot-tooltip>

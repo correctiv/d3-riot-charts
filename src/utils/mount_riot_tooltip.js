@@ -8,12 +8,13 @@ export default function({
   element,
   tooltip,
   tooltipTemplate,
-  margin
+  margin,
+  control
 }) {
   let {top=margin.top, left=margin.left} = tooltip
   let riotWrapperId = elementId+'-riot-tooltip-wrapper'
   let tooltipWrapper = element
     .append('div')
     .attr('id', riotWrapperId)
-  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {tooltipTemplate, top, left})
+  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {tooltipTemplate, top, left, control})
 }

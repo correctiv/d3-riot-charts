@@ -28,6 +28,9 @@ renderChart({
   showXAxis: false,
   color: function(d) {
     return d.position === 'Vorsitzende(r)' ? 'red' : 'blue'
+  },
+  tooltip: {
+    labelCol: 'name'
   }
 });
 
@@ -45,11 +48,10 @@ renderChart({
     labelCol: 'sparkasse'
   },
   search: {
-    searchCols: ['sparkasse'],
-    idCol: 'id'
+    searchCols: ['sparkasse']
   },
   xTicks: 0,
-  xLabel: '...größere Sparkasse',
+  xLabel: 'Größe der Sparkasse',
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
 });
 

@@ -9,6 +9,7 @@ import getTooltipTemplate from './utils/get_tooltip_template.js'
 import mountRiotTooltip from './utils/mount_riot_tooltip.js'
 import getSearchFunc from './utils/get_search_func.js'
 import mountRiotSearchbox from './utils/mount_riot_searchbox.js'
+import ChartStore from './stores/chart_store.js'
 
 /**
  * available opts:
@@ -33,6 +34,10 @@ export default class {
     for (let prop in opts) {
       this[prop] = opts[prop]
     }
+
+    // flux like store implemention but instanciated for this chart
+    this.control = new ChartStore()
+
     this.playbook = PLAYBOOKS[this.kind]
     this._init()
   }
@@ -42,7 +47,7 @@ export default class {
       this.data = data
       this.playbook.run(this)
       this.search ? this._setupSearch() : null
-      riot.control.trigger(riot.EVT.chartReady, this)
+      this.control.trigger(riot.EVT.chartReady, this)
     })
   }
 

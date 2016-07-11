@@ -7,7 +7,8 @@ export default function({
   elementId,
   element,
   search,
-  margin
+  margin,
+  control
 }) {
 
   let riotWrapperId = elementId+'-riot-searchbox-wrapper'
@@ -21,5 +22,5 @@ export default function({
   element
     .append('div')
     .attr('id', riotWrapperId)
-  riot.mount('div#'+riotWrapperId, 'riot-searchbox', {top, left, thereshold, doSearch})
+  riot.mount('div#'+riotWrapperId, 'riot-searchbox', {top, left, thereshold, doSearch, control})
 }

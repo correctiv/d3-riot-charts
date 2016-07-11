@@ -28,7 +28,7 @@
   this.hilight = (data) => {
     // clear list
     this.results = []
-    riot.control.trigger(riot.EVT.hilightPath, data)
+    this.opts.control.trigger(riot.EVT.hilightPath, data)
   }
 
   this.handleClick = (e) => {
