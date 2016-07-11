@@ -32,5 +32,8 @@ export default function({
     if (!_y) {
       axis.attr('transform', 'translate(0,' + height + ')')
     }
+
+    return axis
   }
+  return null
 }

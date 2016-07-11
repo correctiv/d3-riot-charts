@@ -30,8 +30,10 @@ export default class {
   }
 
   _draw(chart) {
-    this.playbook.renderXAxis(chart)
-    this.playbook.renderYAxis(chart)
+    chart.renderedXAxis = this.playbook.renderXAxis(chart)
+    chart.renderedYAxis = this.playbook.renderYAxis(chart)
+    chart.renderedXLabel = this.playbook.renderXLabel(chart)
+    chart.renderedYLabel = this.playbook.renderYLabel(chart)
     chart.drawedSelection = this.playbook.drawData(chart)
     this.playbook.addEvents(chart)
   }
