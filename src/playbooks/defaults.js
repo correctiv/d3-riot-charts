@@ -7,9 +7,9 @@ const DEFAULTS = {
   height: 500,
   margin: {
     top: 20,
+    right: 20,
     bottom: 30,
-    left: 30,
-    right: 20
+    left: 30
   },
   showXAxis: true,
   showYAxis: true,
