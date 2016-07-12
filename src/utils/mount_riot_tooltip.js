@@ -1,4 +1,5 @@
 import '../components/tooltip.tag'
+import getPositionStr from '../utils/get_position_style_str.js'
 
 /**
  * create element for riot tooltip & mount it
@@ -7,14 +8,21 @@ export default function({
   elementId,
   element,
   tooltip,
-  tooltipTemplate,
   margin,
   control
 }) {
-  let {top=margin.top, left=margin.left} = tooltip
+  let {
+    position=margin,
+    template
+  } = tooltip
+
   let riotWrapperId = elementId+'-riot-tooltip-wrapper'
+
   let tooltipWrapper = element
     .append('div')
     .attr('id', riotWrapperId)
-  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {tooltipTemplate, top, left, control})
+
+  position = getPositionStr(position)
+
+  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {template, position, control})
 }

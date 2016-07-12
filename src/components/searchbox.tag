@@ -1,8 +1,7 @@
-<riot-searchbox class="simple-charts__searchbox"
-  style="top:{opts.top}px;left:{opts.left}px">
+<riot-searchbox class="simple-charts__searchbox" style={ opts.position }>
 
+  <label>{ opts.description }</label>
   <input type="text" oninput={ search } />
-  <p if={ !results.length > 0 } >{ opts.description }</p>
   <ul if={ results.length > 0 } class="simple-charts__searchbox__result-list">
     <li each={ results }
       class={ '-active' ? parent.opts.active === id : ''}
@@ -10,6 +9,8 @@
       { sparkasse }
     </li>
   </ul>
+
+  this.results = []
 
   this.search = (e) => {
     let str = e.target.value.toLowerCase()

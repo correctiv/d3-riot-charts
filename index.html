@@ -45,10 +45,19 @@ renderChart({
   sizeCol: 'mitarbeiter_2014',
   groupCol: 'state',
   tooltip: {
-    labelCol: 'sparkasse'
+    labelCol: 'sparkasse',
+    position: {
+      top: 20,
+      left: 45
+    }
   },
   search: {
-    searchCols: ['sparkasse']
+    searchCols: ['sparkasse'],
+    position: {
+      top: 20,
+      right: 20
+    },
+    description: 'Suche nach deiner Sparkasse oder Postleitzahl'
   },
   xTicks: 0,
   xLabel: 'Größe der Sparkasse',

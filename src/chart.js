@@ -100,7 +100,7 @@ export default class {
   }
 
   _initTooltip() {
-    this.tooltipTemplate = getTooltipTemplate(this)
+    this.tooltip.template = getTooltipTemplate(this)
     mountRiotTooltip(this)
   }
 
