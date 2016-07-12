@@ -11,7 +11,7 @@ export default function({
       })
     drawedSelection
       .on('mouseout', () => {
-        control.trigger(riot.EVT.hilightOff)
+        control.trigger(riot.EVT.unhilight)
       })
   }
 }

@@ -15,7 +15,7 @@ import './raw_html.tag'
     })
   })
 
-  this.opts.control.on(riot.EVT.hilightOff, () => {
+  this.opts.control.on(riot.EVT.unhilight, () => {
     this.update({data: null})
   })
 </riot-tooltip>

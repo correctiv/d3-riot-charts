@@ -3,9 +3,9 @@ import keyMirror from 'keymirror'
 // event names
 riot.EVT = keyMirror({
   hilight: null,
-  hilightOff: null,
-  hilightPath: null,
-  hilightPathOff: null,
-  chartReady: null,
+  unhilight: null,
+  hilightNode: null,
+  unhilightNode: null,
+  chartDrawed: null,
   tooltipChanged: null
 })

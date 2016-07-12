@@ -47,7 +47,7 @@ export default class {
       this.data = data
       this.playbook.run(this)
       this.search ? this._setupSearch() : null
-      this.control.trigger(riot.EVT.chartReady, this)
+      this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
     })
   }
 
@@ -56,6 +56,7 @@ export default class {
     if (doResize) {
       updateSvg(this)
       this.playbook.reRender(this)
+      this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
     }
   }
 
