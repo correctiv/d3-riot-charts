@@ -8,152 +8,61 @@
   <h2>correctiv-simple-charts</h2>
   <h1>Examples</h1>
 
+  <h3>barChart</h3>
+  <section id="example-bar"></section>
+
   <h3>scatterChart</h3>
-  <section class="simple-charts">
-    <section id="example-scatter"></section>
-  </section>
+  <section id="example-scatter"></section>
 
-  <h3>discreteBarChart</h3>
-  <section class="simple-charts">
-    <section id="example-discrete-bar"></section>
-  </section>
-
-  <h3>multiBarChart</h3>
-  <section class="simple-charts">
-    <section id="example-multi-bar"></section>
-  </section>
-
-  <h3>multiBarHorizontalChart</h3>
-  <section class="simple-charts">
-    <section id="example-multi-bar-horizontal"></section>
-  </section>
-
-  <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
-  <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
   <script src="dist/correctiv-simple-charts.min.js"></script>
   <script type="text/javascript">
 
 renderChart({
-  selector: '#example-scatter',
+  kind: 'barChart',
+  elementId: 'example-bar',
+  dataUrl: 'data/sample_barchart.csv',
+  width: 800,
+  height: 400,
+  xCol: 'name',
+  yCol: 'bezuege_quote_zu_2013',
+  showXAxis: false,
+  color: function(d) {
+    return d.position === 'Vorsitzende(r)' ? 'red' : 'blue'
+  },
+  tooltip: {
+    labelCol: 'name'
+  }
+});
+
+renderChart({
   kind: 'scatterChart',
+  elementId: 'example-scatter',
   dataUrl: 'data/sample.csv',
-  chart: {
-    height: '600px',
-    zoom: {
-      active: true
-    },
-    tooltip: {
-      labelCol: 'sparkasse',
-      bodyTempl: '<dl>\
-        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
-        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
-        <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
-        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
-        <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
-    },
-    nvd3: {
-      showDistY: true,
-      color: ['red', 'blue']
-    },
-    yAxis: {
-      tickFormat: d3.format('.01f')
-    },
-  },
-  data: {
-    xCol: 'bemessung_2014',
-    yCol: 'durchschnitt_val',
-    sizeCol: 'mitarbeiter_val',
-    groupCol: 'state',
-    filter: function(row) {
-      return (row.state === 'Nordrhein-Westfalen') || (row.state === 'Bayern')
-    }
-  }
-})
-
-
-
-renderChart({
-  selector: '#example-discrete-bar',
-  kind: 'discreteBarChart',
-  dataUrl: '/data/sample_barchart_o15.csv',
-  chart: {
-    height: '600px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
+  width: 800,
+  height: 600,
+  xCol: 'bemessung_2014',
+  yCol: 'durchschnitt_val',
+  sizeCol: 'mitarbeiter_2014',
+  groupCol: 'state',
+  tooltip: {
+    labelCol: 'sparkasse',
+    position: {
+      bottom: 40,
+      right: 20
     }
   },
-  data: {
-    labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013'
-    // groupCol: 'position'
-  }
-})
-
-renderChart({
-  selector: '#example-multi-bar',
-  kind: 'multiBarChart',
-  dataUrl: '/data/sample_multibar.csv',
-  chart: {
-    height: '300px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
+  search: {
+    searchCols: ['sparkasse'],
+    position: {
+      top: 20,
+      right: 20
     },
-    nvd3: {
-      color: ['blue', 'red'],
-      showControls: false,
-      showXAxis: false,
-      stacked: true
-    },
+    description: 'Suche nach deiner Sparkasse oder Postleitzahl'
   },
-  data: {
-    labelCol: 'name',
-    xCol: 'name',
-    yCol: 'value',
-    groupCol: 'group'
-  }
-})
-
-renderChart({
-  selector: '#example-multi-bar-horizontal',
-  kind: 'multiBarHorizontalChart',
-  dataUrl: '/data/sample_multibar2.csv',
-  chart: {
-    height: '900px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
-        <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
-        <dt>Gesamtverguetung</dt><dd>{gesamtverguetung}</dd>\
-        <dt>Erfolgsabhängige Bezüge</dt><dd>{erfolgsabhaengige_bezuege}</dd>\
-        <dt>Position</dt><dd>{position}</dd></dl>'
-    },
-    nvd3: {
-      color: ['blue', 'red'],
-      showControls: false,
-      showLegend: false,
-      showXAxis: false,
-      showYAxis: false,
-      stacked: true
-    }
-  },
-  data: {
-    labelCol: 'name',
-    xCol: 'name',
-    yCol: 'value',
-    groupCol: 'group'
-  }
-})
-
+  xTicks: 0,
+  xLabel: 'Größe der Sparkasse',
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
+});
 
   </script>
 </body>

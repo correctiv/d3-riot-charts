@@ -1,4 +1,4 @@
-,sparkasse,state,bemessung_2014,gesamtbezuege_2014,durchschnitt_val,durchschnittsgehalt_2014,bilanzsumme_2014,mitarbeiter_2014,mitarbeiter_val,anzahl_vorstaende_2014
+id,sparkasse,state,bemessung_2014,gesamtbezuege_2014,durchschnitt_val,durchschnittsgehalt_2014,bilanzsumme_2014,mitarbeiter_2014,mitarbeiter_val,anzahl_vorstaende_2014
 1,Stadtsparkasse Felsberg,Hessen,0.0424412175,361 T. €,120.33333333333333,"120,3 T. €","156,1 Mio. €",42,42.0,3
 2,Stadtsparkasse Borken,Hessen,0.04345378,278 T. €,139.0,139 T. €,"150,7 Mio. €",48,48.0,2
 3,Sparkasse Battenberg,Hessen,0.055684695,239 T. €,119.5,"119,5 T. €","186,6 Mio. €",65,65.0,2
@@ -266,7 +266,7 @@
 383,Sparkasse Westmünsterland,Nordrhein-Westfalen,1.7797937923,"1,8 Mio. €",446.95,"446,9 T. €","6,4 Mrd. €",1463,1463.0,4
 384,Sparkasse Saarbrücken,Saarland,1.7576742084,"1,2 Mio. €",299.5,"299,5 T. €","6,8 Mrd. €",1283,1283.0,4
 385,Sparkasse Paderborn-Detmold,Nordrhein-Westfalen,1.8131573051,"1,8 Mio. €",441.25,"441,2 T. €","6,5 Mrd. €",1546,1546.0,4
-387,Stadtsparkasse Wuppertal,Nordrhein-Westfalen,1.9660949323,"1,6 Mio. €",778.5,"778,5 T. €","6,9 Mrd. €",1384,1384.0,2
+387,Stadtsparkasse Wuppertal,Nordrhein-Westfalen,1.9660949323,"1,6 Mio. €",519.0,519 T. €,"6,9 Mrd. €",1384,1384.0,3
 388,Sparkasse Karlsruhe Ettlingen,Baden-Württemberg,2.0860387954,"1,5 Mio. €",372.75,"372,8 T. €","7,2 Mrd. €",1614,1614.0,4
 390,Sparkasse Mainfranken Würzburg,Bayern,2.1809455971,"1,5 Mio. €",376.25,"376,2 T. €","7,2 Mrd. €",1803,1803.0,4
 393,Sparkasse Essen,Nordrhein-Westfalen,2.1855912258,"2,1 Mio. €",521.725,"521,7 T. €",8 Mrd. €,1627,1627.0,4
@@ -285,6 +285,6 @@
 408,Stadtsparkasse Düsseldorf,Nordrhein-Westfalen,3.206438536273,"1,9 Mio. €",477.30798749999997,"477,3 T. €","11,5 Mrd. €",2268,2268.0,4
 409,Ostsächsische Sparkasse Dresden,Sachsen,3.2078108515,"1,6 Mio. €",535.3333333333334,"535,3 T. €","11,9 Mrd. €",1799,1799.0,3
 410,Sparkasse Hannover,Niedersachsen,4.0034857866,"2,2 Mio. €",623.8888888888889,"623,9 T. €","13,6 Mrd. €",2255,2255.0,"3,6"
-411,Stadtsparkasse München,Bayern,4.6918148,"2,5 Mio. €",490.2,"490,2 T. €","16,4 Mrd. €","2,742",2.742,5
+411,Stadtsparkasse München,Bayern,4.6918148,"2,5 Mio. €",490.2,"490,2 T. €","16,4 Mrd. €",2742,2742.0,5
 413,Kreissparkasse Köln,Nordrhein-Westfalen,6.5876078123,"3,5 Mio. €",704.28,"704,3 T. €","23,1 Mrd. €",4512,4512.0,5
 414,Sparkasse KölnBonn,Nordrhein-Westfalen,7.54327605925,"2,6 Mio. €",512.76,"512,8 T. €","27,4 Mrd. €",4536,4536.0,5

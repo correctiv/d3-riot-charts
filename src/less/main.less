@@ -1,88 +1,39 @@
-@import url('https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css');
+@import './variables.less';
+@import './responsive_svg.less';
+@import './tooltip.less';
+@import './searchbox.less';
 
+body {
+  // normalize important for resposive resizing
+  margin: 0;
+  padding: 0;
+}
 
 .simple-charts {
+  position: relative;
   color: #1a1a1a;
 
-  .nv-axis path, .nv-axis line {
-    fill: none;
-    // stroke: #000;
-    shape-rendering: crispEdges;
-  }
-
-  .nv-axis text {
-    font: 10px sans-serif;
-  }
-
-  .nv-point {
-    fill-opacity: .6;
-    stroke-width: 1;
-    stroke-opacity: 1;
-  }
-
-  .nv-point.active {
-    fill-opacity: 1;
-  }
-
-
-  &__tooltip {
-    color: #1a1a1a;
-    // display: none;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 200px;
-    background: rgba(255, 255, 255, .8);
-    border: 1px solid #ddd;
-    z-index: 1000;
-    padding: 10px;
-    overflow: hidden;
-    pointer-events: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-
-    &__head {
-      font-weight: bold;
-      color: #c81455;
-      font-size: 14px;
-      line-height: 1.4;
-      margin: 0;
-      padding: 0 0 .5em 0;
-    }
-
-    &__data {
-      font-size: 12px;
-      line-height: 1.4;
-      margin: 0;
-      padding: 0;
-
-      dt {
-        float: none;
-        padding: 0;
-        margin: 0;
-        font-weight: bold;
-      }
-
-      dd {
-        float: none;
-        padding: 0;
-        margin: 0 0 .4em 0;
-      }
-
+  .axis {
+    .label {
+      fill: black;
     }
   }
+
+  .dot, .bar {
+    fill-opacity: .7;
+
+    &:hover {
+      fill-opacity: 1;
+    }
+
+    &.-hilighted {
+      stroke: red;
+      stroke-width: 3px;
+    }
+  }
+
+  // helpers
+  .-hidden {
+    display: none;
+  }
 }
-
-
-// kind of resetting nvd3 tooltip
-.nvtooltip, .xy-tooltip {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-    background: 0;
-    color: #1a1a1a;
-}
-
-
