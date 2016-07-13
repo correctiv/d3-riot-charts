@@ -1,6 +1,7 @@
 import getData from './loader.js'
 import initSvg from './utils/d3/init_svg.js'
 import updateSvg from './utils/d3/update_svg.js'
+import updateElement from './utils/update_element.js'
 import getChartElement from './utils/get_chart_element.js'
 import {PLAYBOOKS} from './playbooks/charts.js'
 import Settings from './playbooks/defaults.js'
@@ -54,6 +55,7 @@ export default class {
   resize() {
     let doResize = updateDimensions(this)
     if (doResize) {
+      updateElement(this)
       updateSvg(this)
       this.playbook.reRender(this)
       this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
@@ -62,10 +64,19 @@ export default class {
 
   _init() {
     this.data = getData(this)
-    this.element = getChartElement(this)
 
     // fix dimensions
-    let {height, width, margin} = this
+    let {
+      height,
+      width,
+      wrapperWidth,
+      wrapperHeight,
+      margin
+    } = this
+
+    this.wrapperWidth = wrapperWidth < width ? width : wrapperWidth
+    this.wrapperHeight = wrapperHeight < height ? height : wrapperHeight
+
     this.height = height - margin.top - margin.bottom
     this.width = width - margin.left - margin.right
 
@@ -76,22 +87,56 @@ export default class {
       this._setupResponsiveness()
     }
 
+    this.element = getChartElement(this)
+    let {svgEl, svg} = initSvg(this)
+    this.svg = svg
+    this.svgEl = svgEl
+
     if (this.tooltip) {
       this._initTooltip()
     }
 
-    this.svg = initSvg(this)
   }
 
   _setupResponsiveness() {
     // setup size ratio, preserve origin values
-    let {height, width} = this
-    this._sizeRatio = height / width
+    let {
+      width,
+      height,
+      wrapperWidth,
+      wrapperHeight,
+      margin
+    } = this
+
+    let {
+      top,
+      right,
+      bottom,
+      left
+    } = margin
+
     this._originHeight = height
     this._originWidth = width
-    this._getHeight = (width) => {
-      return parseInt(width * this._sizeRatio)
+
+    this._svgWidthRatio = (width + left + right) / wrapperWidth
+    this._getSvgWidth = (wrapperWidth) => {
+      let wFix = this.margin.left + this.margin.right
+      return parseInt(wrapperWidth * this._svgWidthRatio) - wFix
     }
+
+    this._svgHeightRatio = (height + top + bottom) / wrapperHeight
+    this._getSvgHeight = (wrapperHeight) => {
+      let hFix = this.margin.top + this.margin.bottom
+      return parseInt(wrapperHeight * this._svgHeightRatio) - hFix
+    }
+
+    this._wrapperSizeRatio = wrapperHeight / wrapperWidth
+    this._originWrapperWidth = wrapperWidth
+    this._originWrapperHeight = wrapperHeight
+    this._getWrapperHeight = (wrapperWidth) => {
+      return parseInt(wrapperWidth * this._wrapperSizeRatio)
+    }
+
     window.addEventListener('resize', this.resize.bind(this))
     // select(window).on('resize', this.resize.bind(this))
 

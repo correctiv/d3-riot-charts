@@ -1,4 +1,4 @@
-export default function() {
+export default () => {
   let w = window,
     d = document,
     e = d.documentElement,

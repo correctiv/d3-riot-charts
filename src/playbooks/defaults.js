@@ -5,6 +5,9 @@ import fillUpNestedObjects from '../utils/fill_up_nested_objects.js'
 const DEFAULTS = {
   width: 800,
   height: 500,
+  wrapperWidth: 800,
+  wrapperHeight: 500,
+  wrapperClass: 'simple-charts',
   margin: {
     top: 20,
     right: 20,

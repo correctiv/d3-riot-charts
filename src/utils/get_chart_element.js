@@ -7,13 +7,21 @@ import {select} from '../d3_packages.js'
  * @param {string} elementId - id of html element
  * @param {string} wrapper - wrapper classname (for css and stuff)
  **/
-export default function({elementId, wrapper='simple-charts'}) {
+export default ({
+  elementId,
+  wrapperClass,
+  wrapperWidth,
+  wrapperHeight
+}) => {
   let element = select('#'+elementId)
   if (element.empty()) {
     element = select('body')
       .append('div')
       .attr('id', elementId)
   }
-  element.classed(wrapper, true)
+  element
+    .style('width', wrapperWidth+'px')
+    .style('height', wrapperHeight+'px')
+    .classed(wrapperClass, true)
   return element
 }
