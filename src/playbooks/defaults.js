@@ -1,7 +1,6 @@
 import {schemeCategory10} from '../d3_packages.js'
 import fillUpNestedObjects from '../utils/fill_up_nested_objects.js'
 
-
 const DEFAULTS = {
   width: 800,
   height: 500,
@@ -23,10 +22,11 @@ const DEFAULTS = {
   xTicks: 10,
   yTicks: 10,
   color: schemeCategory10,
+  filter: false,
   tooltip: false,
   search: false
 }
 
-export default function(opts) {
+export default opts => {
   return fillUpNestedObjects(opts, DEFAULTS)
 }

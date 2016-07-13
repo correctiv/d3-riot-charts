@@ -36,6 +36,9 @@ export default class {
       this[prop] = opts[prop]
     }
 
+    // start getting async data as soon as possible
+    this.data = getData(this)
+
     // flux like store implemention but instanciated for this chart
     this.control = new ChartStore()
 
@@ -63,7 +66,6 @@ export default class {
   }
 
   _init() {
-    this.data = getData(this)
 
     // fix dimensions
     let {

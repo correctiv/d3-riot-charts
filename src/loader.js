@@ -18,24 +18,17 @@ function _loadCsv(dataUrl) {
 }
 
 
-export default function({dataUrl, xCol, yCol}) {
-  // export default function({dataUrl, opts, tooltip}) {
-  // let {groupCol} = this.opts
-
+export default ({
+  dataUrl,
+  xCol,
+  yCol,
+  filter
+}) => {
   return new Promise((resolve) => {
     _loadCsv(dataUrl).then((rows) => {
-      // let tooltipCols = this.tooltipCols
-      // let opts = this.opts
-
-      // if (opts.filter) {
-      //   rows = rows.filter(opts.filter)
-      // }
-
-      // if (groupCol) {
-      //   // resolve(this.model.getGroupedData({rows, tooltipCols, opts}))
-      //   // throw new Error('not implemented')
-      //   resolve(rows)
-      // } else {
+      if (filter) {
+        rows = rows.filter(filter)
+      }
       resolve(rows.filter(r => {
         // ensure data is present
         return (r[xCol] && r[yCol])

@@ -26,6 +26,9 @@ renderChart({
   xCol: 'name',
   yCol: 'bezuege_quote_zu_2013',
   showXAxis: false,
+  filter: function(d) {
+    return (d.state === 'Nordrhein-Westfalen') || (d.state === 'Hessen');
+  },
   color: function(d) {
     return d.position === 'Vorsitzende(r)' ? 'red' : 'blue'
   },
