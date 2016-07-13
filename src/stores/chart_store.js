@@ -23,6 +23,9 @@ export default class  {
 
     // find svg node and hilight it
     this.on(riot.EVT.hilightNode, data => {
+      // first unhilight previous node
+      this.trigger(riot.EVT.unhilightNode)
+
       let selection = this.drawedSelection
       this.hilightedNode = getNodeFromSelection({selection, data})
       hilightNode(this.hilightedNode)
