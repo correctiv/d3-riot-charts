@@ -9,16 +9,21 @@ export default function({
   element,
   search,
   margin,
-  control
+  control,
+  labelCol
 }) {
-
   let riotWrapperId = elementId+'-riot-searchbox-wrapper'
   let {
     position=margin,
     thereshold=4,
     doSearch,
-    description
+    description,
+    resultTempl
   } = search
+
+  if (!labelCol && !resultTempl) {
+    throw new Error('setup search: need a "labelCol" or "resultTempl" property')
+  }
 
   element
     .append('div')
@@ -26,5 +31,13 @@ export default function({
 
   position = getPositionStr(position)
 
-  riot.mount('div#'+riotWrapperId, 'riot-searchbox', {position, thereshold, doSearch, description, control})
+  riot.mount('div#'+riotWrapperId, 'riot-searchbox', {
+    position,
+    thereshold,
+    doSearch,
+    description,
+    control,
+    labelCol,
+    resultTempl
+  })
 }

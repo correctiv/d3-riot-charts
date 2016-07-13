@@ -1,3 +1,5 @@
+import format from 'string-template'
+
 <riot-searchbox class="simple-charts__searchbox" style={ opts.position }>
 
   <label>{ opts.description }</label>
@@ -6,7 +8,7 @@
     <li each={ results }
       class={ '-active' ? parent.opts.active === id : ''}
       onclick={ handleClick }>
-      { sparkasse }
+      { label }
     </li>
   </ul>
 
@@ -19,7 +21,10 @@
       if (results.length == 1) {
         this.hilight(results[0])
       } else {
-        this.results = results
+        this.results = results.map(r => {
+          r.label = this.getResultLabel(r)
+          return r
+        })
       }
     } else if (str.length < this.opts.thereshold) {
       this.results = []
@@ -35,6 +40,14 @@
   this.handleClick = (e) => {
     let data = e.item
     this.hilight(data)
+  }
+
+  this.getResultLabel = (r) => {
+    if (this.opts.resultTempl) {
+      return format(this.opts.resultTempl, r)
+    } else {
+      return r[this.opts.labelCol]
+    }
   }
 
 </riot-searchbox>
