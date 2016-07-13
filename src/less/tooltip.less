@@ -1,9 +1,8 @@
 .simple-charts__tooltip {
   position: absolute;
 
-  color: #1a1a1a;
   background: rgba(255, 255, 255, .8);
-  border: 1px solid #ddd;
+  border: 1px solid @gray;
   z-index: 1000;
   padding: 10px;
   overflow: hidden;
@@ -15,15 +14,15 @@
 
   &__head {
     font-weight: bold;
-    color: #c81455;
-    font-size: 14px;
+    color: @gray-dark;
+    font-size: @font-size-base;
     line-height: 1.4;
     margin: 0;
     padding: 0 0 .5em 0;
   }
 
   &__data {
-    font-size: 12px;
+    font-size: @font-size-small;
     line-height: 1.4;
     margin: 0;
     padding: 0;
