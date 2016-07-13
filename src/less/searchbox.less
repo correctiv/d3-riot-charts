@@ -1,3 +1,29 @@
 .simple-charts__searchbox {
-  position: absolute;
+    position: absolute;
+
+    input {
+        width: 200px;
+    }
+
+    label {
+        font-size: @font-size-small;
+        font-style: italic;
+    }
+
+    &__result-list {
+        width: 100%;
+        margin: @base-padding/2 0;
+        padding: 0;
+        border: 1px solid @gray-light;
+
+        li {
+            list-style: none;
+            padding: @base-padding/2 @base-padding;
+
+            &:hover {
+                background-color: @gray-lighter;
+                cursor: pointer;
+            }
+        }
+    }
 }
