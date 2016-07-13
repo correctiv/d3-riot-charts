@@ -2,22 +2,17 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://correctiv.org/static/CACHE/css/fd09e0dfcaae.css" type="text/css">
+  <!-- <link rel="stylesheet" href="https://correctiv.org/static/CACHE/css/fd09e0dfcaae.css" type="text/css"> -->
   <title>correctiv-simple-charts</title>
 </head>
 <body>
   <h1>Sparkassen-Vorstandsgehälter</h1>
   <h2>Visualisierungen</h2>
   <ol>
-    <li><a href="#karte">Karte absolutes Gesamtgehalt</a></li>
     <li><a href="#vorstaende-chart--1">Durchschnittsgehalt im Vergleich zur Größe der Sparkasse</a></li>
     <li><a href="#vorstaende-chart--2">Durchschnittsgehalts-Niveau Vergleich NRW &amp; Bayern</a></li>
     <li><a href="#vorstaende-chart--3">Quote erfolgsabhängige Bezüge Vergleich NRW &amp; Hessen</a></li>
   </ol>
-
-  <h2>Karte absolutes Gesamtgehalt</h2>
-  <a href="https://correctiv.github.io/sparkassen-maps-reusable/vorstandsgehaelter.html">direktlink</a>
-  <iframe id="karte" width="100%" height="700" src="https://correctiv.github.io/sparkassen-maps-reusable/vorstandsgehaelter.html"></iframe>
 
   <h2>Durchschnittsgehalt im Vergleich zur Größe der Sparkasse</h2>
   <section class="simple-charts">
@@ -30,13 +25,11 @@
   </section>
 
   <h2>Quote erfolgsabhängige Bezüge Vergleich NRW &amp; Hessen</h2>
-  <p>Rot: NRW, Blau: Hessen</p>
+  <p>Rot: Hessen, Blau: NRW</p>
   <section class="simple-charts">
     <section id="vorstaende-chart--3"></section>
   </section>
 
-  <script src="https://correctiv.org/static/vendor/d3/d3.min.js"></script>
-  <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
   <script src="dist/correctiv-simple-charts.min.js"></script>
   <script type="text/javascript">
 
@@ -46,100 +39,118 @@ var correctivColors = {
 };
 
 renderChart({
-  selector: '#vorstaende-chart--1',
   kind: 'scatterChart',
+  elementId: 'vorstaende-chart--1',
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
-  chart: {
-    height: '600px',
-    zoom: {
-      active: true
-    },
-    tooltip: {
-      labelCol: 'sparkasse',
-      bodyTempl: '<dl>\
-        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
-        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
-        <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
-        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
-        <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
-    },
-    nvd3: {
-      color: [correctivColors.red]
+  width: 800,
+  height: 500,
+  xCol: 'bemessung_2014',
+  yCol: 'durchschnitt_val',
+  sizeCol: 'mitarbeiter_2014',
+  color: correctivColors.red,
+  tooltip: {
+    labelCol: 'sparkasse',
+    bodyTempl: '<dl>\
+      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
+    position: {
+      bottom: 40,
+      right: 20
     }
   },
-  data: {
-    xCol: 'bemessung_2014',
-    yCol: 'durchschnitt_val',
-    sizeCol: 'mitarbeiter_val',
-    groupCol: 'state'
-  }
-});
-
-renderChart({
-  selector: '#vorstaende-chart--2',
-  kind: 'scatterChart',
-  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
-  chart: {
-    height: '600px',
-    zoom: {
-      active: true
+  search: {
+    searchCols: ['sparkasse'],
+    position: {
+      top: 20,
+      left: 50
     },
-    tooltip: {
-      labelCol: 'sparkasse',
-      bodyTempl: '<dl>\
-        <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
-        <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
-        <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
-        <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
-        <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>'
-    },
-    nvd3: {
-      color: [correctivColors.red, correctivColors.blue]
-    }
+    description: 'Suche nach deiner Sparkasse oder Postleitzahl'
   },
-  data: {
-    xCol: 'bemessung_2014',
-    yCol: 'durchschnitt_val',
-    sizeCol: 'mitarbeiter_val',
-    groupCol: 'state',
-    filter: function(row) {
-      return (row.state === 'Nordrhein-Westfalen') || (row.state === 'Bayern');
-    }
-  }
+  xTicks: 0,
+  xLabel: 'Größe der Sparkasse',
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
 });
 
 
 renderChart({
-  selector: '#vorstaende-chart--3',
-  kind: 'discreteBarChart',
+  kind: 'scatterChart',
+  elementId: 'vorstaende-chart--2',
+  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
+  width: 800,
+  height: 500,
+  xCol: 'bemessung_2014',
+  yCol: 'durchschnitt_val',
+  sizeCol: 'mitarbeiter_2014',
+  color: function(d) {
+    return d.state === 'Nordrhein-Westfalen' ? correctivColors.red : correctivColors.blue;
+  },
+  tooltip: {
+    labelCol: 'sparkasse',
+    bodyTempl: '<dl>\
+      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
+    position: {
+      bottom: 40,
+      right: 20
+    }
+  },
+  search: {
+    searchCols: ['sparkasse'],
+    position: {
+      top: 20,
+      left: 50
+    },
+    description: 'Suche nach deiner Sparkasse oder Postleitzahl'
+  },
+  xTicks: 0,
+  xLabel: 'Größe der Sparkasse',
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
+});
+
+
+
+renderChart({
+  kind: 'barChart',
+  elementId: 'vorstaende-chart--3',
   dataUrl: 'data/vorstaende/bezuege_quote_barchart.csv',
-  chart: {
-    height: '600px',
-    tooltip: {
-      labelCol: 'name',
-      bodyTempl: '<dl>\
+  width: 800,
+  height: 400,
+  xCol: 'name',
+  yCol: 'bezuege_quote_zu_2013',
+  showXAxis: false,
+  color: function(d) {
+    return d.state === 'Hessen' ? correctivColors.red : correctivColors.blue;
+  },
+  tooltip: {
+    position: {
+      top: 20,
+      left: 50
+    },
+    labelCol: 'name',
+    bodyTempl: '<dl>\
         <dt>Sparkasse</dt><dd>{sparkasse}</dd>\
         <dt>Quote</dt><dd>{bezuege_quote_str}</dd>\
         <dt>Gesamtverguetung 2013</dt><dd>{gesamtverguetung_2013_str}</dd>\
         <dt>Erfolgsabhängige Bezüge 2014</dt><dd>{erfolgsabhaengige_bezuege_str}</dd>\
         <dt>Position</dt><dd>{position}</dd>\
         <dt>Bundesland</dt><dd>{state}</dd></dl>'
-    },
-    nvd3: {
-      color: function(r) {
-        if (r.data.state === 'Hessen') {
-          return correctivColors.blue;
-        } else {
-          return correctivColors.red;
-        }
-      },
-      showXAxis: false
-    }
   },
-  data: {
-    labelCol: 'name',
-    valueCol: 'bezuege_quote_zu_2013'
-  }
+  search: {
+    searchCols: ['name'],
+    position: {
+      top: 20,
+      right: 20
+    },
+    description: 'Gib einen Namen ein'
+  },
+  yLabel: 'Anteil erfolgsabhängiger Bezüge am Grundgehalt in Prozent'
+
 });
 
 
