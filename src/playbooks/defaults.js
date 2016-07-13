@@ -24,7 +24,8 @@ const DEFAULTS = {
   color: schemeCategory10,
   filter: false,
   tooltip: false,
-  search: false
+  search: false,
+  clearSvg: true
 }
 
 export default opts => {

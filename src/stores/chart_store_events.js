@@ -7,5 +7,6 @@ riot.EVT = keyMirror({
   hilightNode: null,
   unhilightNode: null,
   chartDrawed: null,
-  tooltipChanged: null
+  tooltipChanged: null,
+  clearSvg: null
 })

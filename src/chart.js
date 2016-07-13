@@ -1,5 +1,6 @@
 import getData from './loader.js'
 import initSvg from './utils/d3/init_svg.js'
+import addSvgEvents from './utils/d3/add_svg_events.js'
 import updateSvg from './utils/d3/update_svg.js'
 import updateElement from './utils/update_element.js'
 import getChartElement from './utils/get_chart_element.js'
@@ -100,6 +101,10 @@ export default class {
         this.tooltip = {}
       }
       this._initTooltip()
+    }
+
+    if (this.clearSvg) {
+      addSvgEvents(this)
     }
 
   }

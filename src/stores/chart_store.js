@@ -45,6 +45,11 @@ export default class  {
       // TODO
       // remove loading class from wrapper
     })
+
+    // clearSvg
+    this.on(riot.EVT.clearSvg, () => {
+      this.trigger(riot.EVT.unhilightNode)
+    })
   }
 
 }
