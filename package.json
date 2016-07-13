@@ -1,7 +1,7 @@
 {
-  "name": "correctiv-simple-charts",
+  "name": "d3-riot-charts",
   "version": "0.0.1",
-  "description": "A simple wrapper around nvd3",
+  "description": "A simple wrapper around d3v4, extended with some riotjs stuff",
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack -p -d --progress --colors",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/correctiv/correctiv-simple-charts.git"
+    "url": "https://github.com/correctiv/d3-riot-charts.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
