@@ -48,8 +48,8 @@ renderChart({
   yCol: 'durchschnitt_val',
   sizeCol: 'mitarbeiter_2014',
   color: correctivColors.red,
+  labelCol: 'sparkasse',
   tooltip: {
-    labelCol: 'sparkasse',
     bodyTempl: '<dl>\
       <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
       <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
@@ -90,8 +90,8 @@ renderChart({
   filter: function(d) {
     return (d.state === 'Nordrhein-Westfalen') || (d.state === 'Bayern')
   },
+  labelCol: 'sparkasse',
   tooltip: {
-    labelCol: 'sparkasse',
     bodyTempl: '<dl>\
       <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
       <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
@@ -133,12 +133,12 @@ renderChart({
   filter: function(d) {
     return (d.state === 'Nordrhein-Westfalen') || (d.state === 'Hessen')
   },
+  labelCol: 'name',
   tooltip: {
     position: {
       top: 20,
       left: 50
     },
-    labelCol: 'name',
     bodyTempl: '<strong>{sparkasse}</strong>\
         <dl><dt>Quote</dt><dd>{bezuege_quote_str}</dd>\
         <dt>Grundgehalt 2013</dt><dd>{feste_bezuege_2013_str}</dd>\
@@ -147,12 +147,13 @@ renderChart({
         <dt>Bundesland</dt><dd>{state}</dd></dl>'
   },
   search: {
-    searchCols: ['name'],
+    searchCols: ['name', 'sparkasse'],
     position: {
       top: 20,
       right: 30
     },
-    description: 'Gib einen Namen ein'
+    description: 'Gib einen Namen oder eine Sparkasse ein',
+    resultTempl: '{name} ({sparkasse})'
   },
   yLabel: 'Anteil erfolgsabhängiger Bezüge am Grundgehalt in Prozent'
 
