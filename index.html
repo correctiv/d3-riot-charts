@@ -57,6 +57,12 @@ renderChart({
   groupCol: 'state',
   labelCol: 'sparkasse',
   tooltip: {
+    bodyTempl: '<dl class="table">\
+      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
     position: {
       bottom: 40,
       right: 20
