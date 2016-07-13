@@ -95,6 +95,10 @@ export default class {
     this.svgEl = svgEl
 
     if (this.tooltip) {
+      // FIXME
+      if (typeof(this.tooltip) === 'boolean') {
+        this.tooltip = {}
+      }
       this._initTooltip()
     }
 

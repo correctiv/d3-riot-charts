@@ -32,8 +32,16 @@ renderChart({
   color: function(d) {
     return d.position === 'Vorsitzende(r)' ? 'red' : 'blue'
   },
-  tooltip: {
-    labelCol: 'name'
+  labelCol: 'name',
+  tooltip: true,
+  search: {
+    searchCols: ['sparkasse', 'name'],
+    position: {
+      top: 20,
+      right: 20
+    },
+    description: 'Gib einen Namen oder eine Sparkasse ein',
+    resultTempl: '{name} ({sparkasse})'
   }
 });
 
@@ -47,8 +55,8 @@ renderChart({
   yCol: 'durchschnitt_val',
   sizeCol: 'mitarbeiter_2014',
   groupCol: 'state',
+  labelCol: 'sparkasse',
   tooltip: {
-    labelCol: 'sparkasse',
     position: {
       bottom: 40,
       right: 20
