@@ -50,7 +50,7 @@ renderChart({
   color: correctivColors.red,
   labelCol: 'sparkasse',
   tooltip: {
-    bodyTempl: '<dl>\
+    bodyTempl: '<dl class="table">\
       <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
       <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
       <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
@@ -92,7 +92,7 @@ renderChart({
   },
   labelCol: 'sparkasse',
   tooltip: {
-    bodyTempl: '<dl>\
+    bodyTempl: '<dl class="table">\
       <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
       <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
       <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
@@ -137,7 +137,7 @@ renderChart({
   tooltip: {
     position: {
       top: 20,
-      left: 50
+      left: 55
     },
     bodyTempl: '<strong>{sparkasse}</strong>\
         <dl><dt>Quote</dt><dd>{bezuege_quote_str}</dd>\
