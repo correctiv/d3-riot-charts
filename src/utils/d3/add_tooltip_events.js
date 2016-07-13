@@ -1,7 +1,6 @@
 export default function({
   drawedSelection,
   tooltip,
-  search,
   control
 }) {
   if (tooltip) {

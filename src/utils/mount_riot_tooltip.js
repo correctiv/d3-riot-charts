@@ -18,7 +18,8 @@ export default function({
 
   let riotWrapperId = elementId+'-riot-tooltip-wrapper'
 
-  let tooltipWrapper = element
+  // add tooltipWrapper
+  element
     .append('div')
     .attr('id', riotWrapperId)
 
