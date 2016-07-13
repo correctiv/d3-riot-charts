@@ -27,17 +27,28 @@
     margin: 0;
     padding: 0;
 
-    dt {
-      float: none;
-      padding: 0;
-      margin: 0;
-      font-weight: bold;
-    }
+    dl {
 
-    dd {
-      float: none;
-      padding: 0;
-      margin: 0 0 .4em 0;
+      dt {
+        float: none;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      dd {
+        float: none;
+        padding: 0;
+        margin: 0 0 .4em 0;
+      }
+
+      &.table {
+        width: 250px;
+        dt, dd {
+          float: left;
+          width: 50%;
+        }
+      }
     }
 
   }
