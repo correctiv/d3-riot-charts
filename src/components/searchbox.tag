@@ -6,7 +6,6 @@ import format from 'string-template'
   <input type="text" oninput={ search } />
   <ul if={ results.length > 0 } class="simple-charts__searchbox__result-list">
     <li each={ results }
-      class={ '-active' ? parent.opts.active === id : ''}
       onclick={ handleClick }
       onmouseover={ onMouseOver }>
       { label }
@@ -57,5 +56,9 @@ import format from 'string-template'
       return r[this.opts.labelCol]
     }
   }
+
+  this.opts.control.on(riot.EVT.clearSvg, () => {
+    this.update({results: []})
+  })
 
 </riot-searchbox>

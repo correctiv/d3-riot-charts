@@ -13,7 +13,7 @@ import './raw_html.tag'
     })
   })
 
-  this.opts.control.on(riot.EVT.unhilight, () => {
+  this.opts.control.on(riot.EVT.unhilight + ' ' + riot.EVT.clearSvg, () => {
     this.update({data: null})
   })
 </riot-tooltip>
