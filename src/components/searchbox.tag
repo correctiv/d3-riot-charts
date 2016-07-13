@@ -7,7 +7,8 @@ import format from 'string-template'
   <ul if={ results.length > 0 } class="simple-charts__searchbox__result-list">
     <li each={ results }
       class={ '-active' ? parent.opts.active === id : ''}
-      onclick={ handleClick }>
+      onclick={ handleClick }
+      onmouseover={ onMouseOver }>
       { label }
     </li>
   </ul>
@@ -31,15 +32,22 @@ import format from 'string-template'
     }
   }
 
-  this.hilight = (data) => {
+  this.hilight = (data, preserveResults=false) => {
     // clear list
-    this.results = []
+    if (!preserveResults) {
+      this.results = []
+    }
     this.opts.control.trigger(riot.EVT.hilightNode, data)
   }
 
   this.handleClick = (e) => {
     let data = e.item
     this.hilight(data)
+  }
+
+  this.onMouseOver = (e) => {
+    let data = e.item
+    this.hilight(data, true)
   }
 
   this.getResultLabel = (r) => {
