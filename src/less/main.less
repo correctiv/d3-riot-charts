@@ -10,11 +10,18 @@ body {
 }
 
 .simple-charts {
+  font-family: @body-font;
   position: relative;
-  color: #1a1a1a;
+  color: @black;
 
   .axis {
+    font-size: 10px;
+    font-family: sans-serif;
+
     .label {
+      font-size: @font-size-small;
+      font-family: @body-font;
+      font-weight: normal;
       fill: black;
     }
   }

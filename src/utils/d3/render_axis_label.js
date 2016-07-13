@@ -12,7 +12,7 @@ export default function({
     let label = _y ? yLabel : xLabel
     let _label = axis.append('text')
       .attr('class', 'label')
-      .attr('y', 10)
+      .attr('y', 15)
       .style('text-anchor', 'end')
       .text(label)
 

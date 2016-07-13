@@ -1,13 +1,15 @@
 .simple-charts__searchbox {
     position: absolute;
+    font-size: @font-size-small;
 
     input {
+        color: @black;
         width: 200px;
     }
 
     label {
-        font-size: @font-size-small;
         font-style: italic;
+        font-weight: normal;
     }
 
     &__result-list {
@@ -15,6 +17,7 @@
         margin: @base-padding/2 0;
         padding: 0;
         border: 1px solid @gray-light;
+        background: rgba(255, 255, 255, .8);
 
         li {
             list-style: none;
