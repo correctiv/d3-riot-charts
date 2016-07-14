@@ -68,8 +68,8 @@ renderChart({
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
   drawExtra: function(c) {
     c.svg.append('rect')
-      .attr('x', c.xScale(1) - 20)
-      .attr('y', c.yScale(900))
+      .attr('x', c.xScale(8) - 20)
+      .attr('y', c.yScale(890))
       .attr('width', 40)
       .attr('height', c.yScale(550)-c.yScale(900))
       .style('fill', 'none')
@@ -77,10 +77,9 @@ renderChart({
       .style('shape-rendering', 'crispEdges');
     c.svg.append('text')
       .attr('y', c.yScale(900)+10)
-      .attr('x', c.xScale(1)+25)
+      .attr('x', c.xScale(8)+25)
       .style('font-size', '14px')
       .text('*');
-
   }
 });
 
@@ -133,7 +132,7 @@ renderChart({
   elementId: 'vorstaende-chart--3',
   dataUrl: 'data/vorstaende/bezuege_quote_barchart.csv',
   width: 800,
-  height: 400,
+  height: 500,
   xCol: 'name',
   yCol: 'bezuege_quote_zu_2013',
   yLabel: 'Anteil erfolgsabhängiger Bezüge am Grundgehalt in Prozent',
