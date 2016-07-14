@@ -120,6 +120,7 @@ renderChart({
   height: 400,
   xCol: 'name',
   yCol: 'bezuege_quote_zu_2013',
+  yLabel: 'Anteil erfolgsabhängiger Bezüge am Grundgehalt in Prozent',
   showXAxis: false,
   color: function(d) {
     return d.state === 'Hessen' ? correctivColors.red : correctivColors.blue;
@@ -149,7 +150,23 @@ renderChart({
     description: 'Gib einen Namen oder eine Sparkasse ein',
     resultTempl: '{name} ({sparkasse})'
   },
-  yLabel: 'Anteil erfolgsabhängiger Bezüge am Grundgehalt in Prozent'
+  drawExtra: function(c) {
+    var y = c.yScale(15);
+    c.svg.append('svg:line')
+      .attr('x1', 0)
+      .attr('y1', y)
+      .attr('x2', c.width)
+      .attr('y2', y)
+      .style('stroke', 'black')
+      .style('stroke-width', '1')
+      .style('stroke-dasharray', '10,10');
+    c.svg.append('text')
+      .attr('y', y - 5)
+      .attr('x', c.xScale('Beate Brumberg'))
+      .style('text-anchor', 'end')
+      .style('font-size', '12px')
+      .text('Empfehlung der Sparkassenverbände in NRW: 15 %');
+  }
 
 });
 
