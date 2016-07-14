@@ -43,7 +43,8 @@ export default class {
     // flux like store implemention but instanciated for this chart
     this.control = new ChartStore()
 
-    this.playbook = PLAYBOOKS[this.kind]
+    this._setupPlaybook()
+
     this._init()
   }
 
@@ -153,6 +154,12 @@ export default class {
 
     // maybe we have already a smaller window than the given values:
     updateDimensions(this)
+  }
+
+  _setupPlaybook() {
+    let playbook = PLAYBOOKS[this.kind]
+    playbook.merge(this.playbook)
+    this.playbook = playbook
   }
 
   _initTooltip() {

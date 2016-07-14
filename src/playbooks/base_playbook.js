@@ -12,6 +12,13 @@ export default class {
     this._render(chart)
   }
 
+  merge(otherPlaybook) {
+    // overwrite functions with customized ones
+    for (let key in otherPlaybook) {
+      this.playbook[key] = otherPlaybook[key]
+    }
+  }
+
   _render(chart) {
     this._getAxes(chart)
     this._draw(chart)

@@ -26,7 +26,8 @@ const DEFAULTS = {
   tooltip: false,
   search: false,
   clearSvg: true,
-  drawExtra: false
+  drawExtra: false,
+  playbook: {}
 }
 
 export default opts => {
