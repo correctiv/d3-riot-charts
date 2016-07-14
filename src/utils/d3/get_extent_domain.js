@@ -1,15 +1,21 @@
 import {extent} from '../../d3_packages.js'
 
-export default function({data, xCol, yCol}) {
+export default function({
+  data,
+  xCol,
+  yCol,
+  xExtend,
+  yExtend
+}) {
+  let y = this.col === 'yCol'
+  let col = y ? yCol : xCol
+  let _extend = y ? yExtend : xExtend
 
-  let col = this.col === 'xCol' ? xCol :
-    this.col === 'yCol' ? yCol : null
-  if (!col) {
-    throw new Error(this.col+' is not a valid col identifier')
+  if (_extend) {
+    return _extend
+  } else {
+    return extent(data, d => {
+      return d[col]
+    })
   }
-
-  return extent(data, d => {
-    return d[col]
-  })
-
 }
