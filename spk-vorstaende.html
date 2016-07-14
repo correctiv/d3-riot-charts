@@ -37,9 +37,13 @@ renderChart({
   elementId: 'vorstaende-chart--1',
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   width: 800,
-  height: 500,
+  height: 600,
   xCol: 'bemessung_2014',
+  xScaleNice: false,
+  xExtend: [0, 8.2],
   yCol: 'durchschnitt_val',
+  yScaleNice: false,
+  yExtend: [80, 900],
   sizeCol: 'mitarbeiter_2014',
   color: correctivColors.red,
   labelCol: 'sparkasse',
@@ -59,7 +63,7 @@ renderChart({
     searchCols: ['sparkasse'],
     position: {
       top: 20,
-      right: 20
+      right: 70
     },
     description: 'Suche nach Deiner Sparkasse oder Postleitzahl'
   },
@@ -69,9 +73,9 @@ renderChart({
   drawExtra: function(c) {
     c.svg.append('rect')
       .attr('x', c.xScale(8) - 20)
-      .attr('y', c.yScale(890))
+      .attr('y', c.yScale(900)+1)
       .attr('width', 40)
-      .attr('height', c.yScale(550)-c.yScale(900))
+      .attr('height', c.yScale(580)-c.yScale(900))
       .style('fill', 'none')
       .style('stroke', '#9c9c9c')
       .style('shape-rendering', 'crispEdges');
@@ -89,9 +93,13 @@ renderChart({
   elementId: 'vorstaende-chart--2',
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   width: 800,
-  height: 500,
+  height: 600,
   xCol: 'bemessung_2014',
+  xScaleNice: false,
+  xExtend: [0, 7.6],
   yCol: 'durchschnitt_val',
+  yScaleNice: false,
+  yExtend: [150, 750],
   sizeCol: 'mitarbeiter_2014',
   color: function(d) {
     return d.state === 'Nordrhein-Westfalen' ? correctivColors.red : correctivColors.blue;
