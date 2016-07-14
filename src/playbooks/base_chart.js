@@ -4,6 +4,7 @@ import getAxis from '../utils/d3/get_axis.js'
 import renderAxis from '../utils/d3/render_axis.js'
 import renderAxisLabel from '../utils/d3/render_axis_label.js'
 import addTooltipEvents from '../utils/d3/add_tooltip_events.js'
+import drawExtra from '../utils/d3/draw_extra.js'
 
 export default class {
   constructor() {
@@ -17,6 +18,8 @@ export default class {
     this.renderYAxis = renderAxis.bind({axis: 'y', cssClasses: 'y axis'})
     this.renderXLabel = renderAxisLabel
     this.renderYLabel = renderAxisLabel.bind({axis: 'y'})
+    this.drawData = false  // to be specified in subclasses
+    this.drawExtra = drawExtra
     this.addEvents = addTooltipEvents
   }
 }

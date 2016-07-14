@@ -35,6 +35,7 @@ export default class {
     chart.renderedXLabel = this.playbook.renderXLabel(chart)
     chart.renderedYLabel = this.playbook.renderYLabel(chart)
     chart.drawedSelection = this.playbook.drawData(chart)
+    chart.extraDrawedSelections = this.playbook.drawExtra(chart)
     this.playbook.addEvents(chart)
   }
 }

@@ -25,7 +25,8 @@ const DEFAULTS = {
   filter: false,
   tooltip: false,
   search: false,
-  clearSvg: true
+  clearSvg: true,
+  drawExtra: false
 }
 
 export default opts => {
