@@ -4,12 +4,18 @@
 @import './searchbox.less';
 
 body {
-  // normalize important for resposive resizing
+  // normalize for resposive resizing
+  // FIXME ?
   margin: 0;
   padding: 0;
 }
 
 .simple-charts {
+  // wrapper
+  &.-centered {
+    margin: 0 auto;
+  }
+
   font-family: @body-font;
   position: relative;
   color: @black;
