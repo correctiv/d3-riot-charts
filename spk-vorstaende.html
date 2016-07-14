@@ -65,7 +65,23 @@ renderChart({
   },
   xTicks: 0,
   xLabel: 'Größe der Sparkasse',
-  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
+  drawExtra: function(c) {
+    c.svg.append('rect')
+      .attr('x', c.xScale(1) - 20)
+      .attr('y', c.yScale(900))
+      .attr('width', 40)
+      .attr('height', c.yScale(550)-c.yScale(900))
+      .style('fill', 'none')
+      .style('stroke', '#9c9c9c')
+      .style('shape-rendering', 'crispEdges');
+    c.svg.append('text')
+      .attr('y', c.yScale(900)+10)
+      .attr('x', c.xScale(1)+25)
+      .style('font-size', '14px')
+      .text('*');
+
+  }
 });
 
 
@@ -159,7 +175,8 @@ renderChart({
       .attr('y2', y)
       .style('stroke', 'black')
       .style('stroke-width', '1')
-      .style('stroke-dasharray', '10,10');
+      .style('stroke-dasharray', '10,10')
+      .style('shape-rendering', 'crispEdges');
     c.svg.append('text')
       .attr('y', y - 5)
       .attr('x', c.xScale('Beate Brumberg'))
