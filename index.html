@@ -99,7 +99,15 @@ renderChart({
   },
   xTicks: 0,
   xLabel: 'Größe der Sparkasse',
-  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
+  playbook: {
+    getXDomain: function() {
+      return [0, 8.5];
+    },
+    getYDomain: function() {
+      return [100, 800];
+    }
+  }
 });
 
   </script>
