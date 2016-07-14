@@ -17,6 +17,7 @@ export default class {
     for (let key in otherPlaybook) {
       this.playbook[key] = otherPlaybook[key]
     }
+    return this
   }
 
   _render(chart) {

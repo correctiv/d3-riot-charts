@@ -157,9 +157,7 @@ export default class {
   }
 
   _setupPlaybook() {
-    let playbook = PLAYBOOKS[this.kind]
-    playbook.merge(this.playbook)
-    this.playbook = playbook
+    this.playbook = PLAYBOOKS[this.kind].merge(this.playbook)
   }
 
   _initTooltip() {
