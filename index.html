@@ -3,6 +3,11 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>correctiv-simple-charts</title>
+  <style type="text/css">
+    .quota-label {
+      font-size: 10px;
+    }
+  </style>
 </head>
 <body>
   <h2>correctiv-simple-charts</h2>
@@ -42,6 +47,22 @@ renderChart({
     },
     description: 'Gib einen Namen oder eine Sparkasse ein',
     resultTempl: '{name} ({sparkasse})'
+  },
+  drawExtra: function(chart) {
+    var y = chart.yScale(0.15);
+    return {
+      line: chart.svg.append('svg:line')
+        .attr('x1', 0)
+        .attr('y1', y)
+        .attr('x2', chart.width)
+        .attr('y2', y)
+        .style('stroke', 'red'),
+      label: chart.svg.append('text')
+        .attr('class', 'quota-label')
+        .attr('y', y - 5)
+        .attr('x', 2)
+        .text('Quotengrenze')
+    };
   }
 });
 
