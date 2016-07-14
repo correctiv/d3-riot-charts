@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/dist/',
-    filename: 'correctiv-simple-charts.min.js'
+    filename: 'd3-riot-charts.min.js'
   },
   devtool: 'eval',
   debug: true,
