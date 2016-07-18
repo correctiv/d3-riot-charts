@@ -28,6 +28,7 @@ export default class {
 
   _getFuncs(chart) {
     chart.getColor = this.playbook.getColor(chart)
+    chart.getSize = this.playbook.getSize(chart)
   }
 
   _getDomains(chart) {
