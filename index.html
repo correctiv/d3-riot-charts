@@ -63,7 +63,9 @@ renderChart({
         .attr('x', 2)
         .text('Quotengrenze')
     };
-  }
+  },
+  legend: true,
+  groupCol: 'position'
 });
 
 renderChart({
@@ -107,6 +109,9 @@ renderChart({
     getYDomain: function() {
       return [100, 800];
     }
+  },
+  legend: {
+    cssClasses: '-boxed'
   }
 });
 
