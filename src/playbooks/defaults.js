@@ -28,6 +28,8 @@ const DEFAULTS = {
   legend: false,
   clearSvg: true,
   drawExtra: false,
+  sizeRange: [3, 8],
+  size: 6,
   playbook: {}
 }
 

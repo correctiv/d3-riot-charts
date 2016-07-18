@@ -1,22 +1,3 @@
-import {scaleLinear, extent} from '../../../d3_packages.js'
-
-const _sizeRange = [2, 7]
-const _getSize = (data, col) => {
-  if (col) {
-    let domain = extent(data, d => {
-      return d[col]
-    })
-    return scaleLinear()
-      .domain(domain)
-      .range(_sizeRange)
-  } else {
-    return () => {
-      return 3
-    }
-  }
-}
-
-
 export default function({
   data,
   sizeCol,
@@ -25,9 +6,9 @@ export default function({
   xScale,
   yScale,
   svg,
-  getColor
+  getColor,
+  getSize
 }) {
-  let getSize = _getSize(data, sizeCol)
   return svg.selectAll('.dot')
     .data(data)
     .enter().append('circle')
