@@ -28,6 +28,7 @@ renderChart({
   dataUrl: 'data/sample_barchart.csv',
   width: 800,
   height: 400,
+  wrapperHeight: 420,
   xCol: 'name',
   yCol: 'bezuege_quote_zu_2013',
   showXAxis: false,
@@ -65,7 +66,10 @@ renderChart({
     };
   },
   legend: true,
-  groupCol: 'position'
+  groupCol: 'position',
+  annotation: {
+    content: 'Ich bin eine Anmerkung!<strong>html</strong>'
+  }
 });
 
 renderChart({
