@@ -11,6 +11,8 @@ import getTooltipTemplate from './utils/get_tooltip_template.js'
 import mountRiotTooltip from './utils/mount_riot_tooltip.js'
 import getSearchFunc from './utils/get_search_func.js'
 import mountRiotSearchbox from './utils/mount_riot_searchbox.js'
+import getLegendItems from './utils/get_legend_items.js'
+import mountRiotLegend from './utils/mount_riot_legend.js'
 import ChartStore from './stores/chart_store.js'
 
 /**
@@ -53,6 +55,7 @@ export default class {
       this.data = data
       this.playbook.run(this)
       this.search ? this._setupSearch() : null
+      this.legend ? this._initLegend() : null
       this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
     })
   }
@@ -163,6 +166,15 @@ export default class {
     }
     this.tooltip.template = getTooltipTemplate(this)
     mountRiotTooltip(this)
+  }
+
+  _initLegend() {
+    // FIXME
+    if (typeof(this.legend) === 'boolean') {
+      this.legend = {}
+    }
+    this.legend.legendItems = getLegendItems(this)
+    mountRiotLegend(this)
   }
 
   _setupSearch() {

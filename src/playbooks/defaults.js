@@ -25,6 +25,7 @@ const DEFAULTS = {
   filter: false,
   tooltip: false,
   search: false,
+  legend: false,
   clearSvg: true,
   drawExtra: false,
   playbook: {}
