@@ -1,5 +1,4 @@
 import {scaleLinear, extent} from '../../../d3_packages.js'
-import _getColor from '../get_color.js'
 
 const _sizeRange = [2, 7]
 const _getSize = (data, col) => {
@@ -23,13 +22,11 @@ export default function({
   sizeCol,
   xCol,
   yCol,
-  groupCol,
   xScale,
   yScale,
   svg,
-  color
+  getColor
 }) {
-  let getColor = _getColor({color, groupCol})
   let getSize = _getSize(data, sizeCol)
   return svg.selectAll('.dot')
     .data(data)

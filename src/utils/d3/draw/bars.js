@@ -1,17 +1,13 @@
-import _getColor from '../get_color.js'
-
 export default function({
   height,
   data,
   xCol,
   yCol,
-  groupCol,
   xScale,
   yScale,
   svg,
-  color
+  getColor
 }) {
-  let getColor = _getColor({color, groupCol})
   return svg.selectAll('.bar')
     .data(data)
     .enter().append('rect')
