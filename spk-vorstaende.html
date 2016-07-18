@@ -56,7 +56,7 @@ renderChart({
       <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
       <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
     position: {
-      bottom: 40,
+      bottom: 50,
       right: 20
     }
   },
@@ -75,7 +75,7 @@ renderChart({
       .attr('x1', c.xScale(8) - 10)
       .attr('y1', c.yScale(900))
       .attr('x2', c.xScale(8) - 10)
-      .attr('y2', c.yScale(200))
+      .attr('y2', c.yScale(400))
       .style('stroke', 'black')
       .style('shape-rendering', 'crispEdges');
     c.svg.append('text')
