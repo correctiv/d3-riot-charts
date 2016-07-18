@@ -6,6 +6,7 @@ import updateElement from './utils/update_element.js'
 import getChartElement from './utils/get_chart_element.js'
 import {PLAYBOOKS} from './playbooks/charts.js'
 import Settings from './playbooks/defaults.js'
+import setUpResponsiveness from './utils/setup_responsiveness.js'
 import updateDimensions from './utils/update_dimensions.js'
 import getTooltipTemplate from './utils/get_tooltip_template.js'
 import mountRiotTooltip from './utils/mount_riot_tooltip.js'
@@ -115,47 +116,8 @@ export default class {
   }
 
   _setupResponsiveness() {
-    // setup size ratio, preserve origin values
-    let {
-      width,
-      height,
-      wrapperWidth,
-      wrapperHeight,
-      margin
-    } = this
-
-    let {
-      top,
-      right,
-      bottom,
-      left
-    } = margin
-
-    this._originHeight = height
-    this._originWidth = width
-
-    this._svgWidthRatio = (width + left + right) / wrapperWidth
-    this._getSvgWidth = (wrapperWidth) => {
-      let wFix = this.margin.left + this.margin.right
-      return parseInt(wrapperWidth * this._svgWidthRatio) - wFix
-    }
-
-    this._svgHeightRatio = (height + top + bottom) / wrapperHeight
-    this._getSvgHeight = (wrapperHeight) => {
-      let hFix = this.margin.top + this.margin.bottom
-      return parseInt(wrapperHeight * this._svgHeightRatio) - hFix
-    }
-
-    this._wrapperSizeRatio = wrapperHeight / wrapperWidth
-    this._originWrapperWidth = wrapperWidth
-    this._originWrapperHeight = wrapperHeight
-    this._getWrapperHeight = (wrapperWidth) => {
-      return parseInt(wrapperWidth * this._wrapperSizeRatio)
-    }
-
+    setUpResponsiveness(this)
     window.addEventListener('resize', this.resize.bind(this))
-    // select(window).on('resize', this.resize.bind(this))
-
     // maybe we have already a smaller window than the given values:
     updateDimensions(this)
   }
