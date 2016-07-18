@@ -97,10 +97,6 @@ export default class {
     this.svgEl = svgEl
 
     if (this.tooltip) {
-      // FIXME
-      if (typeof(this.tooltip) === 'boolean') {
-        this.tooltip = {}
-      }
       this._initTooltip()
     }
 
@@ -161,6 +157,10 @@ export default class {
   }
 
   _initTooltip() {
+    // FIXME
+    if (typeof(this.tooltip) === 'boolean') {
+      this.tooltip = {}
+    }
     this.tooltip.template = getTooltipTemplate(this)
     mountRiotTooltip(this)
   }
