@@ -13,6 +13,7 @@ import getSearchFunc from './utils/get_search_func.js'
 import mountRiotSearchbox from './utils/mount_riot_searchbox.js'
 import getLegendItems from './utils/get_legend_items.js'
 import mountRiotLegend from './utils/mount_riot_legend.js'
+import mountRiotAnnotation from './utils/mount_riot_annotation.js'
 import ChartStore from './stores/chart_store.js'
 
 /**
@@ -103,6 +104,10 @@ export default class {
       this._initTooltip()
     }
 
+    if (this.annotation) {
+      this._initAnnotation()
+    }
+
     if (this.clearSvg) {
       addSvgEvents(this)
     }
@@ -175,6 +180,10 @@ export default class {
     }
     this.legend.legendItems = getLegendItems(this)
     mountRiotLegend(this)
+  }
+
+  _initAnnotation() {
+    mountRiotAnnotation(this)
   }
 
   _setupSearch() {
