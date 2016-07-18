@@ -38,12 +38,13 @@ renderChart({
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   width: 800,
   height: 600,
+  wrapperHeight: 610,
   xCol: 'bemessung_2014',
   xScaleNice: false,
   xExtend: [0, 8.2],
   yCol: 'durchschnitt_val',
   yScaleNice: false,
-  yExtend: [80, 900],
+  yExtend: [0, 900],
   sizeCol: 'mitarbeiter_2014',
   color: correctivColors.red,
   labelCol: 'sparkasse',
@@ -65,25 +66,30 @@ renderChart({
       top: 20,
       right: 70
     },
-    description: 'Suche nach Deiner Sparkasse oder Postleitzahl'
+    description: 'Suche nach Deiner Sparkasse'
   },
   xTicks: 0,
-  xLabel: 'Größe der Sparkasse',
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
   drawExtra: function(c) {
-    c.svg.append('rect')
-      .attr('x', c.xScale(8) - 20)
-      .attr('y', c.yScale(900)+1)
-      .attr('width', 40)
-      .attr('height', c.yScale(580)-c.yScale(900))
-      .style('fill', 'none')
-      .style('stroke', '#9c9c9c')
+    c.svg.append('line')
+      .attr('x1', c.xScale(8) - 10)
+      .attr('y1', c.yScale(900))
+      .attr('x2', c.xScale(8) - 10)
+      .attr('y2', c.yScale(200))
+      .style('stroke', 'black')
       .style('shape-rendering', 'crispEdges');
     c.svg.append('text')
       .attr('y', c.yScale(900)+10)
-      .attr('x', c.xScale(8)+25)
+      .attr('x', c.xScale(8) - 10)
       .style('font-size', '14px')
       .text('*');
+  },
+  annotation: {
+    position: {
+      bottom: 1,
+      right: 20
+    },
+    content: '<div style="text-align:right;">Je weiter rechts eine Sparkasse hier erscheint, desto größer ist sie. <a href="https://correctiv.org/recherchen/sparkassen/artikel/2016/07/18/datenauswertung-von-vorstandsgehaelter/">So haben wir die Größe der Sparkassen berechnet</a><br>* Von diesen Sparkassen haben wir keine Daten zum Kreditvolumen. Deshalb konnten wir sie nicht in unsere Bemessungsgrundlage mit einbeziehen.</div>'
   }
 });
 
@@ -99,7 +105,7 @@ renderChart({
   xExtend: [0, 7.6],
   yCol: 'durchschnitt_val',
   yScaleNice: false,
-  yExtend: [150, 750],
+  yExtend: [0, 750],
   sizeCol: 'mitarbeiter_2014',
   color: function(d) {
     return d.state === 'Nordrhein-Westfalen' ? correctivColors.red : correctivColors.blue;
@@ -126,11 +132,24 @@ renderChart({
       top: 20,
       right: 20
     },
-    description: 'Suche nach Deiner Sparkasse oder Postleitzahl'
+    description: 'Suche nach Deiner Sparkasse'
   },
   xTicks: 0,
-  xLabel: 'Größe der Sparkasse',
-  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €'
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
+  legend: {
+    position: {
+      top: 20,
+      left: 55
+    }
+  },
+  annotation: {
+    position: {
+      bottom: 10,
+      right: 20
+    },
+    content: 'Je weiter rechts eine Sparkasse hier erscheint, desto größer ist sie. <a href="https://correctiv.org/recherchen/sparkassen/artikel/2016/07/18/datenauswertung-von-vorstandsgehaelter/">So haben wir die Größe der Sparkassen berechnet</a>'
+  },
+  groupCol: 'state'
 });
 
 
@@ -154,7 +173,7 @@ renderChart({
   labelCol: 'name',
   tooltip: {
     position: {
-      top: 20,
+      top: 53,
       left: 55
     },
     bodyTempl: '<strong>{sparkasse}</strong>\
@@ -190,7 +209,14 @@ renderChart({
       .style('text-anchor', 'end')
       .style('font-size', '12px')
       .text('Empfehlung der Sparkassenverbände in NRW: 15 %');
-  }
+  },
+  legend: {
+    position: {
+      top: 20,
+      left: 55
+    }
+  },
+  groupCol: 'state'
 
 });
 
