@@ -4,6 +4,7 @@ export default class {
   }
 
   run(chart) {
+    this._getFuncs(chart)
     this._getDomains(chart)
     this._render(chart)
   }
@@ -23,6 +24,10 @@ export default class {
   _render(chart) {
     this._getAxes(chart)
     this._draw(chart)
+  }
+
+  _getFuncs(chart) {
+    chart.getColor = this.playbook.getColor(chart)
   }
 
   _getDomains(chart) {

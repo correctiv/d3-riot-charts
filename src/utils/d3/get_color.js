@@ -8,7 +8,10 @@ import {scaleOrdinal} from '../../d3_packages.js'
  *  a mapping (object), the color for the given value will be returned
  *  a callable - will just return as is
 **/
-export default function({color, groupCol}){
+export default ({
+  color,
+  groupCol
+}) => {
 
   if (typeof color === 'string') {
     return () => {

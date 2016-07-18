@@ -28,6 +28,7 @@ renderChart({
   dataUrl: 'data/sample_barchart.csv',
   width: 800,
   height: 400,
+  wrapperHeight: 420,
   xCol: 'name',
   yCol: 'bezuege_quote_zu_2013',
   showXAxis: false,
@@ -63,6 +64,11 @@ renderChart({
         .attr('x', 2)
         .text('Quotengrenze')
     };
+  },
+  legend: true,
+  groupCol: 'position',
+  annotation: {
+    content: 'Ich bin eine Anmerkung!<strong>html</strong>'
   }
 });
 
@@ -107,6 +113,9 @@ renderChart({
     getYDomain: function() {
       return [100, 800];
     }
+  },
+  legend: {
+    cssClasses: '-boxed'
   }
 });
 

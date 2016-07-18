@@ -5,6 +5,7 @@ import renderAxis from '../utils/d3/render_axis.js'
 import renderAxisLabel from '../utils/d3/render_axis_label.js'
 import addTooltipEvents from '../utils/d3/add_tooltip_events.js'
 import drawExtra from '../utils/d3/draw_extra.js'
+import getColor from '../utils/d3/get_color.js'
 
 export default class {
   constructor() {
@@ -21,5 +22,6 @@ export default class {
     this.drawData = false  // to be specified in subclasses
     this.drawExtra = drawExtra
     this.addEvents = addTooltipEvents
+    this.getColor = getColor
   }
 }
