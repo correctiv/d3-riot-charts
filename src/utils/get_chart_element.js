@@ -9,9 +9,7 @@ import {select} from '../d3_packages.js'
  **/
 export default ({
   elementId,
-  wrapperClass,
-  wrapperWidth,
-  wrapperHeight
+  wrapperClass
 }) => {
   let element = select('#'+elementId)
   if (element.empty()) {
@@ -19,9 +17,8 @@ export default ({
       .append('div')
       .attr('id', elementId)
   }
-  element
-    .style('width', wrapperWidth+'px')
-    .style('height', wrapperHeight+'px')
-    .classed(wrapperClass, true)
+
+  element.classed(wrapperClass, true)
+
   return element
 }

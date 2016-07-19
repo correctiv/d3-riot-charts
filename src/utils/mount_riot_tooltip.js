@@ -9,6 +9,7 @@ export default function({
   element,
   tooltip,
   margin,
+  breakpoint,
   control
 }) {
   let {
@@ -19,11 +20,18 @@ export default function({
   let riotWrapperId = elementId+'-riot-tooltip-wrapper'
 
   // add tooltipWrapper
-  element
+  let tooltipSel = element
     .append('div')
     .attr('id', riotWrapperId)
 
   position = getPositionStr(position)
 
-  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {template, position, control})
+  riot.mount('div#'+riotWrapperId, 'riot-tooltip', {
+    breakpoint,
+    template,
+    position,
+    control
+  })
+
+  return tooltipSel.node()
 }

@@ -1,18 +1,18 @@
+import Immutable from 'immutable'
 import {schemeCategory10} from '../d3_packages.js'
-import fillUpNestedObjects from '../utils/fill_up_nested_objects.js'
 
-const DEFAULTS = {
+const DEFAULTS = Immutable.Map({
   width: 800,
   height: 500,
   wrapperWidth: 800,
   wrapperHeight: 500,
   wrapperClass: 'simple-charts',
-  margin: {
+  margin: Immutable.Map({
     top: 20,
     right: 20,
     bottom: 30,
     left: 30
-  },
+  }),
   showXAxis: true,
   showYAxis: true,
   xScaleNice: true,
@@ -26,13 +26,21 @@ const DEFAULTS = {
   tooltip: false,
   search: false,
   legend: false,
+  annotation: false,
   clearSvg: true,
   drawExtra: false,
   sizeRange: [3, 8],
   size: 6,
-  playbook: {}
-}
+  playbook: Immutable.Map({}),
+  breakpoints: Immutable.Map({
+    small: 480,
+    medium: 768,
+    large: 1280
+  }),
+  elements: Immutable.Map({}),
+  elementsOrder: ['searchbox', 'legend', '__svg__',  'annotation', 'tooltip']
+})
 
 export default opts => {
-  return fillUpNestedObjects(opts, DEFAULTS)
+  return DEFAULTS.merge(opts).toJS()
 }
