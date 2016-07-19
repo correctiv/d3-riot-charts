@@ -8,7 +8,9 @@ export default function({
   elementId,
   element,
   margin,
-  annotation
+  annotation,
+  breakpoint,
+  control
 }) {
   let riotWrapperId = elementId+'-riot-annotation-wrapper'
   let {
@@ -19,14 +21,18 @@ export default function({
     content
   } = annotation
 
-  element
+  let annotationSel = element
     .append('div')
     .attr('id', riotWrapperId)
 
   position = getPositionStr(position)
 
   riot.mount('div#'+riotWrapperId, 'riot-annotation', {
+    control,
+    breakpoint,
     position,
     content
   })
+
+  return annotationSel.node()
 }

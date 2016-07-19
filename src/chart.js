@@ -1,4 +1,5 @@
 import getData from './loader.js'
+import fixDimensions from './utils/fix_dimensions.js'
 import initSvg from './utils/d3/init_svg.js'
 import addSvgEvents from './utils/d3/add_svg_events.js'
 import updateSvg from './utils/d3/update_svg.js'
@@ -7,6 +8,8 @@ import getChartElement from './utils/get_chart_element.js'
 import {PLAYBOOKS} from './playbooks/charts.js'
 import Settings from './playbooks/defaults.js'
 import setUpResponsiveness from './utils/setup_responsiveness.js'
+import updateBreakpoints from './utils/update_breakpoints.js'
+import getBreakpoints from './utils/get_breakpoints.js'
 import updateDimensions from './utils/update_dimensions.js'
 import getTooltipTemplate from './utils/get_tooltip_template.js'
 import mountRiotTooltip from './utils/mount_riot_tooltip.js'
@@ -15,6 +18,7 @@ import mountRiotSearchbox from './utils/mount_riot_searchbox.js'
 import getLegendItems from './utils/get_legend_items.js'
 import mountRiotLegend from './utils/mount_riot_legend.js'
 import mountRiotAnnotation from './utils/mount_riot_annotation.js'
+import orderElements from './utils/order_elements.js'
 import ChartStore from './stores/chart_store.js'
 
 /**
@@ -82,14 +86,19 @@ export default class {
       this.search ? this._setupSearch() : null
       this.legend ? this._initLegend() : null
       this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
+
+      // sort elements for correct display in smaller windows
+      orderElements(this)
     })
   }
 
   resize() {
     let doResize = updateDimensions(this)
     if (doResize) {
+      updateBreakpoints(this)
       updateElement(this)
       updateSvg(this)
+      this.control.trigger(riot.EVT.updatePositions, this.breakpoint)
       this.playbook.reRender(this)
       this.control.trigger(riot.EVT.chartDrawed, this.drawedSelection)
     }
@@ -97,39 +106,24 @@ export default class {
 
   _init() {
 
-    // fix dimensions
-    let {
-      height,
-      width,
-      wrapperWidth,
-      wrapperHeight,
-      margin
-    } = this
-
-    this.wrapperWidth = wrapperWidth < width ? width : wrapperWidth
-    this.wrapperHeight = wrapperHeight < height ? height : wrapperHeight
-
-    this.height = height - margin.top - margin.bottom
-    this.width = width - margin.left - margin.right
-
-    this.xTicksRatio = this.xTicks / this.width
-    this.yTicksRatio = this.yTicks / this.height
+    fixDimensions(this)
 
     if (this.responsive) {
       this._setupResponsiveness()
     }
 
     this.element = getChartElement(this)
+    updateElement(this)
     let {svgEl, svg} = initSvg(this)
     this.svg = svg
     this.svgEl = svgEl
 
-    if (this.tooltip) {
-      this._initTooltip()
-    }
-
     if (this.annotation) {
       this._initAnnotation()
+    }
+
+    if (this.tooltip) {
+      this._initTooltip()
     }
 
     if (this.clearSvg) {
@@ -140,9 +134,16 @@ export default class {
 
   _setupResponsiveness() {
     setUpResponsiveness(this)
+
+    // initial conversion of breakpoint object into array
+    this.breakpoints = getBreakpoints(this)
+
+    this._setupTicks()
+
     window.addEventListener('resize', this.resize.bind(this))
     // maybe we have already a smaller window than the given values:
     updateDimensions(this)
+    updateBreakpoints(this)
   }
 
   _setupPlaybook() {
@@ -155,7 +156,7 @@ export default class {
       this.tooltip = {}
     }
     this.tooltip.template = getTooltipTemplate(this)
-    mountRiotTooltip(this)
+    this.elements.tooltip = mountRiotTooltip(this)
   }
 
   _initLegend() {
@@ -164,15 +165,20 @@ export default class {
       this.legend = {}
     }
     this.legend.legendItems = getLegendItems(this)
-    mountRiotLegend(this)
+    this.elements.legend = mountRiotLegend(this)
   }
 
   _initAnnotation() {
-    mountRiotAnnotation(this)
+    this.elements.annotation = mountRiotAnnotation(this)
   }
 
   _setupSearch() {
     this.search.doSearch = getSearchFunc(this)
-    mountRiotSearchbox(this)
+    this.elements.searchbox = mountRiotSearchbox(this)
+  }
+
+  _setupTicks() {
+    this.xTicksRatio = this.xTicks / this.width
+    this.yTicksRatio = this.yTicks / this.height
   }
 }

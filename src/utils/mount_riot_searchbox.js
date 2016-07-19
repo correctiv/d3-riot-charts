@@ -10,6 +10,7 @@ export default function({
   search,
   margin,
   control,
+  breakpoint,
   labelCol
 }) {
   let riotWrapperId = elementId+'-riot-searchbox-wrapper'
@@ -25,7 +26,7 @@ export default function({
     throw new Error('setup search: need a "labelCol" or "resultTempl" property')
   }
 
-  element
+  let searchboxSel = element
     .append('div')
     .attr('id', riotWrapperId)
 
@@ -37,7 +38,10 @@ export default function({
     doSearch,
     description,
     control,
+    breakpoint,
     labelCol,
     resultTempl
   })
+
+  return searchboxSel.node()
 }

@@ -31,7 +31,14 @@ const DEFAULTS = Immutable.Map({
   drawExtra: false,
   sizeRange: [3, 8],
   size: 6,
-  playbook: Immutable.Map({})
+  playbook: Immutable.Map({}),
+  breakpoints: Immutable.Map({
+    small: 480,
+    medium: 768,
+    large: 1280
+  }),
+  elements: Immutable.Map({}),
+  elementsOrder: ['searchbox', 'legend', '__svg__',  'annotation', 'tooltip']
 })
 
 export default opts => {

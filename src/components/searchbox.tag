@@ -1,6 +1,7 @@
 import format from 'string-template'
+import makeResponsive from '../utils/tags/setup_responsive_tag.js'
 
-<riot-searchbox class="simple-charts__searchbox" style={ opts.position }>
+<riot-searchbox class="simple-charts__searchbox" style={ position }>
 
   <label>{ opts.description }</label>
   <input type="text" oninput={ search } />
@@ -11,6 +12,8 @@ import format from 'string-template'
       { label }
     </li>
   </ul>
+
+  makeResponsive(this)
 
   this.results = []
 

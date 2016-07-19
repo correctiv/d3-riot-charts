@@ -8,7 +8,9 @@ export default function({
   elementId,
   element,
   margin,
-  legend
+  legend,
+  breakpoint,
+  control
 }) {
   let riotWrapperId = elementId+'-riot-legend-wrapper'
   let {
@@ -17,15 +19,19 @@ export default function({
     cssClasses
   } = legend
 
-  element
+  let legendSel = element
     .append('div')
     .attr('id', riotWrapperId)
 
   position = getPositionStr(position)
 
   riot.mount('div#'+riotWrapperId, 'riot-legend', {
+    control,
+    breakpoint,
     position,
     legendItems,
     cssClasses
   })
+
+  return legendSel.node()
 }

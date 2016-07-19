@@ -22,15 +22,15 @@ export default (chart) => {
 
   chart._svgWidthRatio = (width + left + right) / wrapperWidth
 
+  let wFix = chart.margin.left + chart.margin.right
   chart._getSvgWidth = (wrapperWidth) => {
-    let wFix = chart.margin.left + chart.margin.right
     return parseInt(wrapperWidth * chart._svgWidthRatio) - wFix
   }
 
   chart._svgHeightRatio = (height + top + bottom) / wrapperHeight
 
+  let hFix = chart.margin.top + chart.margin.bottom
   chart._getSvgHeight = (wrapperHeight) => {
-    let hFix = chart.margin.top + chart.margin.bottom
     return parseInt(wrapperHeight * chart._svgHeightRatio) - hFix
   }
 
