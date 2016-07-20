@@ -56,11 +56,13 @@ renderChart({
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
   drawExtra: function(c) {
     c.svg.append('line')
-      .attr('x1', c.xScale(8) - 10)
+      .attr('x1', c.xScale(7.8) - 5)
       .attr('y1', c.yScale(900))
-      .attr('x2', c.xScale(8) - 10)
-      .attr('y2', c.yScale(400))
+      .attr('x2', c.xScale(7.8) - 5)
+      .attr('y2', c.yScale(0) - 5)
       .style('stroke', 'black')
+      .style('stroke-width', '1')
+      .style('stroke-dasharray', '10,10')
       .style('shape-rendering', 'crispEdges');
     c.svg.append('text')
       .attr('y', c.yScale(900)+10)
