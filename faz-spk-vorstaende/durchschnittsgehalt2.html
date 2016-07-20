@@ -50,12 +50,13 @@ renderChart({
     }
   },
   search: {
-    searchCols: ['sparkasse'],
+    searchCols: ['sparkasse', 'plz'],
     position: {
       top: 20,
-      right: 20
+      right: 70
     },
-    description: 'Suche nach Deiner Sparkasse'
+    description: 'Suche nach Deiner Sparkasse oder Postleitzahl',
+    failMsg: 'Leider wurde keine Sparkasse zu "{searchStr}" gefunden.'
   },
   xTicks: 0,
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',

@@ -1,288 +1,269 @@
-sparkasse,state,bemessung_2014,gesamtbezuege_2014,durchschnitt_val,durchschnittsgehalt_2014,bilanzsumme_2014,mitarbeiter_2014,mitarbeiter_val,anzahl_vorstaende_2014
-Sparkasse Battenberg,Hessen,0.055684695,239 T. €,119.5,"119,5 T. €","186,6 Mio. €",65,65.0,2
-Stadtsparkasse Grebenstein,Hessen,0.050684293,254 T. €,87.58620689655173,"87,6 T. €","188,2 Mio. €",62,62.0,"2,9"
-Stadtsparkasse Borken,Hessen,0.04345378,278 T. €,139.0,139 T. €,"150,7 Mio. €",48,48.0,2
-Sparkasse Laubach-Hungen,Hessen,0.0670256386,291 T. €,145.5,"145,5 T. €","237,8 Mio. €",81,81.0,2
-Stadtsparkasse Schwalmstadt,Hessen,0.053798237,291 T. €,145.5,"145,5 T. €","193,6 Mio. €",48,48.0,2
-Sparkasse Hohenwestedt,Schleswig-Holstein,0.065397131,305 T. €,152.5,"152,5 T. €","239,5 Mio. €",47,47.0,2
-Stadtsparkasse Haltern am See,Nordrhein-Westfalen,0.0785124389,315 T. €,157.5,"157,5 T. €","295,9 Mio. €",109,109.0,2
-Kreissparkasse Hildburghausen,Thüringen,0.1356695232,319 T. €,159.5,"159,5 T. €","524,7 Mio. €",134,134.0,2
-Sparkasse Geseke,Nordrhein-Westfalen,0.0736237869,329 T. €,164.5,"164,5 T. €",269 Mio. €,80,80.0,2
-Sparkasse Unstrut-Hainich,Thüringen,0.298899184,343 T. €,171.5,"171,5 T. €","1,1 Mrd. €",290,290.0,2
-Sparkasse Schönau-Todtnau,Baden-Württemberg,0.0871487569,345 T. €,172.5,"172,5 T. €","328,8 Mio. €",80,80.0,2
-Sparkasse St. Blasien,Baden-Württemberg,0.0970374468,349 T. €,174.5,"174,5 T. €","362,2 Mio. €",83,83.0,2
-Stadtsparkasse Schmallenberg,Nordrhein-Westfalen,0.10110164,353 T. €,176.5,"176,5 T. €","376,3 Mio. €",88,88.0,2
-Stadtsparkasse Blomberg/Lippe,Nordrhein-Westfalen,0.07559,360 T. €,180.0,180 T. €,290 Mio. €,75,75.0,2
-Stadtsparkasse Felsberg,Hessen,0.0424412175,361 T. €,120.33333333333333,"120,3 T. €","156,1 Mio. €",42,42.0,3
-Stadtsparkasse Völklingen,Saarland,0.0973042019,"366,3 T. €",183.129,"183,1 T. €","367,7 Mio. €",90,90.0,2
-Sparkasse Sonneberg,Thüringen,0.17445543,368 T. €,184.0,184 T. €,"614,6 Mio. €",216,216.0,2
-Kreissparkasse St. Wendel,Saarland,0.318162947,"370,9 T. €",185.4495,"185,4 T. €","1,1 Mrd. €",311,311.0,2
-Sparkasse Hennstedt-Wesselburen,Schleswig-Holstein,0.164959873,380 T. €,126.66666666666667,"126,7 T. €","671,5 Mio. €",173,173.0,3
-Sparkasse Altenburger Land,Thüringen,0.2584887428,384 T. €,192.0,192 T. €,"981,7 Mio. €",239,239.0,2
-Sparkasse Finnentrop,Nordrhein-Westfalen,0.076601953,396 T. €,198.0,198 T. €,"296,5 Mio. €",94,94.0,2
-Stadtsparkasse Freudenberg,Nordrhein-Westfalen,0.0843755068,398 T. €,199.0,199 T. €,"285,3 Mio. €",91,91.0,2
-Sparkasse Salem-Heiligenberg,Baden-Württemberg,0.219146389,399 T. €,199.5,"199,5 T. €","825,2 Mio. €",139,139.0,2
-Stadtsparkasse Porta Westfalica,Nordrhein-Westfalen,0.1166310689,399 T. €,199.5,"199,5 T. €","449,3 Mio. €",108,108.0,2
-Stadtsparkasse Versmold,Nordrhein-Westfalen,0.0834645362,400 T. €,200.0,200 T. €,"301,6 Mio. €",79,79.0,2
-Kreissparkasse Gelnhausen,Hessen,0.318724873,401 T. €,190.95238095238093,191 T. €,"1,1 Mrd. €",320,320.0,"2,1"
-Sparkasse Ennepetal-Breckerfeld,Nordrhein-Westfalen,0.197475103,"404,2 T. €",202.1,"202,1 T. €","704,5 Mio. €",145,145.0,2
-Sparkasse Stockach,Baden-Württemberg,0.145794314,406 T. €,203.0,203 T. €,587 Mio. €,113,113.0,2
-Stadtsparkasse Hilchenbach,Nordrhein-Westfalen,0.0806856927,"411,5 T. €",205.75,"205,8 T. €","311,5 Mio. €",83,83.0,2
-Sparkasse der Stadt Straelen,Nordrhein-Westfalen,0.0792001304,"411,7 T. €",205.829,"205,8 T. €","314,2 Mio. €",92,92.0,2
-Sparkasse Grünberg,Hessen,0.0949588417,413 T. €,206.5,"206,5 T. €","317,2 Mio. €",88,88.0,2
-Kreissparkasse Eichsfeld,Thüringen,0.3256310599,414 T. €,207.0,207 T. €,"1,2 Mrd. €",282,282.0,2
-Sparkasse Arnstadt-Ilmenau,Thüringen,0.311902626,418 T. €,209.0,209 T. €,"1,1 Mrd. €",285,285.0,2
-Sparkasse Erwitte-Anröchte,Nordrhein-Westfalen,0.0897904694,418 T. €,209.0,209 T. €,"331,6 Mio. €",113,113.0,2
-Kreissparkasse Limburg,Hessen,0.391695995,422 T. €,211.0,211 T. €,"1,4 Mrd. €",417,417.0,2
-Sparkasse Freyung-Grafenau,Bayern,0.1888051022,422 T. €,211.0,211 T. €,"702,7 Mio. €",225,225.0,2
-Sparkasse Pfullendorf-Messkirch,Baden-Württemberg,0.186288189,424 T. €,212.0,212 T. €,"709,2 Mio. €",152,152.0,2
-Sparkasse Bad Neustadt a.d. Saale,Bayern,0.33834206304000003,426 T. €,213.0,213 T. €,"1,2 Mrd. €",318,318.0,2
-Sparkasse Rietberg,Nordrhein-Westfalen,0.1111925234,431 T. €,215.5,"215,5 T. €","407,2 Mio. €",110,110.0,2
-Stadtsparkasse Herdecke,Nordrhein-Westfalen,0.1115362598,434 T. €,217.0,217 T. €,"390,7 Mio. €",100,100.0,2
-Sparkasse Neunkirchen,Saarland,0.441237974,"434,2 T. €",217.089,"217,1 T. €","1,4 Mrd. €",401,401.0,2
-Kreissparkasse Höchstadt/Aisch,Bayern,0.2256961004,436 T. €,218.0,218 T. €,"795,2 Mio. €",242,242.0,2
-Stadtsparkasse Rahden,Nordrhein-Westfalen,0.1141658502,436 T. €,218.0,218 T. €,"439,1 Mio. €",92,92.0,2
-Kreissparkasse Gotha,Thüringen,0.340869759,439 T. €,219.5,"219,5 T. €","1,2 Mrd. €",278,278.0,2
-Kyffhäusersparkasse Artern-Sondershausen,Thüringen,0.232710142,443 T. €,221.5,"221,5 T. €",900 Mio. €,224,224.0,2
-Kreissparkasse Weilburg,Hessen,0.26699787,445 T. €,222.5,"222,5 T. €","964,1 Mio. €",246,246.0,2
-Vereinigte Sparkassen Gunzenhausen,Bayern,0.1993642064,448 T. €,224.0,224 T. €,"754,1 Mio. €",191,191.0,2
-Kreissparkasse Schlüchtern,Hessen,0.137869321,449 T. €,224.5,"224,5 T. €",495 Mio. €,132,132.0,2
-Stadtsparkasse Bad Honnef,Nordrhein-Westfalen,0.13285086,"449,8 T. €",224.9,"224,9 T. €","516,4 Mio. €",118,118.0,2
-Kreissparkasse Saale-Orla,Thüringen,0.232345981,452 T. €,226.0,226 T. €,"871,1 Mio. €",261,261.0,2
-Stadtsparkasse Delbrück,Nordrhein-Westfalen,0.0794589147,453 T. €,226.5,"226,5 T. €","296,1 Mio. €",89,89.0,2
-Stadt- und Kreissparkasse Moosburg,Bayern,0.193138035,456 T. €,228.0,228 T. €,"606,1 Mio. €",192,192.0,2
-Stadtsparkasse Dessau,Sachsen-Anhalt,0.19764889,458 T. €,229.0,229 T. €,"723,8 Mio. €",194,194.0,2
-Sparkasse Oberpfalz Nord,Bayern,0.3722874486,462 T. €,231.0,231 T. €,"1,4 Mrd. €",419,419.0,2
-Kreis- und Stadtsparkasse Wasserburg am Inn,Bayern,0.2992834452,462 T. €,231.0,231 T. €,"981,7 Mio. €",247,247.0,2
-Sparkasse Elmshorn,Schleswig-Holstein,0.256451344,465 T. €,232.5,"232,5 T. €","861,2 Mio. €",203,203.0,2
-Sparkasse Bühl,Baden-Württemberg,0.225456431,469 T. €,234.5,"234,5 T. €","811,8 Mio. €",181,181.0,2
-Sparkasse Neuburg-Rain,Bayern,0.2679128282,472 T. €,236.0,236 T. €,"916,2 Mio. €",261,261.0,2
-Kreissparkasse Stendal,Sachsen-Anhalt,0.310908589,474 T. €,237.0,237 T. €,"1,2 Mrd. €",309,309.0,2
-Sparkasse Gronau,Nordrhein-Westfalen,0.1181400419,474 T. €,237.0,237 T. €,"452,4 Mio. €",122,122.0,2
-Sparkasse Ostunterfranken,Bayern,0.3313982914,476 T. €,238.0,238 T. €,"1,2 Mrd. €",316,316.0,2
-Sparkasse Wetzlar,Hessen,0.621772378,479 T. €,239.5,"239,5 T. €","2,1 Mrd. €",585,585.0,2
-Sparkasse Burbach-Neunkirchen,Nordrhein-Westfalen,0.1372336392,480 T. €,240.0,240 T. €,"537,4 Mio. €",121,121.0,2
-Kreissparkasse Garmisch-Partenkirchen,Bayern,0.2855364084,481 T. €,240.5,"240,5 T. €","1,1 Mrd. €",309,309.0,2
-Rhön-Rennsteig-Sparkasse,Thüringen,0.495385706,482 T. €,241.0,241 T. €,"1,6 Mrd. €",472,472.0,2
-Sparkasse Meschede,Nordrhein-Westfalen,0.159747226,491 T. €,245.5,"245,5 T. €","606,8 Mio. €",151,151.0,2
-Stadt-Sparkasse Haan,Nordrhein-Westfalen,0.178359781,"491,1 T. €",245.5475,"245,5 T. €",673 Mio. €,131,131.0,2
-Verbundsparkasse Emsdetten-Ochtrup,Nordrhein-Westfalen,0.232184853,"491,4 T. €",245.7,"245,7 T. €","792,8 Mio. €",214,214.0,2
-Bordesholmer Sparkasse AG,Schleswig-Holstein,0.201244632,492 T. €,246.0,246 T. €,"713,1 Mio. €",155,155.0,2
-Stadtsparkasse Lengerich,Nordrhein-Westfalen,0.1078483368,493 T. €,246.5,"246,5 T. €","414,3 Mio. €",108,108.0,2
-Sparkasse Eichstätt,Bayern,0.2735556994,499 T. €,249.5,"249,5 T. €",1 Mrd. €,260,260.0,2
-Stadtsparkasse Emmerich-Rees,Nordrhein-Westfalen,0.218463563,499 T. €,249.5,"249,5 T. €","795,9 Mio. €",209,209.0,2
-Sparkasse Waldeck-Frankenberg,Hessen,0.5536279416,500 T. €,250.0,250 T. €,2 Mrd. €,517,517.0,2
-Sparkasse Odenwaldkreis,Hessen,0.42780837,503 T. €,251.5,"251,5 T. €","1,5 Mrd. €",407,407.0,2
-Kreissparkasse Nordhausen,Thüringen,0.294538454,505 T. €,252.5,"252,5 T. €","1,1 Mrd. €",252,252.0,2
-Sparkasse Bad Kissingen,Bayern,0.3974799784,506 T. €,253.0,253 T. €,"1,4 Mrd. €",370,370.0,2
-Sparkasse Dillenburg,Hessen,0.353921265,506 T. €,253.0,253 T. €,"1,2 Mrd. €",360,360.0,2
-Sparkasse im Landkreis Cham,Bayern,0.4349825043,512 T. €,256.0,256 T. €,"1,5 Mrd. €",379,379.0,2
-Stadtsparkasse Gladbeck,Nordrhein-Westfalen,0.208738142,512 T. €,256.0,256 T. €,"744,9 Mio. €",211,211.0,2
-Sparkasse Bergkamen-Bönen,Nordrhein-Westfalen,0.156127353,533 T. €,266.5,"266,5 T. €","585,4 Mio. €",109,109.0,2
-Sparkasse Radevormwald-Hückeswagen,Nordrhein-Westfalen,0.160710846,"533,9 T. €",266.95,"266,9 T. €","536,8 Mio. €",156,156.0,2
-Sparkasse Freising,Bayern,0.3854066561,535 T. €,267.5,"267,5 T. €","1,3 Mrd. €",358,358.0,2
-Stadtsparkasse Schwerte,Nordrhein-Westfalen,0.180393009,538 T. €,269.0,269 T. €,"661,2 Mio. €",171,171.0,2
-Städtische Sparkasse zu Schwelm,Nordrhein-Westfalen,0.161466931,542 T. €,271.0,271 T. €,"590,2 Mio. €",145,145.0,2
-Stadtsparkasse Sprockhövel,Nordrhein-Westfalen,0.126614792,543 T. €,271.5,"271,5 T. €",436 Mio. €,109,109.0,2
-Verbandssparkasse Goch-Kevelaer-Weeze,Nordrhein-Westfalen,0.142855837,547 T. €,273.5,"273,5 T. €","570,3 Mio. €",111,111.0,2
-Stadtsparkasse Wetter,Nordrhein-Westfalen,0.1447725901,547 T. €,273.5,"273,5 T. €","542,8 Mio. €",118,118.0,2
-Sparkasse Kleve,Nordrhein-Westfalen,0.333791681,549 T. €,274.5,"274,5 T. €","1,3 Mrd. €",335,335.0,2
-Stadtsparkasse Remscheid,Nordrhein-Westfalen,0.412966822,"552,9 T. €",276.45,"276,4 T. €","1,4 Mrd. €",382,382.0,2
-Kreis- und Stadtsparkasse Kaufbeuren,Bayern,0.4149097096,553 T. €,276.5,"276,5 T. €","1,4 Mrd. €",336,336.0,2
-Wartburg-Sparkasse,Thüringen,0.429813638,555 T. €,222.0,222 T. €,"1,6 Mrd. €",392,392.0,"2,5"
-Stadtsparkasse Bocholt,Nordrhein-Westfalen,0.248314047,556 T. €,278.0,278 T. €,"1,1 Mrd. €",237,237.0,2
-Sparkasse Staufen-Breisach,Baden-Württemberg,0.343349058,558 T. €,279.0,279 T. €,"1,2 Mrd. €",304,304.0,2
-Sparkasse Olpe-Drolshagen-Wenden,Nordrhein-Westfalen,0.219612682,559 T. €,279.5,"279,5 T. €",862 Mio. €,200,200.0,2
-Sparkasse Wittgenstein,Nordrhein-Westfalen,0.231034294,560 T. €,280.0,280 T. €,"838,8 Mio. €",243,243.0,2
-Sparkasse der Homburgischen Gemeinden,Nordrhein-Westfalen,0.199769086,"560,3 T. €",280.15,"280,1 T. €","757,6 Mio. €",172,172.0,2
-Sparkasse Hattingen,Nordrhein-Westfalen,0.251695171,568 T. €,284.0,284 T. €,"906,1 Mio. €",212,212.0,2
-Sparkasse Attendorn-Lennestadt-Kirchhundem,Nordrhein-Westfalen,0.292248153,"568,2 T. €",284.1,"284,1 T. €","1,1 Mrd. €",240,240.0,2
-Stadtsparkasse Bad Oeynhausen,Nordrhein-Westfalen,0.196835842,571 T. €,285.5,"285,5 T. €",739 Mio. €,208,208.0,2
-Sparkasse Forchheim,Bayern,0.4490416446,572 T. €,286.0,286 T. €,"1,6 Mrd. €",414,414.0,2
-Kreis- und Stadtsparkasse Dillingen,Bayern,0.3517496441,572 T. €,286.0,286 T. €,"1,2 Mrd. €",381,381.0,2
-Sparkasse Gütersloh,Nordrhein-Westfalen,0.52300949,574 T. €,382.6666666666667,"382,7 T. €","1,9 Mrd. €",397,397.0,"1,5"
-Stadtsparkasse Wermelskirchen,Nordrhein-Westfalen,0.170510622,"574,6 T. €",287.3,"287,3 T. €","640,6 Mio. €",147,147.0,2
-Stadtsparkasse Werne,Nordrhein-Westfalen,0.154527775,576 T. €,288.0,288 T. €,"595,9 Mio. €",131,131.0,2
-Sparkasse Merzig-Wadern,Saarland,0.467814554,577 T. €,288.5,"288,5 T. €","1,6 Mrd. €",436,436.0,2
-Kreissparkasse Kelheim,Bayern,0.4958393533,579 T. €,289.5,"289,5 T. €","1,8 Mrd. €",528,528.0,2
-Sparkasse Werl,Nordrhein-Westfalen,0.200861663,579 T. €,289.5,"289,5 T. €",742 Mio. €,167,167.0,2
-Sparkasse Donnersberg,Rheinland-Pfalz,0.342020855,588 T. €,294.0,294 T. €,"1,4 Mrd. €",271,271.0,2
-Sparkasse Günzburg-Krumbach,Bayern,0.5011799742,593 T. €,296.5,"296,5 T. €","1,8 Mrd. €",426,426.0,2
-Sparkasse Kierspe-Meinerzhagen,Nordrhein-Westfalen,0.187552717,597 T. €,298.5,"298,5 T. €","672,6 Mio. €",146,146.0,2
-Sparkasse Mansfeld-Südharz,Sachsen-Anhalt,0.398473934,599 T. €,299.5,"299,5 T. €","1,4 Mrd. €",317,317.0,2
-Sparkasse Werra-Meißner,Hessen,0.490561366,600 T. €,300.0,300 T. €,"1,7 Mrd. €",404,404.0,2
-Sparkasse Bensheim,Hessen,0.5140658185,601 T. €,300.5,"300,5 T. €","1,8 Mrd. €",424,424.0,2
-Kreissparkasse Schongau,Bayern,0.2105262187,603 T. €,206.5068493150685,"206,5 T. €","763,8 Mio. €",213,213.0,"2,92"
-Stadtsparkasse Gevelsberg,Nordrhein-Westfalen,0.243959408,"603,3 T. €",301.65,"301,6 T. €","910,7 Mio. €",148,148.0,2
-Sparkasse Starkenburg,Hessen,0.6014875461,606 T. €,303.0,303 T. €,"1,9 Mrd. €",414,414.0,2
-Verbands-Sparkasse Wesel,Nordrhein-Westfalen,0.4373443609,606 T. €,303.0,303 T. €,"1,7 Mrd. €",403,403.0,2
-Sparkasse Hochsauerland,Nordrhein-Westfalen,0.29988991,606 T. €,303.0,303 T. €,"1,2 Mrd. €",305,305.0,2
-Kreissparkasse Saarpfalz,Saarland,0.481667239,610 T. €,305.0,305 T. €,"1,7 Mrd. €",451,451.0,2
-Kreissparkasse Saalfeld-Rudolstadt,Thüringen,0.313696109,612 T. €,204.0,204 T. €,"1,2 Mrd. €",302,302.0,3
-Sparkasse Märkisches Sauerland Hemer-Menden,Nordrhein-Westfalen,0.3207261098,613 T. €,306.5,"306,5 T. €","1,2 Mrd. €",274,274.0,2
-Sparkasse Bad Hersfeld-Rotenburg,Hessen,0.5540114151,615 T. €,307.5,"307,5 T. €","1,8 Mrd. €",484,484.0,2
-Städtische Sparkasse Offenbach am Main,Hessen,0.365301,616 T. €,308.0,308 T. €,"1,4 Mrd. €",302,302.0,2
-Sparkasse Arnsberg-Sundern,Nordrhein-Westfalen,0.33176417,616 T. €,308.0,308 T. €,"1,1 Mrd. €",286,286.0,2
-Kreissparkasse Heidenheim,Baden-Württemberg,0.4903130782,617 T. €,308.5,"308,5 T. €","1,9 Mrd. €",386,386.0,2
-Herner Sparkasse,Nordrhein-Westfalen,0.4446124393,621 T. €,310.5,"310,5 T. €","1,6 Mrd. €",418,418.0,2
-Sparkasse Dinslaken-Voerde-Hünxe,Nordrhein-Westfalen,0.4101679549,"623,8 T. €",311.9,"311,9 T. €","1,5 Mrd. €",429,429.0,2
-Vereinigte Sparkasse im Märkischen Kreis,Nordrhein-Westfalen,0.423433677,624 T. €,312.0,312 T. €,"1,6 Mrd. €",355,355.0,2
-Sparkasse Beckum-Wadersloh,Nordrhein-Westfalen,0.222210786,626 T. €,313.0,313 T. €,"781,1 Mio. €",192,192.0,2
-Sparkasse Pfaffenhofen,Bayern,0.3344662206,630 T. €,252.0,252 T. €,"1,2 Mrd. €",327,327.0,"2,5"
-Sparkasse Kulmbach-Kronach,Bayern,0.612039248,636 T. €,318.0,318 T. €,"2,3 Mrd. €",614,614.0,2
-Sparkasse Gelsenkirchen,Nordrhein-Westfalen,0.9149445392,637 T. €,318.5,"318,5 T. €","3,1 Mrd. €",820,820.0,2
-Sparkasse Höxter,Nordrhein-Westfalen,0.381144443,637 T. €,318.5,"318,5 T. €","1,4 Mrd. €",390,390.0,2
-Sparkasse Bayreuth,Bayern,0.5663765362,645 T. €,322.5,"322,5 T. €","2,2 Mrd. €",569,569.0,2
-Sparkasse Lünen,Nordrhein-Westfalen,0.359432618,646 T. €,323.0,323 T. €,"1,4 Mrd. €",318,318.0,2
-Kreissparkasse Euskirchen,Nordrhein-Westfalen,0.4982557277,"658,8 T. €",329.4215,"329,4 T. €","1,8 Mrd. €",478,478.0,2
-Stadtsparkasse Bottrop,Nordrhein-Westfalen,0.32944165,667 T. €,333.5,"333,5 T. €","1,2 Mrd. €",309,309.0,2
-Sparkasse Lippstadt,Nordrhein-Westfalen,0.37206718,669 T. €,334.5,"334,5 T. €","1,4 Mrd. €",277,277.0,2
-Sparkasse Gummersbach-Bergneustadt,Nordrhein-Westfalen,0.341178687,"669,5 T. €",334.75,"334,8 T. €","1,2 Mrd. €",281,281.0,2
-Kreissparkasse Freudenstadt,Baden-Württemberg,0.4581339222,671 T. €,223.66666666666666,"223,7 T. €","1,7 Mrd. €",412,412.0,3
-Stadt-Sparkasse Langenfeld,Nordrhein-Westfalen,0.370756588,"679,7 T. €",339.85,"339,9 T. €","1,3 Mrd. €",254,254.0,2
-Sparkasse Witten,Nordrhein-Westfalen,0.522611799,681 T. €,340.5,"340,5 T. €",2 Mrd. €,463,463.0,2
-Sparkasse Zollernalb,Baden-Württemberg,0.9016381607,682 T. €,341.0,341 T. €,"3,2 Mrd. €",804,804.0,2
-Sparkasse Gießen,Hessen,0.5913571,686 T. €,274.4,"274,4 T. €","2,1 Mrd. €",628,628.0,"2,5"
-Sparkasse Aichach-Schrobenhausen,Bayern,0.3723524117,686 T. €,228.66666666666666,"228,7 T. €","1,2 Mrd. €",377,377.0,3
-Sparkasse Niederlausitz mit Sitz in Senftenberg,Brandenburg,0.445989213,689 T. €,344.5,"344,5 T. €","1,5 Mrd. €",335,335.0,2
-Sparkasse Rotenburg-Bremervörde,Niedersachsen,0.5208118764,690 T. €,345.0,345 T. €,"1,8 Mrd. €",471,471.0,2
-Kreissparkasse Halle,Nordrhein-Westfalen,0.356440065,690 T. €,345.0,345 T. €,"1,4 Mrd. €",245,245.0,2
-Sparkasse Jena-Saale-Holzland,Thüringen,0.4695843545,694 T. €,231.33333333333334,"231,3 T. €","1,9 Mrd. €",479,479.0,3
-Kreissparkasse Schwalm-Eder,Hessen,0.5148869898,699 T. €,349.5,"349,5 T. €",2 Mrd. €,445,445.0,2
-Sparkasse im Landkreis Schwandorf,Bayern,0.5270469335,701 T. €,300.85836909871244,"300,9 T. €","1,9 Mrd. €",534,534.0,"2,33"
-Sparkasse Dieburg,Hessen,0.736059601,"704,6 T. €",352.3,"352,3 T. €","2,2 Mrd. €",524,524.0,2
-Sparkasse zu Lübeck AG,Schleswig-Holstein,0.700964196,707 T. €,353.5,"353,5 T. €","2,4 Mrd. €",493,493.0,2
-Sparkasse Gera-Greiz,Thüringen,0.5195283085,740 T. €,246.66666666666666,"246,7 T. €","1,9 Mrd. €",494,494.0,3
-Sparkasse Mülheim an der Ruhr,Nordrhein-Westfalen,0.7265559222,"744,7 T. €",248.21833333333333,"248,2 T. €","2,7 Mrd. €",534,534.0,3
-Sparkasse Dachau,Bayern,0.7157140412,749 T. €,374.5,"374,5 T. €","2,6 Mrd. €",561,561.0,2
-Sparkasse Hochrhein,Baden-Württemberg,0.7838573377,763 T. €,339.11111111111114,"339,1 T. €","2,7 Mrd. €",567,567.0,"2,25"
-Sparkasse Berchtesgadener Land,Bayern,0.4306901371,764 T. €,254.66666666666666,"254,7 T. €","1,5 Mrd. €",394,394.0,3
-Sparkasse im Landkreis Neustadt/Aisch - Bad Windsheim,Bayern,0.52921074163,777 T. €,259.0,259 T. €,"1,8 Mrd. €",457,457.0,3
-Kreissparkasse Traunstein-Trostberg,Bayern,0.5059352992,779 T. €,259.66666666666663,"259,7 T. €",2 Mrd. €,469,469.0,3
-Vereinigte Sparkassen im Landkreis Weilheim,Bayern,0.4630822982,779 T. €,259.66666666666663,"259,7 T. €","1,6 Mrd. €",409,409.0,3
-Sparkasse Miltenberg-Obernburg,Bayern,0.5169550678,780 T. €,260.0,260 T. €,"1,8 Mrd. €",530,530.0,3
-Stadt-Sparkasse Solingen,Nordrhein-Westfalen,0.620420552,781 T. €,390.5,"390,5 T. €","2,2 Mrd. €",630,630.0,2
-Kreissparkasse Wiedenbrück,Nordrhein-Westfalen,0.5728771,784 T. €,392.0,392 T. €,"2,1 Mrd. €",366,366.0,2
-OstseeSparkasse Rostock,Mecklenburg-Vorpommern,0.817627535,792 T. €,396.0,396 T. €,3 Mrd. €,741,741.0,2
-Kreis- und Stadtsparkasse Erding - Dorfen,Bayern,0.5234468213,794 T. €,264.6666666666667,"264,7 T. €","1,9 Mrd. €",421,421.0,3
-Sparkasse Baden-Baden Gaggenau,Baden-Württemberg,0.4865835309,795 T. €,265.0,265 T. €,"1,8 Mrd. €",390,390.0,3
-Sparkasse Hildesheim,Niedersachsen,1.1856920945,805 T. €,268.3333333333333,"268,3 T. €","3,9 Mrd. €",1085,1085.0,3
-Kreissparkasse Miesbach-Tegernsee,Bayern,0.5056710061,806 T. €,268.6666666666667,"268,7 T. €","1,7 Mrd. €",380,380.0,3
-Sparkasse Zwickau,Sachsen,0.7505540274,812 T. €,406.0,406 T. €,"2,6 Mrd. €",514,514.0,2
-Sparkasse Langen-Seligenstadt,Hessen,0.943730212,817 T. €,408.5,"408,5 T. €","3,2 Mrd. €",740,740.0,2
-Vereinigte Spk. Eschenbach Neustadt Vohenstrauß,Bayern,0.4261203879,818 T. €,272.6666666666667,"272,7 T. €","1,3 Mrd. €",348,348.0,3
-Sparkasse Fulda,Hessen,1.0106091351,828 T. €,276.0,276 T. €,"3,5 Mrd. €",837,837.0,3
-Sparkasse Schweinfurt,Bayern,0.6983925426300001,833 T. €,277.6666666666667,"277,7 T. €","2,5 Mrd. €",596,596.0,3
-Sparkasse Landsberg-Dießen,Bayern,0.5163655792,856 T. €,285.3333333333333,"285,3 T. €","1,7 Mrd. €",404,404.0,3
-Sparkasse Märkisch-Oderland,Brandenburg,0.375004743,866 T. €,288.6666666666667,"288,7 T. €","1,5 Mrd. €",361,361.0,3
-Sparkasse Soest,Nordrhein-Westfalen,0.410892773,870 T. €,290.0,290 T. €,"1,5 Mrd. €",303,303.0,3
-Sparkasse Oberlausitz-Niederschlesien,Sachsen,0.7931401242,874 T. €,437.0,437 T. €,"2,9 Mrd. €",590,590.0,2
-Sparkasse Neumarkt-Parsberg,Bayern,0.63536780234,876 T. €,292.0,292 T. €,2 Mrd. €,540,540.0,3
-Sparkasse Neu-Ulm - Illertissen,Bayern,0.5516007959,876 T. €,292.0,292 T. €,"1,9 Mrd. €",525,525.0,3
-Sparkasse Bad Tölz-Wolfratshausen,Bayern,0.5946267712,888 T. €,296.0,296 T. €,"2,1 Mrd. €",491,491.0,3
-Sparkasse Südholstein,Schleswig-Holstein,1.4732214494,903 T. €,387.55364806866953,"387,6 T. €",5 Mrd. €,1052,1052.0,"2,33"
-Sparkasse Minden-Lübbecke,Nordrhein-Westfalen,0.692419742,906 T. €,302.0,302 T. €,"2,3 Mrd. €",679,679.0,3
-Kreissparkasse Saarlouis,Saarland,0.9835486722,915 T. €,305.0,305 T. €,"3,6 Mrd. €",769,769.0,3
-Vereinigte Sparkassen Stadt- und Landkreis Ansbach,Bayern,0.82861757729,920 T. €,306.6666666666667,"306,7 T. €","2,9 Mrd. €",708,708.0,3
-Sparkasse Schwäbisch Hall Crailsheim,Baden-Württemberg,0.8254863453,921 T. €,307.0,307 T. €,"3,1 Mrd. €",576,576.0,3
-Sparkasse Göttingen,Niedersachsen,0.762504386,925 T. €,308.3333333333333,"308,3 T. €","2,7 Mrd. €",730,730.0,3
-Sparkasse Meißen,Sachsen,0.6432656662,932 T. €,372.8,"372,8 T. €","2,5 Mrd. €",441,441.0,"2,5"
-Sparkasse Vorpommern,Mecklenburg-Vorpommern,0.8704397805,935 T. €,311.6666666666667,"311,7 T. €","3,2 Mrd. €",770,770.0,3
-Sparkasse Marburg-Biedenkopf,Hessen,0.9536108948,945 T. €,315.0,315 T. €,"3,2 Mrd. €",916,916.0,3
-Sparkasse Coburg-Lichtenfels,Bayern,0.6628985131,950 T. €,316.6666666666667,"316,7 T. €","2,4 Mrd. €",657,657.0,3
-Taunus Sparkasse,Hessen,1.28345,957 T. €,395.4545454545455,"395,5 T. €","4,4 Mrd. €",851,851.0,"2,42"
-Sparkasse Aschaffenburg-Alzenau,Bayern,1.0828795997,962 T. €,320.6666666666667,"320,7 T. €","3,9 Mrd. €",941,941.0,3
-Stadtsparkasse Oberhausen,Nordrhein-Westfalen,0.6465968008,964 T. €,241.00475,241 T. €,"2,4 Mrd. €",589,589.0,4
-Sparkasse der Stadt Iserlohn,Nordrhein-Westfalen,0.431787038,967 T. €,322.3333333333333,"322,3 T. €","1,5 Mrd. €",373,373.0,3
-Sparkasse Hamm,Nordrhein-Westfalen,0.447025237,970 T. €,323.3333333333333,"323,3 T. €","1,7 Mrd. €",376,376.0,3
-Sparkasse Regensburg,Bayern,1.1774737792,973 T. €,324.3333333333333,"324,3 T. €",4 Mrd. €,856,856.0,3
-Sparkasse Kraichgau,Baden-Württemberg,1.0433429887,973 T. €,324.3333333333333,"324,3 T. €","3,9 Mrd. €",768,768.0,3
-Sparkasse Amberg-Sulzbach,Bayern,0.53472634829,978 T. €,326.0,326 T. €,2 Mrd. €,527,527.0,3
-Sparkasse Markgräflerland,Baden-Württemberg,0.614480143,980 T. €,326.6666666666667,"326,7 T. €","2,3 Mrd. €",412,412.0,3
-Sparkasse Lüdenscheid,Nordrhein-Westfalen,0.5310591325,"980,4 T. €",326.8,"326,8 T. €","1,8 Mrd. €",425,425.0,3
-Sparkasse Bamberg,Bayern,0.9256449138,986 T. €,358.5454545454545,"358,5 T. €","3,5 Mrd. €",969,969.0,"2,75"
-Kreissparkasse Reutlingen,Baden-Württemberg,1.2437451261,988 T. €,329.3333333333333,"329,3 T. €","4,7 Mrd. €",1017,1017.0,3
-Sparkasse Passau,Bayern,0.7569454253,989 T. €,329.6666666666667,"329,7 T. €","2,6 Mrd. €",779,779.0,3
-Sparkasse Emsland,Niedersachsen,0.9224059551,990 T. €,330.0,330 T. €,"3,1 Mrd. €",889,889.0,3
-Sparkasse Allgäu,Bayern,1.1836326934,994 T. €,331.3333333333333,"331,3 T. €","4,2 Mrd. €",1079,1079.0,3
-Sparkasse Altötting-Mühldorf,Bayern,0.6815541913,995 T. €,331.6666666666667,"331,7 T. €","2,4 Mrd. €",617,617.0,3
-Sparkasse Memmingen-Lindau-Mindelheim,Bayern,1.0634690214,1 Mio. €,333.6666666666667,"333,7 T. €","3,7 Mrd. €",837,837.0,3
-Kreissparkasse Düsseldorf,Nordrhein-Westfalen,0.7505889963,1 Mio. €,338.5416666666667,"338,5 T. €","2,6 Mrd. €",679,679.0,3
-Stadt- und Kreissparkasse Erlangen,Bayern,1.193458632,1 Mio. €,374.9077490774908,"374,9 T. €","4,2 Mrd. €",918,918.0,"2,71"
-Sparkasse am Niederrhein,Nordrhein-Westfalen,0.8385817628,1 Mio. €,338.7333333333333,"338,7 T. €","3,1 Mrd. €",757,757.0,3
-Sparkasse Offenburg/Ortenau,Baden-Württemberg,1.0996122614,1 Mio. €,341.3333333333333,"341,3 T. €",4 Mrd. €,870,870.0,3
-Kreissparkasse Göppingen,Baden-Württemberg,1.4270521701,1 Mio. €,343.0,343 T. €,"5,1 Mrd. €",1176,1176.0,3
-Kreissparkasse Tübingen,Baden-Württemberg,1.2612693772,1 Mio. €,347.6666666666667,"347,7 T. €","4,8 Mrd. €",985,985.0,3
-Sparkasse Fürstenfeldbruck,Bayern,0.9941456375,1 Mio. €,349.0,349 T. €,"3,3 Mrd. €",812,812.0,3
-Kreissparkasse Ostalb,Baden-Württemberg,1.3022030002,"1,1 Mio. €",352.6666666666667,"352,7 T. €","4,7 Mrd. €",1068,1068.0,3
-Sparkasse Rosenheim-Bad Aibling,Bayern,1.2641738159,"1,1 Mio. €",398.49624060150376,"398,5 T. €","4,5 Mrd. €",974,974.0,"2,66"
-Sparkasse Fürth,Bayern,0.8403634101,"1,1 Mio. €",354.3333333333333,"354,3 T. €",3 Mrd. €,775,775.0,3
-Kreissparkasse Heinsberg,Nordrhein-Westfalen,0.8668226112,"1,1 Mio. €",354.5,"354,5 T. €",3 Mrd. €,702,702.0,3
-Sparkasse Hanau,Hessen,1.2378997089,"1,1 Mio. €",355.6666666666667,"355,7 T. €","4,3 Mrd. €",689,689.0,3
-Sparkasse Landshut,Bayern,0.9522736939,"1,1 Mio. €",360.3333333333333,"360,3 T. €","3,5 Mrd. €",863,863.0,3
-Sparkasse Oder-Spree,Brandenburg,0.7448915,"1,1 Mio. €",372.60273972602744,"372,6 T. €","2,5 Mrd. €",524,524.0,"2,92"
-Sparkasse Düren,Nordrhein-Westfalen,0.9541624384,"1,1 Mio. €",364.3333333333333,"364,3 T. €","3,4 Mrd. €",813,813.0,3
-Sparkasse Mittelfranken-Süd,Bayern,0.9208546425,"1,1 Mio. €",364.6666666666667,"364,7 T. €","3,5 Mrd. €",923,923.0,3
-Kreissparkasse Augsburg,Bayern,0.8779722134,"1,1 Mio. €",364.6666666666667,"364,7 T. €","3,2 Mrd. €",688,688.0,3
-Sparkasse Hagen,Nordrhein-Westfalen,0.7041618107,"1,1 Mio. €",364.6666666666667,"364,7 T. €","2,5 Mrd. €",538,538.0,3
-Sparkasse Ulm,Baden-Württemberg,1.6145199062,"1,1 Mio. €",366.0,366 T. €,"5,6 Mrd. €",1264,1264.0,3
-Sparkasse Mittelthüringen,Thüringen,1.11390394,"1,1 Mio. €",366.3333333333333,"366,3 T. €","3,9 Mrd. €",893,893.0,3
-Sparkasse Oberhessen,Hessen,1.2895025455,"1,1 Mio. €",368.6666666666667,"368,7 T. €","4,4 Mrd. €",1042,1042.0,3
-Sparkasse Niederbayern-Mitte,Bayern,1.0207118769,"1,1 Mio. €",368.6666666666667,"368,7 T. €","3,8 Mrd. €",827,827.0,3
-Sparkasse Bodensee,Baden-Württemberg,1.1566752083,"1,1 Mio. €",372.6666666666667,"372,7 T. €","4,1 Mrd. €",901,901.0,3
-Sparkasse Ingolstadt,Bayern,1.1637384427,"1,1 Mio. €",375.6666666666667,"375,7 T. €","3,8 Mrd. €",787,787.0,3
-Sparkasse Westholstein,Schleswig-Holstein,0.9099278694,"1,1 Mio. €",378.0,378 T. €,"3,3 Mrd. €",708,708.0,3
-Sparkasse Hochfranken,Bayern,1.0054431434,"1,1 Mio. €",381.3333333333333,"381,3 T. €","3,5 Mrd. €",940,940.0,3
-Kreissparkasse Groß-Gerau,Hessen,0.7732305998,"1,2 Mio. €",385.0,385 T. €,"2,7 Mrd. €",686,686.0,3
-Sparkasse Vogtland,Sachsen,0.8440424112,"1,2 Mio. €",392.0,392 T. €,3 Mrd. €,598,598.0,3
-Sparkasse Saarbrücken,Saarland,1.7576742084,"1,2 Mio. €",299.5,"299,5 T. €","6,8 Mrd. €",1283,1283.0,4
-Sparkasse Lemgo,Nordrhein-Westfalen,0.772104865,"1,2 Mio. €",403.6666666666667,"403,7 T. €","2,8 Mrd. €",630,630.0,3
-Kreis- und Stadtsparkasse Unna-Kamen,Nordrhein-Westfalen,0.6194226,"1,2 Mio. €",308.5,"308,5 T. €","2,2 Mrd. €",433,433.0,4
-Kasseler Sparkasse,Hessen,1.4430817296,"1,2 Mio. €",310.0,310 T. €,"5,2 Mrd. €",1170,1170.0,4
-Stadtsparkasse Augsburg,Bayern,1.5659339028,"1,2 Mio. €",416.0,416 T. €,"5,4 Mrd. €",1343,1343.0,3
-Sparkasse Worms-Alzey-Ried,Rheinland-Pfalz,0.7816195838,"1,3 Mio. €",418.6666666666667,"418,7 T. €","2,9 Mrd. €",613,613.0,3
-Stadt- und Kreissparkasse Darmstadt,Hessen,1.2553698216,"1,3 Mio. €",422.3333333333333,"422,3 T. €","4,1 Mrd. €",856,856.0,3
-Sparkasse Siegen,Nordrhein-Westfalen,0.8882343577,"1,3 Mio. €",422.3333333333333,"422,3 T. €","3,1 Mrd. €",796,796.0,3
-Sparkasse Hilden Ratingen Velbert,Nordrhein-Westfalen,0.9136011831,"1,3 Mio. €",422.7,"422,7 T. €","3,3 Mrd. €",789,789.0,3
-Sparkasse Herford,Nordrhein-Westfalen,1.2972289557,"1,3 Mio. €",423.3333333333333,"423,3 T. €","4,4 Mrd. €",1089,1089.0,3
-Sparkasse Leverkusen,Nordrhein-Westfalen,0.8448484042,"1,3 Mio. €",428.7666666666667,"428,8 T. €","3,1 Mrd. €",619,619.0,3
-Kreissparkasse Steinfurt,Nordrhein-Westfalen,0.9399790296,"1,3 Mio. €",334.0,334 T. €,"3,4 Mrd. €",910,910.0,4
-Sparkasse Bielefeld,Nordrhein-Westfalen,1.6429114882,"1,3 Mio. €",445.6666666666667,"445,7 T. €","5,8 Mrd. €",1430,1430.0,3
-Weser-Elbe Sparkasse,Niedersachsen,1.1635728,"1,3 Mio. €",446.3333333333333,"446,3 T. €",4 Mrd. €,976,976.0,3
-Erzgebirgssparkasse,Sachsen,1.107913448,"1,3 Mio. €",449.6666666666667,"449,7 T. €","4,2 Mrd. €",1091,1091.0,3
-Sparkasse Krefeld,Nordrhein-Westfalen,2.281993233092,"1,3 Mio. €",449.68,"449,7 T. €","8,2 Mrd. €",1819,1819.0,3
-Sparkasse Karlsruhe Ettlingen,Baden-Württemberg,2.0860387954,"1,5 Mio. €",372.75,"372,8 T. €","7,2 Mrd. €",1614,1614.0,4
-Sparkasse Mainfranken Würzburg,Bayern,2.1809455971,"1,5 Mio. €",376.25,"376,2 T. €","7,2 Mrd. €",1803,1803.0,4
-Sparkasse Bochum,Nordrhein-Westfalen,1.698608182903,"1,5 Mio. €",504.3333333333333,"504,3 T. €","5,9 Mrd. €",1219,1219.0,3
-Sparkasse Neuss,Nordrhein-Westfalen,1.7722486205,"1,5 Mio. €",378.95,"378,9 T. €","6,3 Mrd. €",1301,1301.0,4
-Kreissparkasse Mittelsachsen,Sachsen,0.8109155967,"1,5 Mio. €",384.5,"384,5 T. €",3 Mrd. €,631,631.0,4
-Stadtsparkasse Wuppertal,Nordrhein-Westfalen,1.9660949323,"1,6 Mio. €",519.0,519 T. €,"6,9 Mrd. €",1384,1384.0,3
-Mittelbrandenburgische Sparkasse in Potsdam,Brandenburg,2.896151972698,"1,6 Mio. €",390.0,390 T. €,11 Mrd. €,1683,1683.0,4
-Sparkasse Vest Recklinghausen,Nordrhein-Westfalen,1.605595003,"1,6 Mio. €",436.3387978142076,"436,3 T. €","5,7 Mrd. €",1356,1356.0,"3,66"
-Ostsächsische Sparkasse Dresden,Sachsen,3.2078108515,"1,6 Mio. €",535.3333333333334,"535,3 T. €","11,9 Mrd. €",1799,1799.0,3
-Kreissparkasse Ludwigsburg,Baden-Württemberg,2.64454144011,"1,6 Mio. €",535.6666666666666,"535,7 T. €","9,8 Mrd. €",1802,1802.0,3
-Stadt- und Kreissparkasse Leipzig,Sachsen,2.340156841398,"1,6 Mio. €",542.3333333333334,"542,3 T. €","8,8 Mrd. €",1663,1663.0,3
-Landessparkasse zu Oldenburg,Niedersachsen,2.36254,"1,6 Mio. €",411.75,"411,8 T. €","8,4 Mrd. €",1677,1677.0,4
-Sparkasse Rhein Neckar Nord,Baden-Württemberg,1.2073845396,"1,6 Mio. €",471.14285714285717,"471,1 T. €","4,6 Mrd. €",941,941.0,"3,5"
-Sparkasse Nürnberg,Bayern,3.0578534734700002,"1,7 Mio. €",425.0,425 T. €,"10,3 Mrd. €",2211,2211.0,4
-Sparkasse Paderborn-Detmold,Nordrhein-Westfalen,1.8131573051,"1,8 Mio. €",441.25,"441,2 T. €","6,5 Mrd. €",1546,1546.0,4
-Sparkasse Westmünsterland,Nordrhein-Westfalen,1.7797937923,"1,8 Mio. €",446.95,"446,9 T. €","6,4 Mrd. €",1463,1463.0,4
-Förde Sparkasse,Schleswig-Holstein,1.7359906425,"1,8 Mio. €",454.0,454 T. €,"6,5 Mrd. €",1417,1417.0,4
-Nassauische Sparkasse,Hessen,3.33707516809,"1,8 Mio. €",461.75,"461,8 T. €","10,8 Mrd. €",1901,1901.0,4
-Stadtsparkasse Düsseldorf,Nordrhein-Westfalen,3.206438536273,"1,9 Mio. €",487.04897959183677,487 T. €,"11,5 Mrd. €",2268,2268.0,"3,92"
-Kreissparkasse München Starnberg Ebersberg,Bayern,2.81393,"1,9 Mio. €",484.5,"484,5 T. €","10,2 Mrd. €",1801,1801.0,4
-Stadtsparkasse Mönchengladbach,Nordrhein-Westfalen,1.3080200174,2 Mio. €,390.8612,"390,9 T. €","4,6 Mrd. €",964,964.0,5
-Stadtsparkasse Dortmund,Nordrhein-Westfalen,2.3321649049,2 Mio. €,497.0,497 T. €,"8,3 Mrd. €",1823,1823.0,4
-Sparkasse Duisburg,Nordrhein-Westfalen,1.5249140971,2 Mio. €,409.4,"409,4 T. €","5,4 Mrd. €",1430,1430.0,5
-Sparkasse Essen,Nordrhein-Westfalen,2.1855912258,"2,1 Mio. €",521.725,"521,7 T. €",8 Mrd. €,1627,1627.0,4
-Sparkasse Münsterland Ost,Nordrhein-Westfalen,2.40404,"2,2 Mio. €",556.0,556 T. €,"8,8 Mrd. €",1437,1437.0,4
-Sparkasse Hannover,Niedersachsen,4.0034857866,"2,2 Mio. €",613.6612021857924,"613,7 T. €","13,6 Mrd. €",2255,2255.0,"3,66"
-Sparkasse Vorderpfalz,Rheinland-Pfalz,1.5824203628,"2,4 Mio. €",396.3333333333333,"396,3 T. €","5,7 Mrd. €",1112,1112.0,6
-Die Sparkasse Bremen AG,Bremen,3.094575238624,"2,4 Mio. €",600.0,600 T. €,11 Mrd. €,1537,1537.0,4
-Stadtsparkasse München,Bayern,4.6918148,"2,5 Mio. €",490.2,"490,2 T. €","16,4 Mrd. €",2742,2742.0,5
-Frankfurter Sparkasse,Hessen,8.0,"2,5 Mio. €",613.0,613 T. €,"17,7 Mrd. €",1797,1797.0,4
-Sparkasse KölnBonn,Nordrhein-Westfalen,7.54327605925,"2,6 Mio. €",512.76,"512,8 T. €","27,4 Mrd. €",4536,4536.0,5
-Sparkasse Aachen,Nordrhein-Westfalen,3.1178573000200003,"2,7 Mio. €",544.8,"544,8 T. €",10 Mrd. €,2071,2071.0,5
-Kreissparkasse Köln,Nordrhein-Westfalen,6.5876078123,"3,5 Mio. €",704.28,"704,3 T. €","23,1 Mrd. €",4512,4512.0,5
-Berliner Sparkasse,Berlin,8.0,"3,9 Mio. €",651.8333333333334,"651,8 T. €","57,4 Mrd. €",4073,4073.0,6
-Hamburger Sparkasse AG,Hamburg,8.0,"4,2 Mio. €",853.6585365853659,"853,7 T. €","41,9 Mrd. €",5358,5358.0,"4,92"
+sparkasse,plz,state,bemessung_2014,gesamtbezuege_2014,durchschnitt_val,durchschnittsgehalt_2014,bilanzsumme_2014,mitarbeiter_2014,mitarbeiter_val,anzahl_vorstaende_2014
+Sparkasse Battenberg,"35116,35088,35108",Hessen,0.055684695,239 T. €,119.5,"119,5 T. €","186,6 Mio. €",65,65.0,2
+Stadtsparkasse Grebenstein,"34376,34379,34393",Hessen,0.050684293,254 T. €,87.58620689655173,"87,6 T. €","188,2 Mio. €",62,62.0,"2,9"
+Sparkasse Laubach-Hungen,"35321,35410",Hessen,0.0670256386,291 T. €,145.5,"145,5 T. €","237,8 Mio. €",81,81.0,2
+Stadtsparkasse Schwalmstadt,34613,Hessen,0.053798237,291 T. €,145.5,"145,5 T. €","193,6 Mio. €",48,48.0,2
+Sparkasse Hohenwestedt,"24647,25581,24797,24594,24613,24819,25590,24634",Schleswig-Holstein,0.065397131,305 T. €,152.5,"152,5 T. €","239,5 Mio. €",47,47.0,2
+Stadtsparkasse Haltern am See,45721,Nordrhein-Westfalen,0.0785124389,315 T. €,157.5,"157,5 T. €","295,9 Mio. €",109,109.0,2
+Kreissparkasse Hildburghausen,"98553,98630,98646,98660,98663,98669,98673,98678,98667,98666",Thüringen,0.1356695232,319 T. €,159.5,"159,5 T. €","524,7 Mio. €",134,134.0,2
+Sparkasse Geseke,59590,Nordrhein-Westfalen,0.0736237869,329 T. €,164.5,"164,5 T. €",269 Mio. €,80,80.0,2
+Sparkasse Unstrut-Hainich,"99991,99996,99998,99976,99955,99988,99974,99947,99986,99994",Thüringen,0.298899184,343 T. €,171.5,"171,5 T. €","1,1 Mrd. €",290,290.0,2
+Sparkasse Schönau-Todtnau,"79694,79695,79674,79677",Baden-Württemberg,0.0871487569,345 T. €,172.5,"172,5 T. €","328,8 Mio. €",80,80.0,2
+Sparkasse St. Blasien,"79862,79837,79872,79875,79859",Baden-Württemberg,0.0970374468,349 T. €,174.5,"174,5 T. €","362,2 Mio. €",83,83.0,2
+Stadtsparkasse Schmallenberg,57392,Nordrhein-Westfalen,0.10110164,353 T. €,176.5,"176,5 T. €","376,3 Mio. €",88,88.0,2
+Stadtsparkasse Blomberg/Lippe,32825,Nordrhein-Westfalen,0.07559,360 T. €,180.0,180 T. €,290 Mio. €,75,75.0,2
+Sparkasse Sonneberg,"96524,96515,96528,96523,98724",Thüringen,0.17445543,368 T. €,184.0,184 T. €,"614,6 Mio. €",216,216.0,2
+Kreissparkasse St. Wendel,"66620,66646,66629,66649,66636,66606,66640,66625",Saarland,0.318162947,"370,9 T. €",185.4495,"185,4 T. €","1,1 Mrd. €",311,311.0,2
+Sparkasse Hennstedt-Wesselburen,"25774,25776,25746,25792,25794,25788,25782,25795,25764,25786,25797,25779,25799,25791",Schleswig-Holstein,0.164959873,380 T. €,126.66666666666667,"126,7 T. €","671,5 Mio. €",173,173.0,3
+Sparkasse Altenburger Land,"04626,04603,04600,04610,04617,04639,04613,04618",Thüringen,0.2584887428,384 T. €,192.0,192 T. €,"981,7 Mio. €",239,239.0,2
+Sparkasse Finnentrop,57413,Nordrhein-Westfalen,0.076601953,396 T. €,198.0,198 T. €,"296,5 Mio. €",94,94.0,2
+Sparkasse Salem-Heiligenberg,"88693,88697,88633,88682,88090,88690,88699",Baden-Württemberg,0.219146389,399 T. €,199.5,"199,5 T. €","825,2 Mio. €",139,139.0,2
+Stadtsparkasse Porta Westfalica,32457,Nordrhein-Westfalen,0.1166310689,399 T. €,199.5,"199,5 T. €","449,3 Mio. €",108,108.0,2
+Stadtsparkasse Versmold,33775,Nordrhein-Westfalen,0.0834645362,400 T. €,200.0,200 T. €,"301,6 Mio. €",79,79.0,2
+Kreissparkasse Gelnhausen,"63589,63579,63619,63594,63633,63637,63584,63599,63636,63607,63639,63571",Hessen,0.318724873,401 T. €,190.95238095238093,191 T. €,"1,1 Mrd. €",320,320.0,"2,1"
+Sparkasse Ennepetal-Breckerfeld,"58256,58339",Nordrhein-Westfalen,0.197475103,"404,2 T. €",202.1,"202,1 T. €","704,5 Mio. €",145,145.0,2
+Stadtsparkasse Hilchenbach,57271,Nordrhein-Westfalen,0.0806856927,"411,5 T. €",205.75,"205,8 T. €","311,5 Mio. €",83,83.0,2
+Sparkasse der Stadt Straelen,47638,Nordrhein-Westfalen,0.0792001304,"411,7 T. €",205.829,"205,8 T. €","314,2 Mio. €",92,92.0,2
+Sparkasse Grünberg,"35466,35305",Hessen,0.0949588417,413 T. €,206.5,"206,5 T. €","317,2 Mio. €",88,88.0,2
+Kreissparkasse Eichsfeld,"37308,37339,37327,37355,37359,37351,37345,37318",Thüringen,0.3256310599,414 T. €,207.0,207 T. €,"1,2 Mrd. €",282,282.0,2
+Sparkasse Arnstadt-Ilmenau,"98716,98693,98704,99326,99310,98708,99334,98711,99330,98714,98701,99338",Thüringen,0.311902626,418 T. €,209.0,209 T. €,"1,1 Mrd. €",285,285.0,2
+Sparkasse Erwitte-Anröchte,"59609,59597",Nordrhein-Westfalen,0.0897904694,418 T. €,209.0,209 T. €,"331,6 Mio. €",113,113.0,2
+Kreissparkasse Limburg,"65552,65555,65550,65553,65556,65597,65618",Hessen,0.391695995,422 T. €,211.0,211 T. €,"1,4 Mrd. €",417,417.0,2
+Sparkasse Freyung-Grafenau,"94513,94151,94169,94143,94157,94133,94146,94158,94579,94118,94142,94163,94548,94481,94065,94078,94566,94556,94536,94572,94145,94545,94518,94160,94568,94089",Bayern,0.1888051022,422 T. €,211.0,211 T. €,"702,7 Mio. €",225,225.0,2
+Sparkasse Bad Neustadt a.d. Saale,"97631,97654,97633,97657,97618,97659,97650,97656,97616,97724,97653,97638,97645",Bayern,0.33834206304000003,426 T. €,213.0,213 T. €,"1,2 Mrd. €",318,318.0,2
+Sparkasse Rietberg,33397,Nordrhein-Westfalen,0.1111925234,431 T. €,215.5,"215,5 T. €","407,2 Mio. €",110,110.0,2
+Stadtsparkasse Herdecke,58313,Nordrhein-Westfalen,0.1115362598,434 T. €,217.0,217 T. €,"390,7 Mio. €",100,100.0,2
+Sparkasse Neunkirchen,"66564,66578,66589,66557,66540,66571,66538,66539,66583",Saarland,0.441237974,"434,2 T. €",217.089,"217,1 T. €","1,4 Mrd. €",401,401.0,2
+Kreissparkasse Höchstadt/Aisch,"91097,91487",Bayern,0.2256961004,436 T. €,218.0,218 T. €,"795,2 Mio. €",242,242.0,2
+Stadtsparkasse Rahden,32369,Nordrhein-Westfalen,0.1141658502,436 T. €,218.0,218 T. €,"439,1 Mio. €",92,92.0,2
+Kreissparkasse Gotha,"99894,99958,99869,99897,99891,99880,99867,99885,99100,99192,99887",Thüringen,0.340869759,439 T. €,219.5,"219,5 T. €","1,2 Mrd. €",278,278.0,2
+Kyffhäusersparkasse Artern-Sondershausen,"06567,06577,06571,06578,06556,99713,99718,99706",Thüringen,0.232710142,443 T. €,221.5,"221,5 T. €",900 Mio. €,224,224.0,2
+Kreissparkasse Weilburg,"65614,35799,35796,35781,65606,35792,35794,35789",Hessen,0.26699787,445 T. €,222.5,"222,5 T. €","964,1 Mio. €",246,246.0,2
+Vereinigte Sparkassen Gunzenhausen,"91734,91801,91732,91720,91735,91639,91710,91723,91719",Bayern,0.1993642064,448 T. €,224.0,224 T. €,"754,1 Mio. €",191,191.0,2
+Kreissparkasse Schlüchtern,"63628,36396,36381,36391",Hessen,0.137869321,449 T. €,224.5,"224,5 T. €",495 Mio. €,132,132.0,2
+Stadtsparkasse Bad Honnef,53604,Nordrhein-Westfalen,0.13285086,"449,8 T. €",224.9,"224,9 T. €","516,4 Mio. €",118,118.0,2
+Kreissparkasse Saale-Orla,"07927,07924,07929,07926,07819,07806,07368,07389,07381,07356,07907,07922,07387,07366,07343",Thüringen,0.232345981,452 T. €,226.0,226 T. €,"871,1 Mio. €",261,261.0,2
+Stadtsparkasse Delbrück,33129,Nordrhein-Westfalen,0.0794589147,453 T. €,226.5,"226,5 T. €","296,1 Mio. €",89,89.0,2
+Stadt- und Kreissparkasse Moosburg,"85408,85413,85416,85419,85410,85368,84079,85405",Bayern,0.193138035,456 T. €,228.0,228 T. €,"606,1 Mio. €",192,192.0,2
+Stadtsparkasse Dessau,"06847,06849,06846,06861,06842,06862,06844",Sachsen-Anhalt,0.19764889,458 T. €,229.0,229 T. €,"723,8 Mio. €",194,194.0,2
+Sparkasse Oberpfalz Nord,"95683,95469,95692,95703,95505,95676,95682,95688,95700,95698,95506,95478,95679,95704,95643,95701,95508,95689,95685,95666,95652,95695,92637,95671",Bayern,0.3722874486,462 T. €,231.0,231 T. €,"1,4 Mrd. €",419,419.0,2
+Kreis- und Stadtsparkasse Wasserburg am Inn,"83533,83543,83544,84424,85664,83547,83536,83530,83123,83512,83564,83539,83556,83549",Bayern,0.2992834452,462 T. €,231.0,231 T. €,"981,7 Mio. €",247,247.0,2
+Sparkasse Elmshorn,"25336,25337,25335",Schleswig-Holstein,0.256451344,465 T. €,232.5,"232,5 T. €","861,2 Mio. €",203,203.0,2
+Sparkasse Bühl,"77833,77815,77836,77830,77886,76547",Baden-Württemberg,0.225456431,469 T. €,234.5,"234,5 T. €","811,8 Mio. €",181,181.0,2
+Sparkasse Neuburg-Rain,"86643,86701,86684,86673,86669,86692,86633,86666,86694,86676,85123,86641,86697,86668,86706",Bayern,0.2679128282,472 T. €,236.0,236 T. €,"916,2 Mio. €",261,261.0,2
+Kreissparkasse Stendal,"39606,39596,39517,39524,39579,39576,39615,39629,39539,39599,39590",Sachsen-Anhalt,0.310908589,474 T. €,237.0,237 T. €,"1,2 Mrd. €",309,309.0,2
+Sparkasse Ostunterfranken,"97522,97461,97475,97500,96190,96181,96184,97519,96188,97494,96166,96106,97503,96176,97539,97491,97531,97478,97486,97496,97514,96151,97483,96126,97437",Bayern,0.3313982914,476 T. €,238.0,238 T. €,"1,2 Mrd. €",316,316.0,2
+Sparkasse Wetzlar,"35583,35585,35649,35444,35630,35578,35625,35576,35606,35633,35614,35582,35586,35647,35619,35638,35584,35435,35581,35644,35579,35641,35428,35580",Hessen,0.621772378,479 T. €,239.5,"239,5 T. €","2,1 Mrd. €",585,585.0,2
+Sparkasse Burbach-Neunkirchen,"57299,57290",Nordrhein-Westfalen,0.1372336392,480 T. €,240.0,240 T. €,"537,4 Mio. €",121,121.0,2
+Kreissparkasse Garmisch-Partenkirchen,"82445,82496,82467,82475,82438,82487,82481,82497,82493,82490,82488,82494,82491,82499,82433,82441,82442",Bayern,0.2855364084,481 T. €,240.5,"240,5 T. €","1,1 Mrd. €",309,309.0,2
+Rhön-Rennsteig-Sparkasse,"98597,98596,98590,98574,98593,98617,98547,98639,98631,98559,98554,98527,98634,98529,98530,98528,98544,98587",Thüringen,0.495385706,482 T. €,241.0,241 T. €,"1,6 Mrd. €",472,472.0,2
+Sparkasse Meschede,"59889,59872",Nordrhein-Westfalen,0.159747226,491 T. €,245.5,"245,5 T. €","606,8 Mio. €",151,151.0,2
+Verbundsparkasse Emsdetten-Ochtrup,"48607,48282",Nordrhein-Westfalen,0.232184853,"491,4 T. €",245.7,"245,7 T. €","792,8 Mio. €",214,214.0,2
+Bordesholmer Sparkasse AG,"24644,25596,24247,24220,24582,24625,24254,25572,24113,24241,25594,24111",Schleswig-Holstein,0.201244632,492 T. €,246.0,246 T. €,"713,1 Mio. €",155,155.0,2
+Stadtsparkasse Lengerich,49525,Nordrhein-Westfalen,0.1078483368,493 T. €,246.5,"246,5 T. €","414,3 Mio. €",108,108.0,2
+Sparkasse Eichstätt,"85095,85131,85125,91809,85137,91804,92339,85113,85122,85114,85110,85135,85072,85128,85111,85132,85116,91795",Bayern,0.2735556994,499 T. €,249.5,"249,5 T. €",1 Mrd. €,260,260.0,2
+Stadtsparkasse Emmerich-Rees,"46446,46459",Nordrhein-Westfalen,0.218463563,499 T. €,249.5,"249,5 T. €","795,9 Mio. €",209,209.0,2
+Sparkasse Waldeck-Frankenberg,"35066,34508,34549,35110,34477,34497,34519,34537,35104,34471,35099,34454,34516,35119,35285,34513,35114,34474",Hessen,0.5536279416,500 T. €,250.0,250 T. €,2 Mrd. €,517,517.0,2
+Sparkasse Odenwaldkreis,"64750,64753,64743,64754,64732,64756,64711,64720,64757,64407,64739,64385,64747,64759",Hessen,0.42780837,503 T. €,251.5,"251,5 T. €","1,5 Mrd. €",407,407.0,2
+Kreissparkasse Nordhausen,"99759,99765,99752,99735,99734,99755,99768,99762",Thüringen,0.294538454,505 T. €,252.5,"252,5 T. €","1,1 Mrd. €",252,252.0,2
+Sparkasse Bad Kissingen,"97714,97708,97705,97517,97688,97762,97717,97799,97711,97729,97702,97769,97789,97727,97725,97723,97772,97792,97720,97779,97786,97795,97797",Bayern,0.3974799784,506 T. €,253.0,253 T. €,"1,4 Mrd. €",370,370.0,2
+Sparkasse Dillenburg,"35713,35768,35767,35745,35689,35759,35683,35716,35685,35708,35690,35764,35687,35684,35753,35756,35686,35688",Hessen,0.353921265,506 T. €,253.0,253 T. €,"1,2 Mrd. €",360,360.0,2
+Sparkasse im Landkreis Cham,"93185,93499,93473,93494,93194,93458,93488,93453,93477,93476,93491,93449,93485,93466,93426,93455,93489,93437,93468,93464,93486,93192,93495,93479,93474,93462,93480,93167,92444,93444,93413",Bayern,0.4349825043,512 T. €,256.0,256 T. €,"1,5 Mrd. €",379,379.0,2
+Stadtsparkasse Gladbeck,"45964,45968,45966",Nordrhein-Westfalen,0.208738142,512 T. €,256.0,256 T. €,"744,9 Mio. €",211,211.0,2
+Sparkasse Bergkamen-Bönen,"59192,59199",Nordrhein-Westfalen,0.156127353,533 T. €,266.5,"266,5 T. €","585,4 Mio. €",109,109.0,2
+Sparkasse Radevormwald-Hückeswagen,"42477,42499",Nordrhein-Westfalen,0.160710846,"533,9 T. €",266.95,"266,9 T. €","536,8 Mio. €",156,156.0,2
+Sparkasse Freising,"85417,85356,85402,85414,85777,85376,85395,85375,85406,85411,85354,85386,85391",Bayern,0.3854066561,535 T. €,267.5,"267,5 T. €","1,3 Mrd. €",358,358.0,2
+Stadtsparkasse Schwerte,58239,Nordrhein-Westfalen,0.180393009,538 T. €,269.0,269 T. €,"661,2 Mio. €",171,171.0,2
+Städtische Sparkasse zu Schwelm,58332,Nordrhein-Westfalen,0.161466931,542 T. €,271.0,271 T. €,"590,2 Mio. €",145,145.0,2
+Stadtsparkasse Sprockhövel,45549,Nordrhein-Westfalen,0.126614792,543 T. €,271.5,"271,5 T. €",436 Mio. €,109,109.0,2
+Verbandssparkasse Goch-Kevelaer-Weeze,"47652,47574,47626,47623",Nordrhein-Westfalen,0.142855837,547 T. €,273.5,"273,5 T. €","570,3 Mio. €",111,111.0,2
+Sparkasse Kleve,"47546,47589,47551,47533,47559",Nordrhein-Westfalen,0.333791681,549 T. €,274.5,"274,5 T. €","1,3 Mrd. €",335,335.0,2
+Stadtsparkasse Remscheid,"42859,42899,42857,42855,42853,42897",Nordrhein-Westfalen,0.412966822,"552,9 T. €",276.45,"276,4 T. €","1,4 Mrd. €",382,382.0,2
+Kreis- und Stadtsparkasse Kaufbeuren,"86875,87665,87666,86807,87656,87679,87600",Bayern,0.4149097096,553 T. €,276.5,"276,5 T. €","1,4 Mrd. €",336,336.0,2
+Wartburg-Sparkasse,"99846,99817,36414,99831,99842,99826,99837,99820,99819,36457,36466,36452,36460,99830,36469,99848,99834,36404,36448,36419,36433,36456",Thüringen,0.429813638,555 T. €,222.0,222 T. €,"1,6 Mrd. €",392,392.0,"2,5"
+Stadtsparkasse Bocholt,"46397,46395",Nordrhein-Westfalen,0.248314047,556 T. €,278.0,278 T. €,"1,1 Mrd. €",237,237.0,2
+Sparkasse Staufen-Breisach,"79206,79219,79189,79244,79285,79227,79361,79427,79238,79295,79292,79241,79291,79258,79235,79423,79288,79283,79282",Baden-Württemberg,0.343349058,558 T. €,279.0,279 T. €,"1,2 Mrd. €",304,304.0,2
+Sparkasse Olpe-Drolshagen-Wenden,"57482,57462,57489",Nordrhein-Westfalen,0.219612682,559 T. €,279.5,"279,5 T. €",862 Mio. €,200,200.0,2
+Sparkasse Wittgenstein,"57319,57334,57339",Nordrhein-Westfalen,0.231034294,560 T. €,280.0,280 T. €,"838,8 Mio. €",243,243.0,2
+Sparkasse der Homburgischen Gemeinden,"51674,51588",Nordrhein-Westfalen,0.199769086,"560,3 T. €",280.15,"280,1 T. €","757,6 Mio. €",172,172.0,2
+Sparkasse Hattingen,"45527,45525,45529",Nordrhein-Westfalen,0.251695171,568 T. €,284.0,284 T. €,"906,1 Mio. €",212,212.0,2
+Sparkasse Attendorn-Lennestadt-Kirchhundem,"57439,57368,57399",Nordrhein-Westfalen,0.292248153,"568,2 T. €",284.1,"284,1 T. €","1,1 Mrd. €",240,240.0,2
+Stadtsparkasse Bad Oeynhausen,"32545,32547,32549",Nordrhein-Westfalen,0.196835842,571 T. €,285.5,"285,5 T. €",739 Mio. €,208,208.0,2
+Sparkasse Forchheim,"91286,91365,91077,91099,91330,91336,91352,90542,91301,91322,91364,91359,91338,91361,91367,91358,91356,91320,91327,91353,91349,91346,91369,91362,91355,91090,91094",Bayern,0.4490416446,572 T. €,286.0,286 T. €,"1,6 Mrd. €",414,414.0,2
+Sparkasse Gütersloh,"33332,33334,33335,33428,33330,33333",Nordrhein-Westfalen,0.52300949,574 T. €,382.6666666666667,"382,7 T. €","1,9 Mrd. €",397,397.0,"1,5"
+Stadtsparkasse Wermelskirchen,42929,Nordrhein-Westfalen,0.170510622,"574,6 T. €",287.3,"287,3 T. €","640,6 Mio. €",147,147.0,2
+Sparkasse Merzig-Wadern,"66663,66687,66709,66701,66679,66693,66706",Saarland,0.467814554,577 T. €,288.5,"288,5 T. €","1,6 Mrd. €",436,436.0,2
+Kreissparkasse Kelheim,"93342,84101,93333,84072,93354,93309,93356,93348,93343,93339,93336,93346,93349,84094,93077,84104,84089,93326,93358,84048,93351,84091,84106,93345",Bayern,0.4958393533,579 T. €,289.5,"289,5 T. €","1,8 Mrd. €",528,528.0,2
+Sparkasse Werl,"59457,59469,58739",Nordrhein-Westfalen,0.200861663,579 T. €,289.5,"289,5 T. €",742 Mio. €,167,167.0,2
+Sparkasse Donnersberg,"67308,67724,67811,67813,67823,67727,67725,67295,67814,67297,67292,67722,67821,67816,67822,67304,67307,67817,67806,67305,67819,67728,67729",Rheinland-Pfalz,0.342020855,588 T. €,294.0,294 T. €,"1,4 Mrd. €",271,271.0,2
+Sparkasse Günzburg-Krumbach,"89362,89358,89355,89340,89349,86479,86476,89331,86470,89346,89359,86505,89343,86381,89312,86473,89335",Bayern,0.5011799742,593 T. €,296.5,"296,5 T. €","1,8 Mrd. €",426,426.0,2
+Sparkasse Kierspe-Meinerzhagen,"58540,58566",Nordrhein-Westfalen,0.187552717,597 T. €,298.5,"298,5 T. €","672,6 Mio. €",146,146.0,2
+Sparkasse Mansfeld-Südharz,"06343,06308,06333,06456,06295,06537,06526,06536,06542,06317,06543,06313,06528,06347,06311",Sachsen-Anhalt,0.398473934,599 T. €,299.5,"299,5 T. €","1,4 Mrd. €",317,317.0,2
+Sparkasse Werra-Meißner,"37290,37299,37284,37214,37218,37216,37235,37249,37297,37287,37296,37213,37293,37242,37276,37269,37247,37281,37217,37215,36205",Hessen,0.490561366,600 T. €,300.0,300 T. €,"1,7 Mrd. €",404,404.0,2
+Sparkasse Bensheim,"64686,64673,64625,64653,64683",Hessen,0.5140658185,601 T. €,300.5,"300,5 T. €","1,8 Mrd. €",424,424.0,2
+Kreissparkasse Schongau,"86956,86971,86989,86934,82401,86981,86986,86987,82389,86975,86972,86984,86977,82409,82383,86974,82435,86978",Bayern,0.2105262187,603 T. €,206.5068493150685,"206,5 T. €","763,8 Mio. €",213,213.0,"2,92"
+Stadtsparkasse Gevelsberg,58285,Nordrhein-Westfalen,0.243959408,"603,3 T. €",301.65,"301,6 T. €","910,7 Mio. €",148,148.0,2
+Sparkasse Starkenburg,"64646,69518,69517,69483,64668,69509,68519,69239,69488,64689,64658",Hessen,0.6014875461,606 T. €,303.0,303 T. €,"1,9 Mrd. €",414,414.0,2
+Sparkasse Hochsauerland,"59929,59964,59955,59939,59909",Nordrhein-Westfalen,0.29988991,606 T. €,303.0,303 T. €,"1,2 Mrd. €",305,305.0,2
+Kreissparkasse Saarpfalz,"66399,66386,66424,66459,66450,66453,66440",Saarland,0.481667239,610 T. €,305.0,305 T. €,"1,7 Mrd. €",451,451.0,2
+Kreissparkasse Saalfeld-Rudolstadt,"07427,07426,98746,98744,07330,07407,07422,07334,98739,98743,07338,07429,07349,07333,07318",Thüringen,0.313696109,612 T. €,204.0,204 T. €,"1,2 Mrd. €",302,302.0,3
+Sparkasse Märkisches Sauerland Hemer-Menden,"58708,58675,58710,58706",Nordrhein-Westfalen,0.3207261098,613 T. €,306.5,"306,5 T. €","1,2 Mrd. €",274,274.0,2
+Sparkasse Bad Hersfeld-Rotenburg,"36219,36277,36217,36272,36199,36282,36287,36211,36289,36251,36179,36214,36284,36166,36275,36269,36208,36286,36266",Hessen,0.5540114151,615 T. €,307.5,"307,5 T. €","1,8 Mrd. €",484,484.0,2
+Sparkasse Arnsberg-Sundern,"59757,59759,59823,59821,59755,59846",Nordrhein-Westfalen,0.33176417,616 T. €,308.0,308 T. €,"1,1 Mrd. €",286,286.0,2
+Kreissparkasse Heidenheim,"89567,89168,89555,89547,89551,89564,89522,89542,89568,89518,89520,89561,89537",Baden-Württemberg,0.4903130782,617 T. €,308.5,"308,5 T. €","1,9 Mrd. €",386,386.0,2
+Herner Sparkasse,"44651,44628,44653,44629,44649,44625,44623,44627,44652",Nordrhein-Westfalen,0.4446124393,621 T. €,310.5,"310,5 T. €","1,6 Mrd. €",418,418.0,2
+Vereinigte Sparkasse im Märkischen Kreis,"58840,58762,58791,58802,58769,58809",Nordrhein-Westfalen,0.423433677,624 T. €,312.0,312 T. €,"1,6 Mrd. €",355,355.0,2
+Sparkasse Beckum-Wadersloh,"59269,59329",Nordrhein-Westfalen,0.222210786,626 T. €,313.0,313 T. €,"781,1 Mio. €",192,192.0,2
+Sparkasse Pfaffenhofen,"85088,85276,85283,85290,85305,85301,85307,85296,85119,85309,85293,85298,85126,85304",Bayern,0.3344662206,630 T. €,252.0,252 T. €,"1,2 Mrd. €",327,327.0,"2,5"
+Sparkasse Kulmbach-Kronach,"95364,95352,95355,96369,96277,96346,96367,95346,96358,95509,96332,96361,96364,96268,95502,95349,96365,95358,95499,95336,95365,96328,96342,95512,96352,95367,95339,96337,95361,95369,95359,96355,96349,95356,96197,96317,95362,95326",Bayern,0.612039248,636 T. €,318.0,318 T. €,"2,3 Mrd. €",614,614.0,2
+Sparkasse Gelsenkirchen,"45897,45884,45899,45879,45896,45888,45881,45886,45892,45889,45891,45883,45894",Nordrhein-Westfalen,0.9149445392,637 T. €,318.5,"318,5 T. €","3,1 Mrd. €",820,820.0,2
+Sparkasse Höxter,"34434,34439,33039,33014,37696,32839,37688,37671,33034,34414",Nordrhein-Westfalen,0.381144443,637 T. €,318.5,"318,5 T. €","1,4 Mrd. €",390,390.0,2
+Sparkasse Bayreuth,"95447,95448,95488,95515,95466,95497,95686,95460,95494,91257,95500,91282,95490,95496,95503,95445,91344,95473,95694,91347,91278,95444,95511,95485,95493,95517,91289,91287,96142,95463,95491",Bayern,0.5663765362,645 T. €,322.5,"322,5 T. €","2,2 Mrd. €",569,569.0,2
+Kreissparkasse Euskirchen,"53947,53894,53881,53949,53879,53937,53945,53902,53909,53940,53919,53925",Nordrhein-Westfalen,0.4982557277,"658,8 T. €",329.4215,"329,4 T. €","1,8 Mrd. €",478,478.0,2
+Stadtsparkasse Bottrop,"46240,46242,46238,46244,46236",Nordrhein-Westfalen,0.32944165,667 T. €,333.5,"333,5 T. €","1,2 Mrd. €",309,309.0,2
+Sparkasse Lippstadt,"59558,59555,59602,59581,59557,59556",Nordrhein-Westfalen,0.37206718,669 T. €,334.5,"334,5 T. €","1,4 Mrd. €",277,277.0,2
+Sparkasse Gummersbach-Bergneustadt,"51647,51643,51702,51645",Nordrhein-Westfalen,0.341178687,"669,5 T. €",334.75,"334,8 T. €","1,2 Mrd. €",281,281.0,2
+Kreissparkasse Freudenstadt,"72275,72296,72178,72280,72285,72186,72293,72184,72270,72299,72160,72297,72290,72294",Baden-Württemberg,0.4581339222,671 T. €,223.66666666666666,"223,7 T. €","1,7 Mrd. €",412,412.0,3
+Stadt-Sparkasse Langenfeld,40764,Nordrhein-Westfalen,0.370756588,"679,7 T. €",339.85,"339,9 T. €","1,3 Mrd. €",254,254.0,2
+Sparkasse Witten,"58454,58453,58455,58456,58452",Nordrhein-Westfalen,0.522611799,681 T. €,340.5,"340,5 T. €",2 Mrd. €,463,463.0,2
+Sparkasse Zollernalb,"72359,72362,72401,72475,72355,72367,72414,72459,72461,72469,72393,72474,72361,72364,72406,72479,72458,72336,72356,72379,72365,72351,72358,72369,72415,72417,72348",Baden-Württemberg,0.9016381607,682 T. €,341.0,341 T. €,"3,2 Mrd. €",804,804.0,2
+Sparkasse Gießen,"35440,35392,35423,35415,35460,35396,35452,35463,35390,35394,35457,35418,35398,35447,35469",Hessen,0.5913571,686 T. €,274.4,"274,4 T. €","2,1 Mrd. €",628,628.0,"2,5"
+Sparkasse Aichach-Schrobenhausen,"86447,86570,86508,86571,86568,86561,86565,86444,86564,86574,86551,86674,86576,86577,86579,86562,86573,86556,85302,86554,86529,86559,86558",Bayern,0.3723524117,686 T. €,228.66666666666666,"228,7 T. €","1,2 Mrd. €",377,377.0,3
+Sparkasse Rotenburg-Bremervörde,"27356,27404,27419,27367,27374,27412,27442,27432,27446",Niedersachsen,0.5208118764,690 T. €,345.0,345 T. €,"1,8 Mrd. €",471,471.0,2
+Sparkasse Jena-Saale-Holzland,"07639,07616,07778,07749,07745,07774,07607,07619,07751,07629,07743,07646,07768,07747,07613",Thüringen,0.4695843545,694 T. €,231.33333333333334,"231,3 T. €","1,9 Mrd. €",479,479.0,3
+Kreissparkasse Schwalm-Eder,"34212,34626,34323,34633,36280,34576,34587,34326,34560,34286,34593,34621,34630,34302,34599,34637,34281,34639,34327,34596,34590,34628,34295,34632,34305",Hessen,0.5148869898,699 T. €,349.5,"349,5 T. €",2 Mrd. €,445,445.0,2
+Sparkasse im Landkreis Schwandorf,"92442,92533,92421,93149,92539,92551,92552,92536,93142,92439,92449,92521,92445,92526,93158,92436,92447,92546,92559,93133,92540,92507,92431",Bayern,0.5270469335,701 T. €,300.85836909871244,"300,9 T. €","1,9 Mrd. €",534,534.0,"2,33"
+Sparkasse Dieburg,"64401,64354,64853,64832,64839,64846,64405,64859,64807,64823,64850,63322",Hessen,0.736059601,"704,6 T. €",352.3,"352,3 T. €","2,2 Mrd. €",524,524.0,2
+Sparkasse zu Lübeck AG,"23554,23562,23570,23558,23552,23569,23556,23566,23568,23560,23564",Schleswig-Holstein,0.700964196,707 T. €,353.5,"353,5 T. €","2,4 Mrd. €",493,493.0,2
+Sparkasse Gera-Greiz,"07937,07980,07586,07552,07557,07554,07549,07546,07987,07973,07589,07548,07551,07950,07580,07570,07957,07958,07955,07545",Thüringen,0.5195283085,740 T. €,246.66666666666666,"246,7 T. €","1,9 Mrd. €",494,494.0,3
+Sparkasse Mülheim an der Ruhr,"45472,45481,45476,45468,45473,45475,45470,45478,45479",Nordrhein-Westfalen,0.7265559222,"744,7 T. €",248.21833333333333,"248,2 T. €","2,7 Mrd. €",534,534.0,3
+Sparkasse Dachau,"85235,85247,85778,85254,85258,85244,85221,85256,85229,85241,85757,86567,85253,85238,85250,85259,85232",Bayern,0.7157140412,749 T. €,374.5,"374,5 T. €","2,6 Mrd. €",561,561.0,2
+Sparkasse Hochrhein,"79682,79736,79774,79807,79787,79801,79771,79798,79804,79733,79809,79793,79713,79737,79802,79664,79725,79790,79761,79730",Baden-Württemberg,0.7838573377,763 T. €,339.11111111111114,"339,1 T. €","2,7 Mrd. €",567,567.0,"2,25"
+Sparkasse Berchtesgadener Land,"83454,83451,83395,83364,83487,83317,83416,83483,83486,83471,83410,83404,83457,83435,83458",Bayern,0.4306901371,764 T. €,254.66666666666666,"254,7 T. €","1,5 Mrd. €",394,394.0,3
+Sparkasse im Landkreis Neustadt/Aisch - Bad Windsheim,"96152,97215,91477,90619,91619,91593,91438,90599,91484,91448,91472,91462,91469,91459,91443,91456,91413,97258,91486,91481,90616,91474,91463,91489,91613",Bayern,0.52921074163,777 T. €,259.0,259 T. €,"1,8 Mrd. €",457,457.0,3
+Kreissparkasse Traunstein-Trostberg,"83376,83417,83334,83342,83362,83308,83313,83278,83373,83246,83377,83301,83352,83250,83132,83339,83355,83259,83224,84529,83242,83349,83324,83358,83413,84549,83368,83370,83361,83371,83374,83119,83236,83379,83367,83346,83329,83365",Bayern,0.5059352992,779 T. €,259.66666666666663,"259,7 T. €",2 Mrd. €,469,469.0,3
+Vereinigte Sparkassen im Landkreis Weilheim,"82449,82347,82393,82407,82398,82418,82396,82380,82399,82377,82444,82362,82386",Bayern,0.4630822982,779 T. €,259.66666666666663,"259,7 T. €","1,6 Mrd. €",409,409.0,3
+Sparkasse Miltenberg-Obernburg,"63933,63906,63916,63863,97904,63924,63840,63834,63911,63820,63839,97901,63936,63939,97906,63897,63937,63931,63868,63930,63849,63920,97903,63925,63853,63928,97909,63843,63934,63927,63785",Bayern,0.5169550678,780 T. €,260.0,260 T. €,"1,8 Mrd. €",530,530.0,3
+Stadt-Sparkasse Solingen,"42697,42699,42653,42651,42659,42655,42719,42657",Nordrhein-Westfalen,0.620420552,781 T. €,390.5,"390,5 T. €","2,2 Mrd. €",630,630.0,2
+Kreissparkasse Wiedenbrück,"33442,33758,33449,33378,33415",Nordrhein-Westfalen,0.5728771,784 T. €,392.0,392 T. €,"2,1 Mrd. €",366,366.0,2
+OstseeSparkasse Rostock,"18195,18225,18230,18279,18198,18239,18196,18109,18147,17166,18057,18246,17179,18146,18211,18107,18273,18258,18209,18055,18236,18069,17168,18106,18119,18233,18181,18059,18184,18190,18182,18299,18292",Mecklenburg-Vorpommern,0.817627535,792 T. €,396.0,396 T. €,3 Mrd. €,741,741.0,2
+Kreis- und Stadtsparkasse Erding - Dorfen,"85659,85456,85457,84416,85469,85465,85464,85445,85462,84405,85399,85452,85435,84435,85467,85447",Bayern,0.5234468213,794 T. €,264.6666666666667,"264,7 T. €","1,9 Mrd. €",421,421.0,3
+Sparkasse Baden-Baden Gaggenau,"76571,76530,76532,76476,76534,76456",Baden-Württemberg,0.4865835309,795 T. €,265.0,265 T. €,"1,8 Mrd. €",390,390.0,3
+Sparkasse Hildesheim,"31033,31008,31139,31171,31032,31167,31188,31195,31174,31096,38277,31085,31191,31061,31157,31088,31137,31091,31079,38279,31099,38271,31177,31162,31036,31185,31089,31039,31035,31199,31084,38274,31141,31094,31028,31097,31180,31135,31093,31196,31029,31087,31134",Niedersachsen,1.1856920945,805 T. €,268.3333333333333,"268,3 T. €","3,9 Mrd. €",1085,1085.0,3
+Kreissparkasse Miesbach-Tegernsee,"83735,83629,83703,83700,83737,83727,83714,83708,83684,83730,83627,83734,83666,83607,83624,83707,83626",Bayern,0.5056710061,806 T. €,268.6666666666667,"268,7 T. €","1,7 Mrd. €",380,380.0,3
+Sparkasse Zwickau,"08132,08144,08062,08412,08459,08066,08058,08141,08115,08064,08451,08427,08112,08147,08428,08056,08118,08134,08107,08060",Sachsen,0.7505540274,812 T. €,406.0,406 T. €,"2,6 Mrd. €",514,514.0,2
+Sparkasse Langen-Seligenstadt,"63128,63500,63512,63329,63179,63533,63165,63150,63225",Hessen,0.943730212,817 T. €,408.5,"408,5 T. €","3,2 Mrd. €",740,740.0,2
+Sparkasse Fulda,"36041,36043,36160,36129,36088,36132,36103,36169,36119,36137,36142,36115,36039,36163,36100,36145,36157,36148,36167,36093,36151,36124,36154,36037,36364",Hessen,1.0106091351,828 T. €,276.0,276 T. €,"3,5 Mrd. €",837,837.0,3
+Sparkasse Schweinfurt,"97488,97453,97424,97534,97535,97513,97421,97508,97516,97509,97493,97525,97422,97456,97506,97505,97511,97499,97440,97526,97447,97537,97523,97532,97497,97529,97502,97464,97490,97520,97469",Bayern,0.6983925426300001,833 T. €,277.6666666666667,"277,7 T. €","2,5 Mrd. €",596,596.0,3
+Sparkasse Landsberg-Dießen,"86916,86935,86923,86949,86931,86920,86944,86937,86928,86926,86940,86946,86492,82279,86859,86941,86899,86919,86922,86929,86925,86947,86943,86911,86938,82269,86857,86932",Bayern,0.5163655792,856 T. €,285.3333333333333,"285,3 T. €","1,7 Mrd. €",404,404.0,3
+Sparkasse Märkisch-Oderland,"16269,15328,15324,15374,15320,15366,15370,15344,15306,15562,15345,16259,15326,15377,15378",Brandenburg,0.375004743,866 T. €,288.6666666666667,"288,7 T. €","1,5 Mrd. €",361,361.0,3
+Sparkasse Soest,"59510,59514,59505,59494,59519",Nordrhein-Westfalen,0.410892773,870 T. €,290.0,290 T. €,"1,5 Mrd. €",303,303.0,3
+Sparkasse Oberlausitz-Niederschlesien,"02799,02906,02708,02748,02736,02826,02957,02791,02959,02796,02953,02797,02956,02763,02827,02782,02899,02747,02794,02785,02923,02730,02829,02739,02742,02943,02788,02828,02779,02929,02727,02894",Sachsen,0.7931401242,874 T. €,437.0,437 T. €,"2,9 Mrd. €",590,590.0,2
+Sparkasse Neumarkt-Parsberg,"92361,92364,90602,92342,92348,92331,92283,92353,92366,92367,92363,92318,92355,92358,92334,92345,92360,92369",Bayern,0.63536780234,876 T. €,292.0,292 T. €,2 Mrd. €,540,540.0,3
+Sparkasse Neu-Ulm - Illertissen,"89281,89231,89257,89296,89291,89233,89269,89290,89250,89299,89294,89284,89297,89275,89264,89278,89287,89293",Bayern,0.5516007959,876 T. €,292.0,292 T. €,"1,9 Mrd. €",525,525.0,3
+Sparkasse Bad Tölz-Wolfratshausen,"83670,82541,82547,83674,82549,82538,82544,83673,83671,82432,82515,83646,83623,83677,83676,82057,83661,82431,83679",Bayern,0.5946267712,888 T. €,296.0,296 T. €,"2,1 Mrd. €",491,491.0,3
+Sparkasse Südholstein,"24635,25488,24598,23820,23795,25370,25479,23818,23845,24628,25371,23816,22851,25355,25421,24619,23815,24539,25495,25492,23812,25486,23827,24649,25482,25462,25364,23823,23829,24568,22844,24537,24558,24534,24536,24626,24638,23867,23824,24632,25494,24576,25497,24623,25491,25474,23826,23866,25365,24629,27498,25469,24610,25451,22869,23821,23863,25489,23719,25499,24641,24640,24643,25485,25436,25373,23813",Schleswig-Holstein,1.4732214494,903 T. €,387.55364806866953,"387,6 T. €",5 Mrd. €,1052,1052.0,"2,33"
+Sparkasse Minden-Lübbecke,"32339,32609,32429,32312,32423,32469,32427,32361,32425,32351,32479",Nordrhein-Westfalen,0.692419742,906 T. €,302.0,302 T. €,"2,3 Mrd. €",679,679.0,3
+Kreissparkasse Saarlouis,"66839,66780,66798,66359,66822,66763,66787,66806,66809,66773,66802,66793,66740",Saarland,0.9835486722,915 T. €,305.0,305 T. €,"3,6 Mrd. €",769,769.0,3
+Vereinigte Sparkassen Stadt- und Landkreis Ansbach,"91586,91590,91731,91629,91746,91632,91567,91622,91522,91575,91725,91726,91617,91599,91589,91572,91555,91722,91717,91598,91580,91625,91604,91623,91564,91560,91737,91578,91749,91595,91611",Bayern,0.82861757729,920 T. €,306.6666666666667,"306,7 T. €","2,9 Mrd. €",708,708.0,3
+Sparkasse Schwäbisch Hall Crailsheim,"74429,74523,74545,74541,74423,74544,74405,74547,74420,74585,74542,74532,74427,74424,74564,74549,74579,74592,74589,74582,74538,74586,74595,74599,74575,74426,74572,74535,74597",Baden-Württemberg,0.8254863453,921 T. €,307.0,307 T. €,"3,1 Mrd. €",576,576.0,3
+Sparkasse Göttingen,"37075,37133,37079,37130,37083,37077,37081,37073,37085,37124,37120,37136,37139",Niedersachsen,0.762504386,925 T. €,308.3333333333333,"308,3 T. €","2,7 Mrd. €",730,730.0,3
+Sparkasse Meißen,"01662,01623,01612,01683,01594,01561,01587,01589,01468,01558,01665,01640,01591,01619,01689,01609,01445,01471,01616",Sachsen,0.6432656662,932 T. €,372.8,"372,8 T. €","2,5 Mrd. €",441,441.0,"2,5"
+Sparkasse Vorpommern,"17495,17438,17493,18519,17491,18546,17506,18513,18609,17459,18435,17389,17498,18469,18465,17391,18510,18528,18337,17489,18314,18437,17121,18317,18320,18461,18374,18556,18334,17129,17390,18445,17429,17398,18516,17440,18586,18574,17419,17406,17509,18569,18375,18551,18573,18442,17449,18356,18507,18347,17424,17126,18565,18311,17392,18581,17454,18439",Mecklenburg-Vorpommern,0.8704397805,935 T. €,311.6666666666667,"311,7 T. €","3,2 Mrd. €",770,770.0,3
+Sparkasse Marburg-Biedenkopf,"35091,35041,35112,35239,35083,35075,35094,35236,35080,35260,35274,35117,35288,35096,35085,35043,35719,35279,35287,35282,35102,35216,35039,35037,35232",Hessen,0.9536108948,945 T. €,315.0,315 T. €,"3,2 Mrd. €",916,916.0,3
+Sparkasse Coburg-Lichtenfels,"96260,96484,96279,96237,96269,96271,96465,96450,96482,96257,96250,96145,96472,96489,96253,96476,96215,96272,96274,96264,96224,96479,96487,96231,96247,96275,96242,96486",Bayern,0.6628985131,950 T. €,316.6666666666667,"316,7 T. €","2,4 Mrd. €",657,657.0,3
+Taunus Sparkasse,"61352,61350,61279,65835,61276",Hessen,1.28345,957 T. €,395.4545454545455,"395,5 T. €","4,4 Mrd. €",851,851.0,"2,42"
+Sparkasse Aschaffenburg-Alzenau,"63879,63869,63791,63762,63776,63796,63741,63875,63857,63846,63773,63856,63768,63877,63811,63828,63814,63739,63801,63755,63808,63871,63867,63826,63872,63874,63860,63743,63829,63825,63864,63831",Bayern,1.0828795997,962 T. €,320.6666666666667,"320,7 T. €","3,9 Mrd. €",941,941.0,3
+Stadtsparkasse Oberhausen,"46149,46145,46045,46147,46047,46117,46119,46049",Nordrhein-Westfalen,0.6465968008,964 T. €,241.00475,241 T. €,"2,4 Mrd. €",589,589.0,4
+Sparkasse der Stadt Iserlohn,"58636,58644,58640,58642,58638",Nordrhein-Westfalen,0.431787038,967 T. €,322.3333333333333,"322,3 T. €","1,5 Mrd. €",373,373.0,3
+Sparkasse Hamm,"59065,59067,59063,59075,59077,59069,59071,59073",Nordrhein-Westfalen,0.447025237,970 T. €,323.3333333333333,"323,3 T. €","1,7 Mrd. €",376,376.0,3
+Sparkasse Regensburg,"93138,93051,93161,93049,93182,93059,93092,93186,93080,93109,93101,93105,93164,93083,93089,93053,93188,84069,93098,93170,93086,93047,93173,93177,93087,93180,93128,93090,93107,93057,93176,93197,93096,93183,93055,93155,93093,93179,93073,93095,93195,93152,93102,93104,93099",Bayern,1.1774737792,973 T. €,324.3333333333333,"324,3 T. €",4 Mrd. €,856,856.0,3
+Sparkasse Kraichgau,"75053,75057,76703,76689,76669,76709,74927,74925,75015,74934,76698,75059,74915,76707,74924,74889,76694,74921,76646,74937,74936,74918,75045,76684,74933,74939",Baden-Württemberg,1.0433429887,973 T. €,324.3333333333333,"324,3 T. €","3,9 Mrd. €",768,768.0,3
+Sparkasse Amberg-Sulzbach,"92259,92265,92275,92287,92266,91249,92242,92263,92262,92253,92256,92249,92281,92224,92289,92245,92274,92284,92278,92268,92286,92277,92260,92237,92280,92271,92272",Bayern,0.53472634829,978 T. €,326.0,326 T. €,2 Mrd. €,527,527.0,3
+Sparkasse Markgräflerland,"79576,79589,79588,79415,79426,79424,79395,79418,79595,79379,79410,79591",Baden-Württemberg,0.614480143,980 T. €,326.6666666666667,"326,7 T. €","2,3 Mrd. €",412,412.0,3
+Sparkasse Lüdenscheid,"58553,58507,58849,58513,58509,58511,58579,58515",Nordrhein-Westfalen,0.5310591325,"980,4 T. €",326.8,"326,8 T. €","1,8 Mrd. €",425,425.0,3
+Sparkasse Bamberg,"96178,96187,96170,96173,96182,96110,96114,96117,96149,96135,96167,96194,96120,96163,91332,96047,96175,96191,96154,96129,96185,96199,96169,96148,96161,96123,96052,96050,96196,96146,96179,96157,96164,96049,96158,96155,96103,96132,96138",Bayern,0.9256449138,986 T. €,358.5454545454545,"358,5 T. €","3,5 Mrd. €",969,969.0,"2,75"
+Kreissparkasse Reutlingen,"72584,72539,72829,72766,72800,72760,72581,72587,72532,72124,72770,72555,72531,72768,72582,72574,72820,72661,72813,72525,72805,72818,72537,72827,72141,88529,72585,72764,72762,72793,72534",Baden-Württemberg,1.2437451261,988 T. €,329.3333333333333,"329,3 T. €","4,7 Mrd. €",1017,1017.0,3
+Sparkasse Passau,"94538,94136,94164,94544,94496,94149,94535,94034,94051,94139,94575,94104,94081,94036,94060,94501,94161,94086,94121,94529,94474,94167,94094,94099,94110,94072,94124,94116,94152,94154,94032,94127,94107,94130,94113,94148,94542",Bayern,0.7569454253,989 T. €,329.6666666666667,"329,7 T. €","2,6 Mrd. €",779,779.0,3
+Sparkasse Emsland,"49770,49809,49838,49832,26899,48480,49774,26909,26892,26904,26906,49844,49751,26903,49716,26871,48488,26897,49740,49757,26907,49779,49744,49811,49762,49808,49767,49733,26901,48499,49777",Niedersachsen,0.9224059551,990 T. €,330.0,330 T. €,"3,1 Mrd. €",889,889.0,3
+Sparkasse Allgäu,"87629,87496,87541,87534,87452,87674,87494,87634,87663,86980,87463,87490,87439,87647,87659,87616,87538,86983,87669,87509,87437,87648,87547,87544,87657,87477,87642,87527,87549,87480,87645,87653,87448,87651,87435,87675,87499,87487,87637,87493,87497,87545,87466,87640,87459,87561,87671,87654,87474,87471,87484,87488,87672",Bayern,1.1836326934,994 T. €,331.3333333333333,"331,3 T. €","4,2 Mrd. €",1079,1079.0,3
+Sparkasse Altötting-Mühldorf,"84558,84547,84576,84489,84579,84562,84573,84556,84419,84513,84543,84428,84478,84494,84550,84553,84518,84570,84524,84555,84453,84561,84539,84431,84577,84544,84565,84503,84508,84571,84533,84559,84546,84568,84564,84567,84574",Bayern,0.6815541913,995 T. €,331.6666666666667,"331,7 T. €","2,4 Mrd. €",617,617.0,3
+Sparkasse Memmingen-Lindau-Mindelheim,"86833,87727,87746,88149,87766,87757,87761,87772,86842,88145,87760,87758,87779,88131,86879,87782,88171,87773,87743,87734,88142,86854,86825,88178,86874,87781,87719,87739,88167,87770,87733,87776,87742,87787,87724,87778,87736,87785,87700,87749,87730,87763,87740,87754,86865,87769,88161,87764,88175,86498,87789,87755,87737,87748,87745,87784,87775,86871,87767,88179,87751,88138,87752",Bayern,1.0634690214,1 Mio. €,333.6666666666667,"333,7 T. €","3,7 Mrd. €",837,837.0,3
+Kreissparkasse Düsseldorf,"42579,40822,42489,40699",Nordrhein-Westfalen,0.7505889963,1 Mio. €,338.5416666666667,"338,5 T. €","2,6 Mrd. €",679,679.0,3
+Stadt- und Kreissparkasse Erlangen,"91096,91088,91052,91056,91083,90562,91054,91058,91080,91074",Bayern,1.193458632,1 Mio. €,374.9077490774908,"374,9 T. €","4,2 Mrd. €",918,918.0,"2,71"
+Sparkasse am Niederrhein,"46509,47506,47443,47445,47495,47447,47665,47441,46519",Nordrhein-Westfalen,0.8385817628,1 Mio. €,338.7333333333333,"338,7 T. €","3,1 Mrd. €",757,757.0,3
+Sparkasse Offenburg/Ortenau,"77977,77740,77948,77770,77955,77728,77889,77876,77971,77975,77656,77746,77799,77749,77743,77652,77883,77855,77966,77960,77887,77933,77654,77978,77974,77794,77972,77767,77880,77704,77871,77963",Baden-Württemberg,1.0996122614,1 Mio. €,341.3333333333333,"341,3 T. €",4 Mrd. €,870,870.0,3
+Kreissparkasse Göppingen,"73344,73326,73312,73117,73347,73072,73108,73035,73099,73105,73095,73102,73119,73054,73349,73110,73278,73037,73087,73333,73033,73104,73066,73061,89558,73092,73345,73337,73113,73111,73116,73098,73107,73079,73329,73342,73114,73084,73101",Baden-Württemberg,1.4270521701,1 Mio. €,343.0,343 T. €,"5,1 Mrd. €",1176,1176.0,3
+Kreissparkasse Tübingen,"72108,72810,72076,72074,72119,72144,72135,72147,72116,72149,72138,72070,72131,72072,72181,72411,72127,72145",Baden-Württemberg,1.2612693772,1 Mio. €,347.6666666666667,"347,7 T. €","4,8 Mrd. €",985,985.0,3
+Sparkasse Fürstenfeldbruck,"82278,82294,82223,82256,82296,82239,82285,82216,82291,82110,82287,82178,82284,82288,82290,82275,82272,82276,82293,82194,82140,82281,82299",Bayern,0.9941456375,1 Mio. €,349.0,349 T. €,"3,3 Mrd. €",812,812.0,3
+Kreissparkasse Ostalb,"74417,73565,73433,73434,73466,73499,73547,73569,73572,73495,73486,73577,73557,73479,73463,73453,73467,73568,73491,73441,73540,73485,73571,73469,73430,73431,73457,73488,73525,73489,73566,73497,73527,73575,73579,73447,73574,73529,73492,73550,73494,73460,73560,73450,73563,73432",Baden-Württemberg,1.3022030002,"1,1 Mio. €",352.6666666666667,"352,7 T. €","4,7 Mrd. €",1068,1068.0,3
+Sparkasse Rosenheim-Bad Aibling,"83135,83131,83098,83229,83257,83233,83075,83122,83022,83043,83569,83080,83112,83253,83093,83026,83064,83254,83620,83104,83088,83126,83134,83115,83125,83059,83101,83024,83083,83052,83071,83109,83209",Bayern,1.2641738159,"1,1 Mio. €",398.49624060150376,"398,5 T. €","4,5 Mrd. €",974,974.0,"2,66"
+Sparkasse Fürth,"90617,90766,90574,90614,90579,90556,90547,90762,90768,90765,90613,90522,90513,90587,90763,91452",Bayern,0.8403634101,"1,1 Mio. €",354.3333333333333,"354,3 T. €",3 Mrd. €,775,775.0,3
+Kreissparkasse Heinsberg,"52531,41836,41849,41812,52538,52511,41844,52525",Nordrhein-Westfalen,0.8668226112,"1,1 Mio. €",354.5,"354,5 T. €",3 Mrd. €,702,702.0,3
+Sparkasse Hanau,"61138,63549,63526,61130,63452,63457,63454,63486,63538,63546,63543,61137,63517,63505",Hessen,1.2378997089,"1,1 Mio. €",355.6666666666667,"355,7 T. €","4,3 Mrd. €",689,689.0,3
+Sparkasse Landshut,"84085,84082,84144,84092,84175,84036,84028,84107,84032,84095,84160,84174,84189,84034,84061,84169,93359,84171,84166,84097,84155,84172,84187,84098,84137,84088,84184,93352,84066,84168,84186,84030,84178,84149,84051,84109,84100,84181,94333,84056,84076,84103",Bayern,0.9522736939,"1,1 Mio. €",360.3333333333333,"360,3 T. €","3,5 Mrd. €",863,863.0,3
+Sparkasse Oder-Spree,"15859,15295,15299,15234,15537,15848,15890,15526,15898,15518,15566,15517,15864,15569,15236,15528,15230,15232",Brandenburg,0.7448915,"1,1 Mio. €",372.60273972602744,"372,6 T. €","2,5 Mrd. €",524,524.0,"2,92"
+Sparkasse Düren,"52351,52355,52459,52428,52382,52372,52353,52391,52379,52385,52396,52349,52399,52441,52393,52457,52445,52388",Nordrhein-Westfalen,0.9541624384,"1,1 Mio. €",364.3333333333333,"364,3 T. €","3,4 Mrd. €",813,813.0,3
+Sparkasse Mittelfranken-Süd,"91757,91807,91792,91154,91790,91183,91796,90596,91126,90530,91180,91798,90584,91785,91189,91793,91161,91166,91781,91186,91799,91788,91187,91177,91174,91171",Bayern,0.9208546425,"1,1 Mio. €",364.6666666666667,"364,7 T. €","3,5 Mrd. €",923,923.0,3
+Kreissparkasse Augsburg,"86486,86830,86853,86517,86863,86877,86679,86678,86500,86424,86845,86672,86514,86497,86866,86707,86494,86465,86872,86836,86420,86405,86356,86850,86456,86391,86477,86482,86507,86343,86856,86399,86485,86695,86459,86450,86368,86868,86441,86462",Bayern,0.8779722134,"1,1 Mio. €",364.6666666666667,"364,7 T. €","3,2 Mrd. €",688,688.0,3
+Sparkasse Hagen,"58097,58095,58091,58119,58089,58099,58093,58135",Nordrhein-Westfalen,0.7041618107,"1,1 Mio. €",364.6666666666667,"364,7 T. €","2,5 Mrd. €",538,538.0,3
+Sparkasse Ulm,"89129,89155,89584,89150,89195,89182,89179,89174,89180,89077,72589,89143,89189,73340,89605,89079,89611,89608,89183,89601,89610,89597,89192,89186,89160,89197,89617,89604,89607,72535,89075,89073,89081,89613,89616,89185,89188,88481,89134,89165,89619,89177,89198,89176,89614,89173,89194,89191,89171",Baden-Württemberg,1.6145199062,"1,1 Mio. €",366.0,366 T. €,"5,6 Mrd. €",1264,1264.0,3
+Sparkasse Mittelthüringen,"99510,99518,99428,99092,99102,99084,99427,99090,99439,99628,99087,99425,99625,99097,99098,99448,99096,99095,99444,99634,99438,99631,99086,99610,99189,99091,99089,99085,99441,99195,99094,99198,99636,99423,99099,99638",Thüringen,1.11390394,"1,1 Mio. €",366.3333333333333,"366,3 T. €","3,9 Mrd. €",893,893.0,3
+Sparkasse Oberhessen,"36323,61239,36320,61231,61200,36369,63691,35325,35315,63667,63679,61206,36329,63683,61194,63695,61197,63654,36355,61169,36367,36399,63688,61203,36358,35510,36110,36318,36304,63694,36341,61184,35519,61209,36326,35327,36325,35329,35516,63697,63699,63674,61191",Hessen,1.2895025455,"1,1 Mio. €",368.6666666666667,"368,7 T. €","4,4 Mrd. €",1042,1042.0,3
+Sparkasse Niederbayern-Mitte,"94419,94336,94371,94553,84163,84152,94437,94377,94379,94344,84180,94353,94363,94369,94327,94347,94368,94431,84183,94356,94522,94348,94372,94350,94375,94342,94351,94345,94559,94365,94374,94405,84130,94315,94366,84177,94360,94428,94357,94354,94339,94330,94505,84164,94359,94362",Bayern,1.0207118769,"1,1 Mio. €",368.6666666666667,"368,7 T. €","3,8 Mrd. €",827,827.0,3
+Sparkasse Bodensee,"88069,78467,88709,88719,88718,78462,78465,88097,88079,88094,88662,78354,88085,78464,88074,88046,88045,88048,88099,88696,88677",Baden-Württemberg,1.1566752083,"1,1 Mio. €",372.6666666666667,"372,7 T. €","4,1 Mrd. €",901,901.0,3
+Sparkasse Ingolstadt,"85134,85053,85098,85129,85092,85139,85055,85051,85117,85104,85057,85084,85077,85101,85107,85120,85049,85080",Bayern,1.1637384427,"1,1 Mio. €",375.6666666666667,"375,7 T. €","3,8 Mrd. €",787,787.0,3
+Sparkasse Westholstein,"25591,25348,25597,25588,25704,25709,24616,25551,25379,25715,25582,25724,25725,25785,25579,25712,25576,25524,25548,25761,25541,25575,25573,25721,25693,25719,25566,25584,25578,25563,25727,25729,25767,25569,25554,25560,25593,25587,25368,25599,25376,25358,25770,25718,25361,25377",Schleswig-Holstein,0.9099278694,"1,1 Mio. €",378.0,378 T. €,"3,3 Mrd. €",708,708.0,3
+Sparkasse Hochfranken,"95239,95152,95199,95176,95182,95236,95100,95126,95188,95183,95179,95131,95707,95194,95173,95028,95189,95234,95659,95030,95709,95191,95213,95145,95197,95195,95163,95697,95192,95185,95180,95168,95158,95691,95111,95482,95119,95237,95186,95632,95032,95615,95138,95233,95706,95680",Bayern,1.0054431434,"1,1 Mio. €",381.3333333333333,"381,3 T. €","3,5 Mrd. €",940,940.0,3
+Kreissparkasse Groß-Gerau,"65479,65462,64579,64560,64584,64569,64572,65428,64521,65474,64589,64546,65468,65451",Hessen,0.7732305998,"1,2 Mio. €",385.0,385 T. €,"2,7 Mrd. €",686,686.0,3
+Sparkasse Vogtland,"08538,08523,08267,08239,08236,08223,08499,08527,08258,08541,08543,08525,07952,08547,08645,08261,08248,08237,08548,08485,08228,08262,07919,08529,08233,08496,08648,08491,07985,08468,08626,08539,08606,08209",Sachsen,0.8440424112,"1,2 Mio. €",392.0,392 T. €,3 Mrd. €,598,598.0,3
+Sparkasse Saarbrücken,"66133,66352,66125,66126,66127,66265,66115,66271,66123,66119,66129,66131,66299,66128,66132,66287,66117,66113,66121,66292,66280,66130,66111,66346",Saarland,1.7576742084,"1,2 Mio. €",299.5,"299,5 T. €","6,8 Mrd. €",1283,1283.0,4
+Sparkasse Lemgo,"33813,32107,32694,32105,32657,32699,32689,32108,33818",Nordrhein-Westfalen,0.772104865,"1,2 Mio. €",403.6666666666667,"403,7 T. €","2,8 Mrd. €",630,630.0,3
+Kasseler Sparkasse,"34117,34121,34260,34131,34329,34253,34298,34314,34466,34359,34369,34130,34246,34225,34134,34128,34388,34270,34119,34132,34396,34479,34289,34308,34385,34292,34127,34317,34311,34277,34266,34123,34320,34233,34399,34125",Hessen,1.4430817296,"1,2 Mio. €",310.0,310 T. €,"5,2 Mrd. €",1170,1170.0,4
+Stadtsparkasse Augsburg,"86495,86504,86316,86169,86438,86415,86157,86152,86167,86153,86199,86511,86165,86154,86163,82297,86150,86161,86453,86179,86510,86159,86156",Bayern,1.5659339028,"1,2 Mio. €",416.0,416 T. €,"5,4 Mrd. €",1343,1343.0,3
+Sparkasse Worms-Alzey-Ried,"68647,67595,67582,55234,55597,55578,55232,68649,55286,55239,67593,67592,55599,55291,67578,67577,67550,55288,67580,67575,68642,55237,67547,68623,67598,67551,67596,67590,67574,67591,67599,67549",Rheinland-Pfalz,0.7816195838,"1,3 Mio. €",418.6666666666667,"418,7 T. €","2,9 Mrd. €",613,613.0,3
+Stadt- und Kreissparkasse Darmstadt,"64331,64397,64289,64285,64283,64319,64372,64347,64367,64390,64287,64293,64297,64295,64665,64404,64291,64342",Hessen,1.2553698216,"1,3 Mio. €",422.3333333333333,"422,3 T. €","4,1 Mrd. €",856,856.0,3
+Sparkasse Siegen,"57223,57080,57076,57078,57250,57258,57074,57072,57234",Nordrhein-Westfalen,0.8882343577,"1,3 Mio. €",422.3333333333333,"422,3 T. €","3,1 Mrd. €",796,796.0,3
+Sparkasse Hilden Ratingen Velbert,"42553,42551,42555,40885,40723,40882,40880,40883,40878,40721,42549,40724",Nordrhein-Westfalen,0.9136011831,"1,3 Mio. €",422.7,"422,7 T. €","3,3 Mrd. €",789,789.0,3
+Sparkasse Herford,"32257,32049,32052,32130,32278,32602,32051,32120,32139,32289,32584",Nordrhein-Westfalen,1.2972289557,"1,3 Mio. €",423.3333333333333,"423,3 T. €","4,4 Mrd. €",1089,1089.0,3
+Sparkasse Leverkusen,"51379,51377,51381,51373,51371,51375",Nordrhein-Westfalen,0.8448484042,"1,3 Mio. €",428.7666666666667,"428,8 T. €","3,1 Mrd. €",619,619.0,3
+Kreissparkasse Steinfurt,"48496,49549,48356,48612,49477,49545,48366,48565,48341,48477,48629,49504,49509,48485,48369,49479,49492,49536,49497,48493,48268",Nordrhein-Westfalen,0.9399790296,"1,3 Mio. €",334.0,334 T. €,"3,4 Mrd. €",910,910.0,4
+Sparkasse Bielefeld,"33617,33699,33619,33739,33602,33605,33609,33611,33719,33689,33649,33604,33615,33607,33613,33647,33659,33729",Nordrhein-Westfalen,1.6429114882,"1,3 Mio. €",445.6666666666667,"445,7 T. €","5,8 Mrd. €",1430,1430.0,3
+Weser-Elbe Sparkasse,"27612,27607,27572,27624,21770,27574,27628,21785,27616,21776,27619,27570,21789,21745,27639,21762,21763,21782,21756,27578,21787,21769,21772,21784,27576,27568,21755,27580,21775,21781,21765",Niedersachsen,1.1635728,"1,3 Mio. €",446.3333333333333,"446,3 T. €",4 Mrd. €,976,976.0,3
+Erzgebirgssparkasse,"09456,09221,08309,09579,09392,09366,09423,09376,09430,08280,09387,08304,09518,09477,09235,09509,08328,09439,08289,09380,08349,09548,08301,08297,08344,09427,08340,09488,09385,09526,08352,08324,09405,09419,09437,09487,09471,09434,08294,08315,09390,09496,09468,09429,08321,09465,09394,09432,09514,08359,09484,09481,09474,09399",Sachsen,1.107913448,"1,3 Mio. €",449.6666666666667,"449,7 T. €","4,2 Mrd. €",1091,1091.0,3
+Sparkasse Krefeld,"47802,41749,47839,41751,47800,47661,47929,47877,41379,41747,47799,47647,41334,47509,47608,41372,47918,47804,47809,47906,47829,41366,41748,47798,47669,47805,47807,47803",Nordrhein-Westfalen,2.281993233092,"1,3 Mio. €",449.68,"449,7 T. €","8,2 Mrd. €",1819,1819.0,3
+Sparkasse Karlsruhe Ettlingen,"68794,76351,76139,76297,76307,76337,76228,76133,76661,76227,76189,76316,76356,76149,76359,76185,76137,76344,76287,76275,76135,76706,76676,76229,76131,76187,76199,76327",Baden-Württemberg,2.0860387954,"1,5 Mio. €",372.75,"372,8 T. €","7,2 Mrd. €",1614,1614.0,4
+Sparkasse Mainfranken Würzburg,"97282,97299,97355,97753,97846,97289,97078,97450,97337,97080,97259,97842,97241,97276,97084,97082,97279,97791,97816,97334,97237,97199,97775,97828,97848,97794,97320,97892,97273,97239,97072,97209,97859,97234,97340,96160,97232,97778,97243,97855,97283,97286,97843,97845,97280,97256,97342,97837,97851,97854,97244,97204,97773,97262,97291,97907,97857,97833,97228,97070,97353,97288,97297,97776,97346,97785,97271,97292,97249,97294,97359,97230,97246,97350,97836,97250,97318,97268,97783,97074,97222,97076,97225,97348,97780,97788,97236,97267,97255,97277,97840,97270,97261,97849,97357,97782,97737,97295,97852,97218,97839,97253,97834,97252,97332,97247,97265,97285,97274,97264",Bayern,2.1809455971,"1,5 Mio. €",376.25,"376,2 T. €","7,2 Mrd. €",1803,1803.0,4
+Sparkasse Bochum,"44793,44809,44791,44801,44892,44879,44866,44797,44869,44795,44789,44787,44867,44799,44805,44894,44803,44807",Nordrhein-Westfalen,1.698608182903,"1,5 Mio. €",504.3333333333333,"504,3 T. €","5,9 Mrd. €",1219,1219.0,3
+Sparkasse Neuss,"41466,40670,40667,41564,41540,41468,41464,41470,41460,41516,41569,41515,41352,40668,41363,41539,41469,41541,41517,41472,41542,41462",Nordrhein-Westfalen,1.7722486205,"1,5 Mio. €",378.95,"378,9 T. €","6,3 Mrd. €",1301,1301.0,4
+Kreissparkasse Mittelsachsen,"09619,09232,09669,09633,09569,09634,09600,09244,09603,09629,09557,09217,09328,09573,09322,09544,09618,09599,09577,09326,09638,09236,09661,09306,09627,09648,09575,09241,09249,09623",Sachsen,0.8109155967,"1,5 Mio. €",384.5,"384,5 T. €",3 Mrd. €,631,631.0,4
+Stadtsparkasse Wuppertal,"42115,42399,42117,42287,42107,42289,42105,42349,42111,42283,42119,42279,42285,42103,42369,42327,42281,42389,42275,42329,42113,42277,42109",Nordrhein-Westfalen,1.9660949323,"1,6 Mio. €",519.0,519 T. €,"6,9 Mrd. €",1384,1384.0,3
+Mittelbrandenburgische Sparkasse in Potsdam,"16556,16540,15913,14929,14467,16767,16766,14669,14776,14770,15749,14532,14558,15738,14480,14727,14542,14774,14476,15907,15868,14621,14913,15837,14823,14793,14513,15806,14548,14772,14552,14656,16548,14806,14797,14550,16567,14612,15936,14979,14715,14959,15745,14624,14641,15938,15712,16775,14473,16559,15834,14662,15827,15711,14827,14547,14822,15831,16798,14482,15741,14974,15732,14828,14798,14943,15746,16547,14728,14789,15838,15713,15926,16761,14712,14469,16515,14478,16727,16792,12529,14471,15754,15910",Brandenburg,2.896151972698,"1,6 Mio. €",390.0,390 T. €,11 Mrd. €,1683,1683.0,4
+Sparkasse Vest Recklinghausen,"45731,45701,45699,45665,45711,44579,45663,46286,45739,44577,45772,46284,46282,44581,44575,45768,45657,45659,45770,45661",Nordrhein-Westfalen,1.605595003,"1,6 Mio. €",436.3387978142076,"436,3 T. €","5,7 Mrd. €",1356,1356.0,"3,66"
+Ostsächsische Sparkasse Dresden,"01259,01127,01900,01477,01796,01454,01219,01731,01257,01099,01936,02979,01139,01458,01723,01737,01896,01328,02997,01829,01156,01279,01844,01705,01217,01734,01129,01159,01816,01768,01762,01187,01728,01237,01773,01776,01738,01307,01109,01855,01097,01774,02991,02994,02999,01277,01833,01309,01824,01069,02977,01778,01920,01809,01157,01847,01819,01108,01465,01326,01067,01744,01917,01324,01848,01825,01189,01814,01239,01169",Sachsen,3.2078108515,"1,6 Mio. €",535.3333333333334,"535,3 T. €","11,9 Mrd. €",1799,1799.0,3
+Kreissparkasse Ludwigsburg,"74321,71696,74385,74369,71672,74392,70806,74372,74395,70825,71636,74394,71726,74366,71282,71679,71686,71711,71665,74391,74399,71638,71640,71563,71723,71642,71732,71701,71735,74343,71254,71739,71706,71729,71691,71634,70839,74376,74354,74379,74357",Baden-Württemberg,2.64454144011,"1,6 Mio. €",535.6666666666666,"535,7 T. €","9,8 Mrd. €",1802,1802.0,3
+Stadt- und Kreissparkasse Leipzig,"04657,04349,04552,04509,04103,04109,04880,04107,04420,04356,04328,04849,04523,04249,04654,04862,04889,04416,04155,04318,04209,04442,04861,04277,04299,04159,04279,04229,04105,04347,04769,04357,04860,04758,04838,04289,04177,04179,04451,04571,04316,04539,04886,04207,04178,04157,04329,04519,04158,04315,04129,04567,04205,04319,04874,04463,04288,04317,04779,04275,04565,04643,04435,04575,04564,04774,04655,04425",Sachsen,2.340156841398,"1,6 Mio. €",542.3333333333334,"542,3 T. €","8,8 Mrd. €",1663,1663.0,3
+Landessparkasse zu Oldenburg,"26954,26689,26935,27755,27809,49401,26349,26419,49699,26188,27793,27801,27804,27751,49377,26160,49413,26655,26919,26683,26434,26219,27777,27753,49451,49429,49632,26939,26931,27749,26486,26937,49439,49681,26316,26969,26197,49685,27243,49456,26203,26129,26122,26133,49434,26215,26441,26135,26452,26169,49692,26131,26936,26676,26209,49696,49424,26121,26345,49393,26123,27798,49661,49624,26180,26340,49688,26125,26127",Niedersachsen,2.36254,"1,6 Mio. €",411.75,"411,8 T. €","8,4 Mrd. €",1677,1677.0,4
+Sparkasse Rhein Neckar Nord,"68239,68169,68526,68161,69514,69469,69198,68165,68163,68542,69502,68159,68229,68309,69493,68535,68549,68259,68307,68167,68305,68199,68219",Baden-Württemberg,1.2073845396,"1,6 Mio. €",471.14285714285717,"471,1 T. €","4,6 Mrd. €",941,941.0,"3,5"
+Sparkasse Nürnberg,"90459,90475,90431,91247,90449,90482,91207,91220,90419,91217,90559,91245,90441,90451,90571,90427,91233,90425,91224,90489,90455,90408,90478,91236,90491,91238,90473,90453,91230,90429,91239,91244,90439,90469,91227,90402,90552,90610,90592,90443,90403,91235,90461,90409,91242,90607,90411,90480,91241,90537,90471,90518",Bayern,3.0578534734700002,"1,7 Mio. €",425.0,425 T. €,"10,3 Mrd. €",2211,2211.0,4
+Sparkasse Paderborn-Detmold,"33104,33165,32832,34431,32816,33098,32758,33142,33175,33178,33102,33100,33189,32760,33161,32756,33154,33181,32805,33184,32676,32791,32683,33106",Nordrhein-Westfalen,1.8131573051,"1,8 Mio. €",441.25,"441,2 T. €","6,5 Mrd. €",1546,1546.0,4
+Sparkasse Westmünsterland,"46348,48727,46354,48712,59394,46325,48720,48301,48249,48739,48653,48308,46419,46342,59387,48703,46359,59399,46414,48329,59348,48624,48619,48683,48691,48734",Nordrhein-Westfalen,1.7797937923,"1,8 Mio. €",446.95,"446,9 T. €","6,4 Mrd. €",1463,1463.0,4
+Förde Sparkasse,"24799,24238,24159,24116,24809,24118,24245,24145,24223,24106,24143,24811,24366,24354,24326,24358,24148,24340,24248,24369,24814,24601,24306,24363,24107,24364,24147,24367,24808,24217,24816,24398,24637,24361,24161,24787,24351,24806,24357,24256,24109,24214,24251,24321,24222,24244,24103,24253,24226,24149,24620,24329,24229,24327,24119,24211,24800,24250,24114,24257,24360,24235,24232,24105,24146",Schleswig-Holstein,1.7359906425,"1,8 Mio. €",454.0,454 T. €,"6,5 Mrd. €",1417,1417.0,4
+Nassauische Sparkasse,"65344,65626,65399,56348,65201,65366,65346,65193,65582,56355,65232,56133,57520,56132,56346,65629,56379,56370,56130,65396,65385,65199,56349,65375,56377,65347,56338,65191,65623,65183,65321,65197,65391,56341,65558,65203,65187,65624,56357,65205,65343,65195,65189,56112,65529,65326,65329,65307,56237,65388,65207,65510,56368,65185,56340,65345",Hessen,3.33707516809,"1,8 Mio. €",461.75,"461,8 T. €","10,8 Mrd. €",1901,1901.0,4
+Stadtsparkasse Düsseldorf,"40789,40595,40229,40210,40213,40231,40211,40545,40589,40468,40477,40225,40237,40221,40547,40472,40629,40489,40479,40474,40549,40227,40235,40233,40591,40219,40217,40476,40627,40470,40212,40625,40223,40599,40593,40239,40215,40597",Nordrhein-Westfalen,3.206438536273,"1,9 Mio. €",487.04897959183677,487 T. €,"11,5 Mrd. €",2268,2268.0,"3,92"
+Kreissparkasse München Starnberg Ebersberg,"85622,82343,82008,85661,85598,82024,85764,85635,85643,85521,85560,83565,85540,85653,85625,82069,82054,85609,82031,85630,85640,82327,82065,83550,82152,83553,85591,82205,85604,85567,85617,85667,85551,85652,82349,82346,82049,82131,82064,85658,82166,85748,85662,82319,85646,82041,82234,85774,85614,82211,85570,85599,82266,82402,85737,85716,85649,82340,85579,85665,82067,82061,82229,82237,85586",Bayern,2.81393,"1,9 Mio. €",484.5,"484,5 T. €","10,2 Mrd. €",1801,1801.0,4
+Stadtsparkasse Mönchengladbach,"41061,41236,41169,41179,41238,41069,41065,41063,41068,41239,41189,41199,41066",Nordrhein-Westfalen,1.3080200174,2 Mio. €,390.8612,"390,9 T. €","4,6 Mrd. €",964,964.0,5
+Stadtsparkasse Dortmund,"44379,44319,44227,44225,44141,44289,44229,44329,44135,44147,44149,44143,44359,44357,44309,44328,44269,44339,44145,44263,44388,44265,44287,44267,44139,44137,44369",Nordrhein-Westfalen,2.3321649049,2 Mio. €,497.0,497 T. €,"8,3 Mrd. €",1823,1823.0,4
+Sparkasse Duisburg,"47059,47229,47228,47249,47058,47198,47138,47167,47269,47226,47239,47475,47055,47053,47169,47259,47137,47139,47057,47199,47178,47119,47279,47051,47179,47166",Nordrhein-Westfalen,1.5249140971,2 Mio. €,409.4,"409,4 T. €","5,4 Mrd. €",1430,1430.0,5
+Sparkasse Essen,"45307,45279,45355,45329,45143,45141,45276,45136,45239,45219,45257,45139,45133,45131,45138,45149,45357,45289,45144,45127,45359,45130,45145,45134,45309,45327,45259,45147,45277,45356,45128,45326",Nordrhein-Westfalen,2.1855912258,"2,1 Mio. €",521.725,"521,7 T. €",8 Mrd. €,1627,1627.0,4
+Sparkasse Münsterland Ost,"48145,59227,59302,48161,48147,59320,48361,48151,48351,48165,48153,48159,48317,48155,48163,48149,48291,48346,48167,48336,48143,48324,59229,48231,48157",Nordrhein-Westfalen,2.40404,"2,2 Mio. €",556.0,556 T. €,"8,8 Mrd. €",1437,1437.0,4
+Sparkasse Hannover,"30629,30982,31311,30165,30457,30938,30163,30559,30175,30625,30989,30177,30655,31319,30657,30966,30459,30851,30455,30419,31275,30823,31832,30826,30161,30853,30453,31535,30171,30880,30179,30449,30669,30173,30900,30926,30167,30952,30521,30169,30451,30627,30855,30539,30974,30916,30659,30827,30519,30159",Niedersachsen,4.0034857866,"2,2 Mio. €",613.6612021857924,"613,7 T. €","13,6 Mrd. €",2255,2255.0,"3,66"
+Sparkasse Vorderpfalz,"67069,67346,67373,67165,67240,67166,67459,67065,67136,67126,67133,67259,67245,67071,67059,67105,67258,67134,67063,67112,67122,67354,67125,67067,67376,67061,67141,67117,67127,67374",Rheinland-Pfalz,1.5824203628,"2,4 Mio. €",396.3333333333333,"396,3 T. €","5,7 Mrd. €",1112,1112.0,6
+Die Sparkasse Bremen AG,"28359,28215,28237,28239,28307,28217,28213,28325,28211,28755,28357,28717,28327,28757,28199,28279,28219,28759,28355,28777,28203,28197,28309,28209,28277,28195,28201,28205,28779,28259,28719,28207,28329",Bremen,3.094575238624,"2,4 Mio. €",600.0,600 T. €,11 Mrd. €,1537,1537.0,4
+Stadtsparkasse München,"80333,81245,81735,81545,81371,80797,81479,80636,81241,80992,80539,80798,80993,80937,81827,81673,81671,81737,80809,81379,81667,81925,80639,81675,81375,80331,80804,80687,80802,81549,81825,81927,80538,81539,81679,80469,81377,81243,80337,80935,80939,80933,80807,80805,80339,81677,81829,81369,80637,80686,81249,80689,81669,81739,81373,81476,80634,80803,81541,81475,81543,80995,81477,81547,80997,80796,80799",Bayern,4.6918148,"2,5 Mio. €",490.2,"490,2 T. €","16,4 Mrd. €",2742,2742.0,5
+Frankfurter Sparkasse,"60549,60435,65936,65933,60598,65931,60322,60437,65934,60389,60316,60323,60596,60438,60327,60314,60486,60386,60433,60599,60325,60311,60388,60488",Hessen,8.0,"2,5 Mio. €",613.0,613 T. €,"17,7 Mrd. €",1797,1797.0,4
+Sparkasse KölnBonn,"51143,50672,53177,51109,53127,53129,50969,53123,50765,50968,51107,50935,50999,50733,50737,51061,51069,53179,50859,51063,50937,50931,50674,50996,53173,53121,50678,50933,50823,53227,50679,53229,50997,51147,50825,53113,50858,50735,53115,50676,53111,50739,50827,53225,51103,51149,50668,50829,53119,50939,51105,53117,51067,53175,51145,50767,53125",Nordrhein-Westfalen,7.54327605925,"2,6 Mio. €",512.76,"512,8 T. €","27,4 Mrd. €",4536,4536.0,5
+Sparkasse Aachen,"52222,52499,52076,52072,52156,52066,52080,52159,52224,52146,52223,52078,52134,52070,52062,52477,52068,52249,52074,52064,52152",Nordrhein-Westfalen,3.1178573000200003,"2,7 Mio. €",544.8,"544,8 T. €",10 Mrd. €,2071,2071.0,5
+Kreissparkasse Köln,"51465,53859,53844,50226,51766,50171,51515,53842,50259,51467,51399,50389,50127,53913,51545,50189,53797,53359,42799,53773,51597,51688,53819,51519,51427,53721,50321,53340,53840,51789,51491,53804,51429,50170,50126,53332,51469,50181,53783,53809,50374,53347,53343,51570,51580,51709,53757,50129,50354,53639,51503,50169",Nordrhein-Westfalen,6.5876078123,"3,5 Mio. €",704.28,"704,3 T. €","23,1 Mrd. €",4512,4512.0,5
+Berliner Sparkasse,"10997,14059,10117,13057,13059,10829,13187,12349,13587,13089,13583,14165,12277,12307,12621,10247,12355,13591,13055,13359,10319,14050,10587,10789,10551,12057,10318,13437,10553,13159,14057,13465,12279,12526,13409,14052,10969,10559,12683,10589,13595,13469,10178,14195,12207,14109,10623,10405,13347,13593,10245,12045,14199,12157,12437,12107,13503,12587,10119,10115,13581,10709,12359,10409,10243,13507,12101,12203,12309,13158,10317,10707,12524,10249,10435,12043,14197,12161,12489,10367,12163,12435,13627,12103,12589,14129,12205,10719,13355,12049,12629,12055,13599,14055,12681,12051,12687,10555,12487,12053,13505,10717,13086,13403,13435,10825,10315,10965,12159,14163,10777,10783,10557,10715,10963,12099,10365,12557,13405,10627,10779,10585,10999,12059,10781,10437,12351,10625,12555,12459,13509,13629,14053,14193,10787,10629,12679,12169,12685,13051,12105,14169,12165,12247,13351,14089,13597,12167,12439,12627,12109,13439,10179,13125,13585,13407,13467,10711,10967,14167,12689,13189,12305,12619,13156,10823,12347,13129,10713,10827,12623,13088,12209,13053,10439,10961,13353,12047,12357,13357,13349,13127,12353,12249,10785,12559,10407,12527,13589,10369",Berlin,8.0,"3,9 Mio. €",651.8333333333334,"651,8 T. €","57,4 Mrd. €",4073,4073.0,6
+Hamburger Sparkasse AG,"22455,20253,22761,22309,22765,20249,22307,22297,21035,20097,20537,22087,21033,20146,22337,22043,22143,22587,21073,20354,22529,22559,22085,22081,22589,22453,22607,22175,22299,20535,27499,22041,22159,22301,22391,22049,22083,22605,22769,22846,22335,22111,21444,22609,21077,20359,20355,22179,22415,22147,22457,20251,20457,22395,22303,21029,22525,22119,20539,21465,20459,21109,22047,20259,22527,20148,22417,22397,22523,22763,22399,21147,20149,22177,22459,20255,22767,22549,22419,21037,22339,22045,20357,20099,22149,22305,22115,22547,21031,21449,22359,20095,21107,21079,22117,22393,20257,21075,22089,20144",Hamburg,8.0,"4,2 Mio. €",853.6585365853659,"853,7 T. €","41,9 Mrd. €",5358,5358.0,"4,92"
