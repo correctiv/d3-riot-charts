@@ -19,7 +19,8 @@ export default function({
     thereshold=4,
     doSearch,
     description,
-    resultTempl
+    resultTempl,
+    failMsg
   } = search
 
   if (!labelCol && !resultTempl) {
@@ -40,6 +41,7 @@ export default function({
     control,
     breakpoint,
     labelCol,
+    failMsg,
     resultTempl
   })
 

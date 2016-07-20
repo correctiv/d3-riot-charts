@@ -5,6 +5,7 @@ import makeResponsive from '../utils/tags/setup_responsive_tag.js'
 
   <label>{ opts.description }</label>
   <input type="text" oninput={ search } />
+  <div if={ failMsg } class="simple-charts__searchbox__fail-message">{ failMsg }</div>
   <ul if={ results.length > 0 } class="simple-charts__searchbox__result-list">
     <li each={ results }
       onclick={ handleClick }
@@ -16,9 +17,12 @@ import makeResponsive from '../utils/tags/setup_responsive_tag.js'
   makeResponsive(this)
 
   this.results = []
+  this.failMsg = false
 
   this.search = (e) => {
-    let str = e.target.value.toLowerCase()
+    this.failMsg = false
+    let searchStr = e.target.value
+    let str = searchStr.toLowerCase()
     if (str.length >= this.opts.thereshold) {
       let results = this.opts.doSearch(str)
       if (results.length == 1) {
@@ -28,6 +32,10 @@ import makeResponsive from '../utils/tags/setup_responsive_tag.js'
           r.label = this.getResultLabel(r)
           return r
         })
+        // display failMsg
+        if (this.results.length === 0) {
+          this.failMsg = format(this.opts.failMsg, {searchStr})
+        }
       }
     } else if (str.length < this.opts.thereshold) {
       this.results = []
