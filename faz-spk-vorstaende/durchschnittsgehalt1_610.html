@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>correctiv-simple-charts</title>
+</head>
+<body>
+  <section id="vorstaende-chart--1" class="-centered"></section>
+  <script src="../dist/d3-riot-charts.min.js"></script>
+  <script type="text/javascript">
+
+var correctivColors = {
+  red: '#c81455',
+  blue: '#477ba9'
+};
+
+renderChart({
+  kind: 'scatterChart',
+  elementId: 'vorstaende-chart--1',
+  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
+  width: 610,
+  wrapperWidth: 610,
+  height: 600,
+  wrapperHeight: 640,
+  xCol: 'bemessung_2014',
+  xScaleNice: false,
+  xExtend: [0, 8.2],
+  yCol: 'durchschnitt_val',
+  yScaleNice: false,
+  yExtend: [0, 900],
+  sizeCol: 'mitarbeiter_2014',
+  color: correctivColors.red,
+  labelCol: 'sparkasse',
+  tooltip: {
+    bodyTempl: '<dl class="table" style="width:300px;">\
+      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
+    position: {
+      bottom: 80,
+      right: 60
+    }
+  },
+  search: {
+    searchCols: ['sparkasse', 'plz'],
+    position: {
+      top: 20,
+      right: 70
+    },
+    description: 'Suche nach Deiner Sparkasse oder Postleitzahl',
+    failMsg: 'Leider wurde keine Sparkasse zu "{searchStr}" gefunden.'
+  },
+  xTicks: 0,
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
+  drawExtra: function(c) {
+    c.svg.append('line')
+      .attr('x1', c.xScale(7.8) - 5)
+      .attr('y1', c.yScale(900))
+      .attr('x2', c.xScale(7.8) - 5)
+      .attr('y2', c.yScale(0) - 5)
+      .style('stroke', 'black')
+      .style('stroke-width', '1')
+      .style('stroke-dasharray', '10,10')
+      .style('shape-rendering', 'crispEdges');
+    c.svg.append('text')
+      .attr('y', c.yScale(900)+10)
+      .attr('x', c.xScale(8) - 10)
+      .style('font-size', '14px')
+      .text('*');
+  },
+  annotation: {
+    position: {
+      bottom: 1,
+      right: 20
+    },
+    content: '<div style="text-align:right;">Je weiter rechts eine Sparkasse hier erscheint, desto größer ist sie.<br><a href="https://correctiv.org/recherchen/sparkassen/artikel/2016/07/21/datenauswertung-von-vorstandsgehaelter/">So haben wir die Größe der Sparkassen berechnet</a><br>* Von diesen Sparkassen haben wir keine Daten zum Kreditvolumen. Deshalb konnten wir sie nicht in unsere Bemessungsgrundlage mit einbeziehen.</div>'
+  }
+});
+
+
+  </script>
+</body>
+</html>

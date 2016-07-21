@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>correctiv-simple-charts</title>
+</head>
+<body>
+  <section id="vorstaende-chart--2" class="-centered"></section>
+
+  <script src="../dist/d3-riot-charts.min.js"></script>
+  <script type="text/javascript">
+
+var correctivColors = {
+  red: '#c81455',
+  blue: '#477ba9'
+};
+
+
+renderChart({
+  kind: 'scatterChart',
+  elementId: 'vorstaende-chart--2',
+  dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
+  width: 610,
+  wrapperWidth: 610,
+  height: 600,
+  wrapperHeight: 610,
+  xCol: 'bemessung_2014',
+  xScaleNice: false,
+  xExtend: [0, 7.6],
+  yCol: 'durchschnitt_val',
+  yScaleNice: false,
+  yExtend: [0, 750],
+  sizeCol: 'mitarbeiter_2014',
+  color: function(d) {
+    return d.state === 'Nordrhein-Westfalen' ? correctivColors.red : correctivColors.blue;
+  },
+  filter: function(d) {
+    return (d.state === 'Nordrhein-Westfalen') || (d.state === 'Bayern')
+  },
+  labelCol: 'sparkasse',
+  tooltip: {
+    bodyTempl: '<dl class="table" style="width:300px;">\
+      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
+      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
+      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
+      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
+      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
+    position: {
+      bottom: 40,
+      right: 20
+    }
+  },
+  search: {
+    searchCols: ['sparkasse', 'plz'],
+    position: {
+      top: 20,
+      right: 20
+    },
+    description: 'Suche nach Deiner Sparkasse oder Postleitzahl',
+    failMsg: 'Leider wurde keine Sparkasse zu "{searchStr}" gefunden.'
+  },
+  xTicks: 0,
+  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
+  legend: {
+    position: {
+      bottom: 50,
+      left: 40
+    }
+  },
+  annotation: {
+    position: {
+      bottom: 1,
+      right: 20
+    },
+    content: '<div style="text-align:right;">Je weiter rechts eine Sparkasse hier erscheint, desto größer ist sie.<br><a href="https://correctiv.org/recherchen/sparkassen/artikel/2016/07/21/datenauswertung-von-vorstandsgehaelter/">So haben wir die Größe der Sparkassen berechnet</a></div>'
+  },
+  groupCol: 'state'
+});
+
+
+
+  </script>
+</body>
+</html>
