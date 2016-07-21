@@ -12,15 +12,16 @@ export default function({
     let label = _y ? yLabel : xLabel
     let _label = axis.append('text')
       .attr('class', 'label')
-      .attr('y', 15)
       .style('text-anchor', 'end')
       .text(label)
 
     if (_y) {
       _label
+        .attr('y', 15)
         .attr('transform', 'rotate(-90)')
     } else {
       _label
+        .attr('y', -6)
         .attr('x', width)
     }
   }
