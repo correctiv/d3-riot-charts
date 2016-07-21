@@ -21,7 +21,7 @@ renderChart({
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   width: 800,
   height: 600,
-  wrapperHeight: 620,
+  wrapperHeight: 640,
   xCol: 'bemessung_2014',
   xScaleNice: false,
   xExtend: [0, 8.2],
@@ -52,7 +52,7 @@ renderChart({
     description: 'Suche nach Deiner Sparkasse oder Postleitzahl',
     failMsg: 'Leider wurde keine Sparkasse zu "{searchStr}" gefunden.'
   },
-  xTicks: 0,
+  xLabel: 'Größe der Sparkasse',
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
   drawExtra: function(c) {
     c.svg.append('line')

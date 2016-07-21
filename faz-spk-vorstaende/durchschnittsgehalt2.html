@@ -23,6 +23,7 @@ renderChart({
   dataUrl: 'data/vorstaende/durchschnittsgehalt_scatter.csv',
   width: 800,
   height: 600,
+  wrapperHeight: 610,
   xCol: 'bemessung_2014',
   xScaleNice: false,
   xExtend: [0, 7.6],
@@ -58,7 +59,7 @@ renderChart({
     description: 'Suche nach Deiner Sparkasse oder Postleitzahl',
     failMsg: 'Leider wurde keine Sparkasse zu "{searchStr}" gefunden.'
   },
-  xTicks: 0,
+  xLabel: 'Größe der Sparkasse',
   yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
   legend: {
     position: {
@@ -68,7 +69,7 @@ renderChart({
   },
   annotation: {
     position: {
-      bottom: 10,
+      bottom: 1,
       right: 20
     },
     content: 'Je weiter rechts eine Sparkasse hier erscheint, desto größer ist sie. <a href="https://correctiv.org/recherchen/sparkassen/artikel/2016/07/21/datenauswertung-von-vorstandsgehaelter/">So haben wir die Größe der Sparkassen berechnet</a>'
