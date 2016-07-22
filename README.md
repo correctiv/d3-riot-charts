@@ -71,4 +71,4 @@ starts a simple server at `localhost:1337` that serves the example `index.html` 
 
 `npm run build`
 
-the minified build `correctiv-simple-charts.min.js` will be in the `./dist` folder
+the minified build `d3-riot-charts.min.js` will be in the `./dist` folder
