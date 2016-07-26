@@ -14,6 +14,20 @@
   <h2>correctiv-simple-charts</h2>
   <h1>Examples</h1>
 
+  <h3>simplest barChart</h3>
+  <code>
+    <pre>
+renderChart({
+    kind: "barChart",
+    elementId: "simple-barchart-example",
+    dataUrl: "data/example.csv",
+    xCol: "name",
+    yCol: "bezuege_quote_zu_2013"
+});
+    </pre>
+  </code>
+  <section id="simple-barchart-example"></section>
+
   <h3>barChart</h3>
   <section id="example-bar" class="-centered"></section>
 
@@ -22,6 +36,13 @@
 
   <script src="d3-riot-charts.min.js"></script>
   <script type="text/javascript">
+renderChart({
+    kind: "barChart",
+    elementId: "simple-barchart-example",
+    dataUrl: "data/sample_barchart.csv",
+    xCol: "name",
+    yCol: "bezuege_quote_zu_2013"
+});
 
 renderChart({
   kind: 'barChart',
