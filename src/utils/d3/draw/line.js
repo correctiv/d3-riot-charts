@@ -8,6 +8,7 @@ export default function({
   xScale,
   yScale,
   svg,
+  getColor
 }) {
   let _line = line()
     .x(d => {
@@ -24,5 +25,8 @@ export default function({
   return svg.append('path')
       .datum(data)
       .attr('class', 'line')
-      .attr('d', _line);
+      .attr('d', _line)
+      .style('stroke', d => {
+        return getColor(d)
+      })
 }
