@@ -31,6 +31,9 @@ renderChart({
   <h3>barChart</h3>
   <section id="example-bar" class="-centered"></section>
 
+  <h3>timeLineChart</h3>
+  <section id="example-timeline"></section>
+
   <h3>scatterChart</h3>
   <section id="example-scatter"></section>
 
@@ -42,6 +45,13 @@ renderChart({
     dataUrl: "data/sample_barchart.csv",
     xCol: "name",
     yCol: "bezuege_quote_zu_2013"
+});
+
+renderChart({
+    kind: "timeLineChart",
+    elementId: "example-timeline",
+    dataUrl: "data/sample_timelinechart.csv",
+    timeFormat: "%Y-%m-%d %H:%M:%S"
 });
 
 renderChart({

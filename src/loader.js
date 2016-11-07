@@ -1,5 +1,6 @@
 import Papa from 'papaparse'
 import Promise from 'promise-polyfill'
+import {timeParse} from './d3_packages.js'
 
 function _loadCsv(dataUrl) {
   return new Promise((resolve, reject) => {
@@ -22,18 +23,25 @@ export default ({
   dataUrl,
   xCol,
   yCol,
-  filter
+  filter,
+  timeFormat
 }) => {
   return new Promise((resolve) => {
     _loadCsv(dataUrl).then((rows) => {
       if (filter) {
         rows = rows.filter(filter)
       }
+      if (timeFormat) {
+        // FIXME
+        let parseTime = timeParse(timeFormat)
+        rows.forEach(r => {
+          r[xCol] = parseTime(r[xCol])
+        })
+      }
       resolve(rows.filter(r => {
         // ensure data is present
         return (r[xCol] && r[yCol])
       }))
-    }
-    )
+    })
   })
 }

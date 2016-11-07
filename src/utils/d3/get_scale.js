@@ -1,10 +1,11 @@
-import {scaleLinear, scaleOrdinal, scaleBand, scaleLog} from '../../d3_packages.js'
+import {scaleLinear, scaleOrdinal, scaleBand, scaleTime, scaleLog} from '../../d3_packages.js'
 
 const _scales = {
   scaleLinear,
   scaleOrdinal,
   scaleLog,
-  scaleBand
+  scaleBand,
+  scaleTime
 }
 
 

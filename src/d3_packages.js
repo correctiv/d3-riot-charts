@@ -5,10 +5,13 @@ export {
   axisBottom,
   extent,
   max,
-  scaleOrdinal,
+  line,
   scaleBand,
-  schemeCategory10,
   scaleLinear,
+  scaleOrdinal,
+  scaleTime,
+  schemeCategory10,
   select,
-  selectAll
+  selectAll,
+  timeParse
 } from 'd3'
