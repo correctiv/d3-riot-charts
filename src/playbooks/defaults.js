@@ -25,6 +25,7 @@ const DEFAULTS = Immutable.Map({
   responsiveSvg: false,
   xTicks: 10,
   yTicks: 10,
+  curve: false,
   color: schemeCategory10,
   timeFormat: false,
   filter: false,

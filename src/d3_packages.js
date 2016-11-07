@@ -3,6 +3,7 @@ export {
   axisRight,
   axisTop,
   axisBottom,
+  curveBasis,
   extent,
   max,
   line,

@@ -1,6 +1,7 @@
-import {line} from '../../../d3_packages.js'
+import {line, curveBasis} from '../../../d3_packages.js'
 
 export default function({
+  curve,
   data,
   xCol,
   yCol,
@@ -15,6 +16,10 @@ export default function({
     .y(d => {
       return yScale(d[yCol])
     })
+
+  if (curve) {
+    _line.curve(curveBasis)
+  }
 
   return svg.append('path')
       .datum(data)
