@@ -1,23 +1,42 @@
 export default ({
   groupCol,
   data,
+  yCol,
+  yCols,
+  multiData,
   getColor
 }) => {
-  if (!groupCol) {
-    throw new Error('Legend: need groupCol')
-  }
+  // if (!groupCol && !yCols && !yCol) {
+  //   throw new Error('Legend: need either `groupCol` or `yCols`')
+  // }
 
-  let groups = []
-  let items = []
-  data.map(d => {
-    let item = d[groupCol]
-    if (groups.indexOf(item) < 0) {
-      groups.push(item)
-      items.push({
-        label: item,
-        color: getColor(d)
-      })
-    }
-  })
-  return items
+  if (groupCol) {
+    let groups = []
+    let items = []
+    data.map(d => {
+      let item = d[groupCol]
+      if (groups.indexOf(item) < 0) {
+        groups.push(item)
+        items.push({
+          label: item,
+          color: getColor(d)
+        })
+      }
+    })
+    return items
+  } else if (yCols) {
+    // FIXME ?
+    let {yValues} = multiData
+    return yCols.map((c, i) => {
+      return {
+        label: c,
+        color: getColor(yValues[i])
+      }
+    })
+  } else if (yCol) {
+    return [{
+      label: yCol,
+      color: getColor(data)
+    }]
+  }
 }
