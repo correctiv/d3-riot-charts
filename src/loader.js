@@ -23,6 +23,7 @@ export default ({
   dataUrl,
   xCol,
   yCol,
+  yCols,
   filter,
   timeFormat
 }) => {
@@ -38,10 +39,23 @@ export default ({
           r[xCol] = parseTime(r[xCol])
         })
       }
-      resolve(rows.filter(r => {
-        // ensure data is present
-        return (r[xCol] && r[yCol])
-      }))
+
+      // ensure data is present
+      // FIXME better implementation for both
+      // (or later more?) types
+      if (xCol && yCols) {
+        resolve(rows.filter(r => {
+          return (r[xCol] && yCols.map(c => {
+            return r[c]
+          }).every(e => {
+            return !!e  // FIXME
+          }))
+        }))
+      } else {
+        resolve(rows.filter(r => {
+          return (r[xCol] && r[yCol])
+        }))
+      }
     })
   })
 }

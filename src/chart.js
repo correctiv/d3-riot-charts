@@ -1,4 +1,5 @@
 import getData from './loader.js'
+import transformMulti from './utils/data/transform_multi.js'
 import fixDimensions from './utils/fix_dimensions.js'
 import initSvg from './utils/d3/init_svg.js'
 import addSvgEvents from './utils/d3/add_svg_events.js'
@@ -82,6 +83,12 @@ export default class {
   render() {
     this.data.then(data => {
       this.data = data
+
+      // FIXME this is not elegant at all, at least at this point here
+      if (this.kind.startsWith('multi')) {
+        this.multiData = transformMulti(this)
+      }
+
       this.playbook.run(this)
       this.search ? this._setupSearch() : null
       this.legend ? this._initLegend() : null

@@ -6,6 +6,7 @@ export {
   curveBasis,
   extent,
   max,
+  min,
   line,
   scaleBand,
   scaleLinear,

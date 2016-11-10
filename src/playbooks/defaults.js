@@ -19,6 +19,7 @@ const DEFAULTS = Immutable.Map({
   showYLabel: true,
   xCol: 'x',
   yCol: 'y',
+  yCols: false,
   xScaleNice: true,
   yScaleNice: true,
   responsive: true,
