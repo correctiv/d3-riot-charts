@@ -3,124 +3,61 @@
 <head lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>correctiv-simple-charts</title>
-  <style type="text/css">
-    .quota-label {
-      font-size: 10px;
-    }
-  </style>
+  <title>d3-riot-charts</title>
 </head>
 <body>
-  <h2>correctiv-simple-charts</h2>
-  <h1>Examples</h1>
+  <h1>d3-riot-charts</h1>
+
+  <h2>simplest examples</h2>
 
   <h3>barChart</h3>
-  <section id="example-bar" class="-centered"></section>
+  <section id="bar-simple"></section>
+
+  <h3>lineChart</h3>
+  <section id="line-simple"></section>
 
   <h3>scatterChart</h3>
-  <section id="example-scatter"></section>
+  <section id="scatter-simple"></section>
 
-  <script src="dist/d3-riot-charts.min.js"></script>
+  <h3>timeLineChart</h3>
+  <section id="timeline-simple"></section>
+
+  <h3>multiLineChart</h3>
+  <section id="multiline-simple"></section>
+
+  <script src="./dist/d3-riot-charts.min.js"></script>
   <script type="text/javascript">
-
 renderChart({
-  kind: 'barChart',
-  elementId: 'example-bar',
-  dataUrl: 'data/sample_barchart.csv',
-  width: 800,
-  height: 400,
-  wrapperHeight: 420,
-  xCol: 'name',
-  yCol: 'bezuege_quote_zu_2013',
-  showXAxis: false,
-  filter: function(d) {
-    return (d.state === 'Nordrhein-Westfalen') || (d.state === 'Hessen');
-  },
-  color: function(d) {
-    return d.position === 'Vorsitzende(r)' ? 'red' : 'blue'
-  },
-  labelCol: 'name',
-  tooltip: true,
-  search: {
-    searchCols: ['sparkasse', 'name'],
-    position: {
-      top: 20,
-      right: 20
-    },
-    description: 'Gib einen Namen oder eine Sparkasse ein',
-    failMsg: 'Leider wurde kein Ergebnis für "{searchStr}" gefunden.',
-    resultTempl: '{name} ({sparkasse})'
-  },
-  drawExtra: function(chart) {
-    var y = chart.yScale(0.15);
-    return {
-      line: chart.svg.append('svg:line')
-        .attr('x1', 0)
-        .attr('y1', y)
-        .attr('x2', chart.width)
-        .attr('y2', y)
-        .style('stroke', 'red'),
-      label: chart.svg.append('text')
-        .attr('class', 'quota-label')
-        .attr('y', y - 5)
-        .attr('x', 2)
-        .text('Quotengrenze')
-    };
-  },
-  legend: true,
-  groupCol: 'position',
-  annotation: {
-    content: 'Ich bin eine Anmerkung!<strong>html</strong>'
-  }
+    kind: "barChart",
+    elementId: "bar-simple",
+    dataUrl: "data/bar.csv"
 });
 
 renderChart({
-  kind: 'scatterChart',
-  elementId: 'example-scatter',
-  dataUrl: 'data/sample.csv',
-  width: 800,
-  height: 600,
-  xCol: 'bemessung_2014',
-  yCol: 'durchschnitt_val',
-  sizeCol: 'mitarbeiter_2014',
-  groupCol: 'state',
-  labelCol: 'sparkasse',
-  tooltip: {
-    bodyTempl: '<dl class="table">\
-      <dt>Durchschnittsgehalt</dt><dd>{durchschnittsgehalt_2014}</dd>\
-      <dt>Gesamtbezüge</dt><dd>{gesamtbezuege_2014}</dd>\
-      <dt>Bilanzsumme</dt><dd>{bilanzsumme_2014}</dd>\
-      <dt>Mitarbeiter</dt><dd>{mitarbeiter_2014}</dd>\
-      <dt>Vorstände</dt><dd>{anzahl_vorstaende_2014}</dd></dl>',
-    position: {
-      bottom: 40,
-      right: 20
-    }
-  },
-  search: {
-    searchCols: ['sparkasse'],
-    position: {
-      top: 20,
-      right: 20
-    },
-    description: 'Suche nach deiner Sparkasse oder Postleitzahl'
-  },
-  xTicks: 0,
-  xLabel: 'Größe der Sparkasse',
-  yLabel: 'Durchschnittliches Vorstandsgehalt in T. €',
-  playbook: {
-    getXDomain: function() {
-      return [0, 8.5];
-    },
-    getYDomain: function() {
-      return [100, 800];
-    }
-  },
-  legend: {
-    cssClasses: '-boxed'
-  }
+    kind: "lineChart",
+    elementId: "line-simple",
+    dataUrl: "data/line.csv"
 });
 
+renderChart({
+    kind: "scatterChart",
+    elementId: "scatter-simple",
+    dataUrl: "data/scatter.csv"
+});
+
+renderChart({
+    kind: "timeLineChart",
+    elementId: "timeline-simple",
+    dataUrl: "data/timeline.csv",
+    timeFormat: "%Y-%m-%d %H:%M:%S"
+});
+
+renderChart({
+    kind: "multiLineChart",
+    elementId: "example-multiline",
+    dataUrl: 'data/multiline.csv',
+    yCols: ['y1', 'y2', 'y3']
+});
   </script>
 </body>
 </html>
